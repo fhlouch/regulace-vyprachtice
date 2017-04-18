@@ -1,0 +1,39 @@
+// Možné hodnoty Tag pro LinkButton - práce s grafy
+
+  case Message.WParam of
+    1: ReadGraph(1);
+    2: WriteGraph(1);
+    3: LastState;
+    4: LoadFromDisk;
+    5: SaveToDisk;
+    6: ReadGraph(2);
+    7: WriteGraph(2);
+    8: begin ReadGraph(1); ReadGraph(2); end;
+    9: begin WriteGraph(1); WriteGraph(2); end;
+
+    11: InvertMirror;
+
+    15: SaveUndo;
+  end;
+
+
+// + 100:  Zpracuje jen viditelné stránky z TVizPageControl  
+// + 200:  Zápis do všech typù zapnutých ve TypeCheckList 
+// + 400:  Navíc zpracovat všechny objekty TVizRowGrid
+// + 1000: Speciální režim zápisu TSimpleImage - uložení ImageIndex místo Tag
+
+
+// Seznam funkcí pro VizSettingsManager
+
+  1: Read 
+  2: Write
+  3: Undo
+  4: Load
+  5: Save
+  6: Read 
+  7: Write
+  8: Read 
+  9: Write
+
+ 15: SaveUndo;
+ 10: ModifySignals

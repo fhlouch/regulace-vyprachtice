@@ -1,0 +1,1559 @@
+<PCC_PROJECT APPLICATION="Dirigo" APPLICATION_VERSION="v2.1.7" NAME="" DESCRIPTION="" AUTHOR="" VERSION="" PROFILE="Sybas P3+" THREADINDEX="1">
+  <COMMUNICATION TYPE="2" PLC_ADDRESS="1" PC_ADDRESS="31" BAUD_RATE="57600" HOST="192.168.97.10" PORT="59" PC_PORT="59" PASSWORD="1396855609" TIMEOUT="1000"/>
+  <APP_OPTIONS IQRF_NETWORK="1" IQRF_ADDRESS="1" CYCLE_DELAY="7"/>
+  <SIM_OPTIONS ENABLED="false" ADDRESS="1" PORT="59" PASSWORD="123456789">
+    <PEER_1 IP="127.0.0.1" PORT="59" TIMEOUT="500" PASSWORD="123456789"/>
+  </SIM_OPTIONS>
+  <PAGES>
+    <PAGE CAPTION="Obecne"/>
+    <PAGE CAPTION="KotelVentil_KV"/>
+    <PAGE CAPTION="List 1"/>
+  </PAGES>
+  <CONSTANTS>
+    <CONSTANT ID="1" NAME="KotelPozadZpatecTmp" DATA_TYPE="2" VALUE="650" KIND="1" DESCRIPTION="Požadovaná teplota na zpátečce kotle" K="0.1" Q="0" INFO1="° C" INFO2="" INFO3="" RIGHTS="2" ARRAY_INDEX="-1"/>
+    <CONSTANT ID="2" NAME="KVNecitlivost" DATA_TYPE="2" VALUE="30" KIND="0" DESCRIPTION="Kotel - ventil - pásmo necitlivosti" K="0.1" Q="0" INFO1="° C" INFO2="" INFO3="" RIGHTS="2" ARRAY_INDEX="-1"/>
+    <CONSTANT ID="3" NAME="KVHyst" DATA_TYPE="2" VALUE="10" KIND="0" DESCRIPTION="Kotel - ventil - poloměr hystereze" K="0.1" Q="0" INFO1="° C" INFO2="" INFO3="" RIGHTS="2" ARRAY_INDEX="-1"/>
+    <CONSTANT ID="4" NAME="KotelVentilPozice" DATA_TYPE="2" VALUE="0" KIND="1" DESCRIPTION="Pozice otevření čtyřcestného ventilu kotle (0-60)" K="1" Q="0" INFO1="" INFO2="" INFO3="" RIGHTS="2" ARRAY_INDEX="-1"/>
+    <CONSTANT ID="5" NAME="KotelMaxTmpNaVyst" DATA_TYPE="2" VALUE="900" KIND="1" DESCRIPTION="Maximální teplota na výstupu z kotle" K="0.1" Q="0" INFO1="° C" INFO2="" INFO3="" RIGHTS="2" ARRAY_INDEX="-1"/>
+  </CONSTANTS>
+  <MODULES>
+    <MODULE GUID="{E692388B-2308-4DAA-8871-4377F2FE50BF}" NAME="8xAI1" ID="3" X="392" Y="106" WIDTH="67" HEIGHT="141" ORDER="20" THREAD_ID="1" PAGE="Obecne">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN NAME="KotelTmpVystup" DESCRIPTION="Teplota vody na výstupu z kotle" K="0.1" INFO1="° C" RIGHTS="2"/>
+        <OUT_PIN NAME="KotelTmpZpatecka" DESCRIPTION="Teplota vody na zpátečce do kotle" K="0.1" INFO1="° C" RIGHTS="2"/>
+        <OUT_PIN RIGHTS="2"/>
+        <OUT_PIN RIGHTS="2"/>
+        <OUT_PIN RIGHTS="2"/>
+        <OUT_PIN RIGHTS="2"/>
+        <OUT_PIN RIGHTS="2"/>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{439BFD1C-2D33-4B23-A419-33DA6B2EFBAE}" NAME="P3Menu1" ID="4" X="392" Y="22" WIDTH="57" HEIGHT="57" ORDER="10" THREAD_ID="1" PAGE="Obecne">
+      <MENU/>
+      <IN_PINS/>
+      <PARAM_PINS/>
+      <OUT_PINS/>
+    </MODULE>
+    <MODULE GUID="{82FD83B4-6F13-4B7F-B63F-F2A1F4339415}" NAME="WaterRegulator1" ID="5" X="406" Y="1072" WIDTH="108" HEIGHT="113" ORDER="180" THREAD_ID="1" PAGE="KotelVentil_KV">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN CONSTANT_ID="1" VALUE="650"/>
+      </IN_PINS>
+      <PARAM_PINS>
+        <PARAM_PIN CONSTANT_ID="1" VALUE="650"/>
+        <PARAM_PIN VALUE="15"/>
+        <PARAM_PIN VALUE="5"/>
+        <PARAM_PIN VALUE="1"/>
+      </PARAM_PINS>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{74F92168-F67B-4364-8AC0-B735DAA400A3}" NAME="KVPrivrit" ID="11" X="658" Y="1156" WIDTH="76" HEIGHT="85" ORDER="260" THREAD_ID="1" PAGE="KotelVentil_KV">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS>
+        <PARAM_PIN VALUE="1"/>
+        <PARAM_PIN VALUE="3"/>
+      </PARAM_PINS>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{74F92168-F67B-4364-8AC0-B735DAA400A3}" NAME="KVPootevrit" ID="13" X="658" Y="1058" WIDTH="76" HEIGHT="85" ORDER="220" THREAD_ID="1" PAGE="KotelVentil_KV">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS>
+        <PARAM_PIN VALUE="1"/>
+        <PARAM_PIN VALUE="3"/>
+      </PARAM_PINS>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{930794F2-FA27-4BD8-A42D-15A13162E96D}" NAME="ISub1" ID="14" X="182" Y="1226" WIDTH="58" HEIGHT="71" ORDER="190" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="2">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN CONSTANT_ID="1" VALUE="650"/>
+        <IN_PIN CONSTANT_ID="1" VALUE="650"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{896864FC-42F9-44E4-A091-310F35EB4134}" NAME="IAbs1" ID="15" X="308" Y="1212" WIDTH="58" HEIGHT="57" ORDER="200" THREAD_ID="1" PAGE="KotelVentil_KV">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{93F44752-514B-4B8C-A422-DF52B0677374}" NAME="Equitherm1" ID="16" X="434" Y="1198" WIDTH="71" HEIGHT="113" ORDER="210" THREAD_ID="1" PAGE="KotelVentil_KV">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS>
+        <PARAM_PIN VALUE="10"/>
+        <PARAM_PIN VALUE="40"/>
+        <PARAM_PIN VALUE="200"/>
+        <PARAM_PIN VALUE="1"/>
+      </PARAM_PINS>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{0FAE4998-FD44-4CA1-B55F-7E148FDFF20A}" NAME="ISwitch1" ID="12" X="420" Y="190" WIDTH="58" HEIGHT="113" ORDER="630" THREAD_ID="1" PAGE="List 1" INPUT_COUNT="4">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="-3"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{9263D26F-F78B-4380-B34D-797232F865CD}" NAME="IAdd2" ID="17" X="588" Y="176" WIDTH="56" HEIGHT="71" ORDER="640" THREAD_ID="1" PAGE="List 1" INPUT_COUNT="2">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{0FAE4998-FD44-4CA1-B55F-7E148FDFF20A}" NAME="ISwitch2" ID="18" X="700" Y="148" WIDTH="58" HEIGHT="71" ORDER="650" THREAD_ID="1" PAGE="List 1" INPUT_COUNT="1">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN NAME="SState" RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{0FAE4998-FD44-4CA1-B55F-7E148FDFF20A}" NAME="ISwitch3" ID="19" X="868" Y="134" WIDTH="58" HEIGHT="113" ORDER="660" THREAD_ID="1" PAGE="List 1" INPUT_COUNT="4">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{4139463D-8956-4642-BE4E-8A02E95392D3}" NAME="BoolVar1" ID="1" X="168" Y="218" WIDTH="54" HEIGHT="57" ORDER="620" THREAD_ID="1" PAGE="List 1">
+      <IN_PINS/>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{8EA347F1-5B20-4914-9B1E-ADD7627534A7}" NAME="SaveData1" ID="20" X="882" Y="554" WIDTH="67" HEIGHT="71" ORDER="560" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="1">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN CONSTANT_ID="4" VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS>
+        <PARAM_PIN VALUE="0"/>
+      </PARAM_PINS>
+      <OUT_PINS/>
+    </MODULE>
+    <MODULE GUID="{9263D26F-F78B-4380-B34D-797232F865CD}" NAME="IAdd1" ID="27" X="616" Y="582" WIDTH="58" HEIGHT="71" ORDER="380" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="2">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{F5956E98-9252-4103-8D8C-D098BD8ED82A}" NAME="KVPozice" ID="33" X="742" Y="568" WIDTH="65" HEIGHT="85" ORDER="450" THREAD_ID="1" PAGE="KotelVentil_KV">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS>
+        <PARAM_PIN VALUE="60"/>
+        <PARAM_PIN VALUE="0"/>
+      </PARAM_PINS>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{0FAE4998-FD44-4CA1-B55F-7E148FDFF20A}" NAME="ISwitch4" ID="34" X="490" Y="596" WIDTH="60" HEIGHT="99" ORDER="370" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="3">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="-1"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{A9BD18ED-4059-4B71-97A4-5D52CF189C81}" NAME="Bits2Int1" ID="35" X="378" Y="610" WIDTH="58" HEIGHT="71" ORDER="360" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="2">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{252CEA06-915F-4422-9B6D-5CE9815998A8}" NAME="SinglePulse1" ID="6" X="126" Y="1996" WIDTH="77" HEIGHT="71" ORDER="390" THREAD_ID="1" PAGE="KotelVentil_KV">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS>
+        <PARAM_PIN VALUE="60"/>
+      </PARAM_PINS>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{252CEA06-915F-4422-9B6D-5CE9815998A8}" NAME="SinglePulse2" ID="7" X="546" Y="2038" WIDTH="77" HEIGHT="71" ORDER="580" THREAD_ID="1" PAGE="KotelVentil_KV">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS>
+        <PARAM_PIN VALUE="1"/>
+      </PARAM_PINS>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{9263D26F-F78B-4380-B34D-797232F865CD}" NAME="IAdd3" ID="10" X="420" Y="2150" WIDTH="58" HEIGHT="57" ORDER="440" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="1">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{72ECCB1C-F9E5-42A7-847D-12F37BC9EE47}" NAME="Not1" ID="22" X="280" Y="2150" WIDTH="58" HEIGHT="57" ORDER="430" THREAD_ID="1" PAGE="KotelVentil_KV">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{930794F2-FA27-4BD8-A42D-15A13162E96D}" NAME="ISub2" ID="23" X="546" Y="2150" WIDTH="58" HEIGHT="71" ORDER="570" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="2">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="60"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{058EE871-1370-46E7-AC3E-905CB632A211}" NAME="And2" ID="24" X="294" Y="2080" WIDTH="58" HEIGHT="57" ORDER="410" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="1">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{058EE871-1370-46E7-AC3E-905CB632A211}" NAME="And3" ID="25" X="420" Y="2052" WIDTH="58" HEIGHT="71" ORDER="400" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="2">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0" INVERTED="true"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{5745AE44-2B47-4828-AEFA-B96375DA31C4}" NAME="KVResetProbiha" ID="26" X="126" Y="2136" WIDTH="96" HEIGHT="71" ORDER="420" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="2">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{0FAE4998-FD44-4CA1-B55F-7E148FDFF20A}" NAME="KVOtevirat" ID="28" X="98" Y="582" WIDTH="65" HEIGHT="197" ORDER="350" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="10">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{0FAE4998-FD44-4CA1-B55F-7E148FDFF20A}" NAME="KVZavirat" ID="29" X="238" Y="624" WIDTH="60" HEIGHT="197" ORDER="280" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="10">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{9263D26F-F78B-4380-B34D-797232F865CD}" NAME="KVStav" ID="9" X="798" Y="134" WIDTH="58" HEIGHT="99" ORDER="130" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="4">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{0FAE4998-FD44-4CA1-B55F-7E148FDFF20A}" NAME="KVStavChlazeni" ID="30" X="602" Y="148" WIDTH="94" HEIGHT="85" ORDER="80" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="2">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="7"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{0FAE4998-FD44-4CA1-B55F-7E148FDFF20A}" NAME="KVStavManual" ID="31" X="602" Y="246" WIDTH="87" HEIGHT="85" ORDER="100" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="2">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="5"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{058EE871-1370-46E7-AC3E-905CB632A211}" NAME="KV7" ID="32" X="462" Y="162" WIDTH="58" HEIGHT="71" ORDER="70" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="2">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0" INVERTED="true"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{058EE871-1370-46E7-AC3E-905CB632A211}" NAME="KV5" ID="36" X="462" Y="260" WIDTH="58" HEIGHT="85" ORDER="90" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="3">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0" INVERTED="true"/>
+        <IN_PIN VALUE="0" INVERTED="true"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{058EE871-1370-46E7-AC3E-905CB632A211}" NAME="KV1" ID="37" X="462" Y="358" WIDTH="58" HEIGHT="99" ORDER="110" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="4">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0" INVERTED="true"/>
+        <IN_PIN VALUE="0" INVERTED="true"/>
+        <IN_PIN VALUE="0" INVERTED="true"/>
+        <IN_PIN VALUE="1"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{0FAE4998-FD44-4CA1-B55F-7E148FDFF20A}" NAME="KVStavZpatecka" ID="38" X="602" Y="344" WIDTH="100" HEIGHT="85" ORDER="120" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="2">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="1"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{0FAE4998-FD44-4CA1-B55F-7E148FDFF20A}" NAME="KVStavReset" ID="39" X="602" Y="50" WIDTH="79" HEIGHT="85" ORDER="50" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="2">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="9"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{058EE871-1370-46E7-AC3E-905CB632A211}" NAME="KV9" ID="40" X="462" Y="64" WIDTH="58" HEIGHT="57" ORDER="40" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="1">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{4139463D-8956-4642-BE4E-8A02E95392D3}" NAME="KVManualReset" ID="44" X="294" Y="78" WIDTH="94" HEIGHT="57" ORDER="30" THREAD_ID="1" PAGE="KotelVentil_KV">
+      <IN_PINS/>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{058EE871-1370-46E7-AC3E-905CB632A211}" NAME="And4" ID="46" X="742" Y="2038" WIDTH="58" HEIGHT="71" ORDER="590" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="2">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0" INVERTED="true"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{EDA9D885-FBAC-4AF9-8FAC-0E9FFB3B5B80}" NAME="Yes2" ID="47" X="658" Y="2094" WIDTH="64" HEIGHT="57" ORDER="600" THREAD_ID="1" PAGE="KotelVentil_KV" DATA_TYPES="1">
+      <IN_PINS>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{D163B0B9-D7AE-4BB8-800C-167B9E26488B}" NAME="Set1" ID="48" X="840" Y="2066" WIDTH="49" HEIGHT="71" ORDER="610" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="1">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS>
+        <PARAM_PIN VALUE="0"/>
+      </PARAM_PINS>
+      <OUT_PINS/>
+    </MODULE>
+    <MODULE GUID="{058EE871-1370-46E7-AC3E-905CB632A211}" NAME="KV1O" ID="43" X="840" Y="1044" WIDTH="58" HEIGHT="71" ORDER="230" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="2">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{058EE871-1370-46E7-AC3E-905CB632A211}" NAME="KV1Z" ID="45" X="840" Y="1156" WIDTH="58" HEIGHT="71" ORDER="270" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="2">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{8942245A-7E82-43FF-94E8-E7BCF69FDEE9}" NAME="Comparator2" ID="21" X="308" Y="988" WIDTH="78" HEIGHT="71" ORDER="160" THREAD_ID="1" PAGE="KotelVentil_KV">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="60"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+        <OUT_PIN RIGHTS="2"/>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{058EE871-1370-46E7-AC3E-905CB632A211}" NAME="And6" ID="49" X="532" Y="988" WIDTH="58" HEIGHT="71" ORDER="170" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="2">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{8942245A-7E82-43FF-94E8-E7BCF69FDEE9}" NAME="Comparator4" ID="52" X="308" Y="1310" WIDTH="78" HEIGHT="71" ORDER="240" THREAD_ID="1" PAGE="KotelVentil_KV">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+        <OUT_PIN RIGHTS="2"/>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{058EE871-1370-46E7-AC3E-905CB632A211}" NAME="And8" ID="53" X="532" Y="1310" WIDTH="58" HEIGHT="71" ORDER="250" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="2">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{8942245A-7E82-43FF-94E8-E7BCF69FDEE9}" NAME="Comparator1" ID="56" X="308" Y="190" WIDTH="78" HEIGHT="71" ORDER="60" THREAD_ID="1" PAGE="KotelVentil_KV">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN CONSTANT_ID="5" VALUE="900"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+        <OUT_PIN RIGHTS="2"/>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{0F50AC33-F61E-4009-9C60-FDE664DA0ABC}" NAME="8xDO1" ID="2" X="392" Y="274" WIDTH="58" HEIGHT="155" ORDER="550" THREAD_ID="1" PAGE="Obecne" PIN_COUNT="8">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS/>
+    </MODULE>
+    <MODULE GUID="{74F92168-F67B-4364-8AC0-B735DAA400A3}" NAME="KVChladit" ID="8" X="602" Y="1702" WIDTH="76" HEIGHT="85" ORDER="340" THREAD_ID="1" PAGE="KotelVentil_KV">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS>
+        <PARAM_PIN VALUE="5"/>
+        <PARAM_PIN VALUE="3"/>
+      </PARAM_PINS>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{930794F2-FA27-4BD8-A42D-15A13162E96D}" NAME="ISub3" ID="41" X="210" Y="1772" WIDTH="58" HEIGHT="71" ORDER="310" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="2">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN CONSTANT_ID="1" VALUE="650"/>
+        <IN_PIN CONSTANT_ID="5" VALUE="900"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{896864FC-42F9-44E4-A091-310F35EB4134}" NAME="IAbs2" ID="42" X="336" Y="1758" WIDTH="58" HEIGHT="57" ORDER="320" THREAD_ID="1" PAGE="KotelVentil_KV">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{93F44752-514B-4B8C-A422-DF52B0677374}" NAME="Equitherm2" ID="50" X="462" Y="1744" WIDTH="71" HEIGHT="113" ORDER="330" THREAD_ID="1" PAGE="KotelVentil_KV">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS>
+        <PARAM_PIN VALUE="10"/>
+        <PARAM_PIN VALUE="40"/>
+        <PARAM_PIN VALUE="50"/>
+        <PARAM_PIN VALUE="10"/>
+      </PARAM_PINS>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{8942245A-7E82-43FF-94E8-E7BCF69FDEE9}" NAME="Comparator3" ID="54" X="210" Y="1674" WIDTH="78" HEIGHT="71" ORDER="290" THREAD_ID="1" PAGE="KotelVentil_KV">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="60"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+        <OUT_PIN RIGHTS="2"/>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{058EE871-1370-46E7-AC3E-905CB632A211}" NAME="And7" ID="55" X="364" Y="1674" WIDTH="58" HEIGHT="71" ORDER="300" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="2">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{EDA9D885-FBAC-4AF9-8FAC-0E9FFB3B5B80}" NAME="Yes1" ID="51" X="490" Y="764" WIDTH="64" HEIGHT="57" ORDER="140" THREAD_ID="1" PAGE="KotelVentil_KV" DATA_TYPES="1">
+      <IN_PINS>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{058EE871-1370-46E7-AC3E-905CB632A211}" NAME="And1" ID="57" X="602" Y="722" WIDTH="58" HEIGHT="71" ORDER="510" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="2">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0" INVERTED="true"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{8942245A-7E82-43FF-94E8-E7BCF69FDEE9}" NAME="Comparator5" ID="58" X="350" Y="722" WIDTH="78" HEIGHT="71" ORDER="500" THREAD_ID="1" PAGE="KotelVentil_KV">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+        <OUT_PIN RIGHTS="2"/>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{252CEA06-915F-4422-9B6D-5CE9815998A8}" NAME="KVDorazZ" ID="59" X="728" Y="722" WIDTH="76" HEIGHT="71" ORDER="520" THREAD_ID="1" PAGE="KotelVentil_KV">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS>
+        <PARAM_PIN VALUE="3"/>
+      </PARAM_PINS>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{5745AE44-2B47-4828-AEFA-B96375DA31C4}" NAME="DOKVO" ID="60" X="126" Y="372" WIDTH="58" HEIGHT="71" ORDER="490" THREAD_ID="1" PAGE="Obecne" INPUT_COUNT="2">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{5745AE44-2B47-4828-AEFA-B96375DA31C4}" NAME="DOKVZ" ID="61" X="126" Y="456" WIDTH="58" HEIGHT="71" ORDER="530" THREAD_ID="1" PAGE="Obecne" INPUT_COUNT="2">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{058EE871-1370-46E7-AC3E-905CB632A211}" NAME="And5" ID="62" X="252" Y="428" WIDTH="58" HEIGHT="71" ORDER="540" THREAD_ID="1" PAGE="Obecne" INPUT_COUNT="2">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0" INVERTED="true"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{EDA9D885-FBAC-4AF9-8FAC-0E9FFB3B5B80}" NAME="Yes3" ID="63" X="490" Y="862" WIDTH="64" HEIGHT="57" ORDER="150" THREAD_ID="1" PAGE="KotelVentil_KV" DATA_TYPES="1">
+      <IN_PINS>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{058EE871-1370-46E7-AC3E-905CB632A211}" NAME="And9" ID="64" X="602" Y="820" WIDTH="58" HEIGHT="71" ORDER="470" THREAD_ID="1" PAGE="KotelVentil_KV" INPUT_COUNT="2">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="0" INVERTED="true"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{8942245A-7E82-43FF-94E8-E7BCF69FDEE9}" NAME="Comparator6" ID="65" X="350" Y="820" WIDTH="78" HEIGHT="71" ORDER="460" THREAD_ID="1" PAGE="KotelVentil_KV">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+        <IN_PIN VALUE="60"/>
+      </IN_PINS>
+      <PARAM_PINS/>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+        <OUT_PIN RIGHTS="2"/>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+    <MODULE GUID="{252CEA06-915F-4422-9B6D-5CE9815998A8}" NAME="KVDorazO" ID="66" X="728" Y="820" WIDTH="76" HEIGHT="71" ORDER="480" THREAD_ID="1" PAGE="KotelVentil_KV">
+      <IN_PINS>
+        <IN_PIN VALUE="1"/>
+        <IN_PIN VALUE="0"/>
+      </IN_PINS>
+      <PARAM_PINS>
+        <PARAM_PIN VALUE="3"/>
+      </PARAM_PINS>
+      <OUT_PINS>
+        <OUT_PIN RIGHTS="2"/>
+        <OUT_PIN RIGHTS="2"/>
+      </OUT_PINS>
+    </MODULE>
+  </MODULES>
+  <CONNECTIONS>
+    <IN_CONNECTIONS>
+      <CONNECTION IN_MODULE_ID="5" IN_PIN_ID="0" OUT_MODULE_ID="37" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="301"/>
+          <POINT X="-133" Y="301"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="5" IN_PIN_ID="1" OUT_MODULE_ID="3" OUT_PIN_ID="1" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="23" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="11" IN_PIN_ID="0" OUT_MODULE_ID="53" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="13" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="11" IN_PIN_ID="1" OUT_MODULE_ID="5" OUT_PIN_ID="1" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="61" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="13" IN_PIN_ID="0" OUT_MODULE_ID="49" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="41" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="13" IN_PIN_ID="1" OUT_MODULE_ID="5" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="33" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="14" IN_PIN_ID="0" OUT_MODULE_ID="37" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="378"/>
+          <POINT X="-357" Y="378"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="14" IN_PIN_ID="1" OUT_MODULE_ID="3" OUT_PIN_ID="1" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="539"/>
+          <POINT X="-338" Y="539"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="15" IN_PIN_ID="0" OUT_MODULE_ID="37" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="371"/>
+          <POINT X="-231" Y="371"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="15" IN_PIN_ID="1" OUT_MODULE_ID="14" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="27" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="16" IN_PIN_ID="0" OUT_MODULE_ID="37" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="224"/>
+          <POINT X="-189" Y="224"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="16" IN_PIN_ID="1" OUT_MODULE_ID="15" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="46" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="12" IN_PIN_ID="1" OUT_MODULE_ID="18" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true" REVERSE="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="140"/>
+          <POINT X="-465" Y="140"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="12" IN_PIN_ID="2" OUT_MODULE_ID="1" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="78" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="17" IN_PIN_ID="1" OUT_MODULE_ID="12" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="54" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="17" IN_PIN_ID="2" OUT_MODULE_ID="18" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" REVERSE="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="84"/>
+          <POINT X="-191" Y="84"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="18" IN_PIN_ID="2" OUT_MODULE_ID="17" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="27" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="19" IN_PIN_ID="1" OUT_MODULE_ID="18" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="54" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="20" IN_PIN_ID="1" OUT_MODULE_ID="33" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="45" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="27" IN_PIN_ID="1" OUT_MODULE_ID="34" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="110" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="27" IN_PIN_ID="2" OUT_MODULE_ID="33" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" REVERSE="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="70"/>
+          <POINT X="-218" Y="70"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="33" IN_PIN_ID="1" OUT_MODULE_ID="27" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="76" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="34" IN_PIN_ID="1" OUT_MODULE_ID="35" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="48" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="35" IN_PIN_ID="1" OUT_MODULE_ID="28" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="174" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="35" IN_PIN_ID="2" OUT_MODULE_ID="29" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="25" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="6" IN_PIN_ID="1" OUT_MODULE_ID="40" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="392"/>
+          <POINT X="-343" Y="392"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="7" IN_PIN_ID="0" OUT_MODULE_ID="40" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="97" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="7" IN_PIN_ID="1" OUT_MODULE_ID="25" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="13" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="10" IN_PIN_ID="0" OUT_MODULE_ID="22" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="41" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="10" IN_PIN_ID="1" OUT_MODULE_ID="33" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true" REVERSE="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="252"/>
+          <POINT X="-1086" Y="252"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="22" IN_PIN_ID="0" OUT_MODULE_ID="40" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="469"/>
+          <POINT X="-203" Y="469"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="22" IN_PIN_ID="1" OUT_MODULE_ID="26" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="13" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="23" IN_PIN_ID="0" OUT_MODULE_ID="40" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="41" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="23" IN_PIN_ID="2" OUT_MODULE_ID="10" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="13" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="24" IN_PIN_ID="0" OUT_MODULE_ID="40" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="434"/>
+          <POINT X="-49" Y="434"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="24" IN_PIN_ID="1" OUT_MODULE_ID="6" OUT_PIN_ID="1" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="41" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="25" IN_PIN_ID="0" OUT_MODULE_ID="40" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="41" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="25" IN_PIN_ID="1" OUT_MODULE_ID="6" OUT_PIN_ID="1" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="41" Y="0"/>
+          <POINT X="41" Y="-42"/>
+          <POINT X="162" Y="-42"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="25" IN_PIN_ID="2" OUT_MODULE_ID="24" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" REVERSE="true">
+        <POINTS>
+          <POINT X="41" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="26" IN_PIN_ID="0" OUT_MODULE_ID="40" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="455"/>
+          <POINT X="-343" Y="455"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="26" IN_PIN_ID="1" OUT_MODULE_ID="6" OUT_PIN_ID="1" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="63"/>
+          <POINT X="-96" Y="63"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="26" IN_PIN_ID="2" OUT_MODULE_ID="7" OUT_PIN_ID="1" NAME_X="0" NAME_Y="0" HIDDEN="true" REVERSE="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="49"/>
+          <POINT X="-516" Y="49"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="28" IN_PIN_ID="1" OUT_MODULE_ID="9" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="118" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="28" IN_PIN_ID="3" OUT_MODULE_ID="43" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="13" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="28" IN_PIN_ID="9" OUT_MODULE_ID="8" OUT_PIN_ID="1" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="-350"/>
+          <POINT X="-613" Y="-350"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="29" IN_PIN_ID="1" OUT_MODULE_ID="9" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="118" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="29" IN_PIN_ID="3" OUT_MODULE_ID="45" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="13" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="9" IN_PIN_ID="1" OUT_MODULE_ID="30" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="61" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="9" IN_PIN_ID="2" OUT_MODULE_ID="39" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="48" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="9" IN_PIN_ID="3" OUT_MODULE_ID="31" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="40" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="9" IN_PIN_ID="4" OUT_MODULE_ID="38" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="55" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="30" IN_PIN_ID="1" OUT_MODULE_ID="32" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="55" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="31" IN_PIN_ID="1" OUT_MODULE_ID="36" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="55" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="32" IN_PIN_ID="1" OUT_MODULE_ID="40" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="56"/>
+          <POINT X="-77" Y="56"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="32" IN_PIN_ID="2" OUT_MODULE_ID="56" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="38" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="36" IN_PIN_ID="1" OUT_MODULE_ID="32" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="42"/>
+          <POINT X="-99" Y="42"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="36" IN_PIN_ID="2" OUT_MODULE_ID="40" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="56"/>
+          <POINT X="-77" Y="56"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="37" IN_PIN_ID="1" OUT_MODULE_ID="32" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="98"/>
+          <POINT X="-77" Y="98"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="37" IN_PIN_ID="2" OUT_MODULE_ID="40" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="112"/>
+          <POINT X="-77" Y="112"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="37" IN_PIN_ID="3" OUT_MODULE_ID="36" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="77"/>
+          <POINT X="-77" Y="77"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="38" IN_PIN_ID="1" OUT_MODULE_ID="37" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="55" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="39" IN_PIN_ID="1" OUT_MODULE_ID="40" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="55" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="40" IN_PIN_ID="1" OUT_MODULE_ID="44" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="37" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="46" IN_PIN_ID="0" OUT_MODULE_ID="40" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="55" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="46" IN_PIN_ID="1" OUT_MODULE_ID="7" OUT_PIN_ID="1" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="64" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="46" IN_PIN_ID="2" OUT_MODULE_ID="47" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" REVERSE="true">
+        <POINTS>
+          <POINT X="7" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="47" IN_PIN_ID="0" OUT_MODULE_ID="7" OUT_PIN_ID="1" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="22" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="48" IN_PIN_ID="0" OUT_MODULE_ID="46" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="43" IN_PIN_ID="1" OUT_MODULE_ID="49" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="209" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="43" IN_PIN_ID="2" OUT_MODULE_ID="13" OUT_PIN_ID="1" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="47" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="45" IN_PIN_ID="1" OUT_MODULE_ID="11" OUT_PIN_ID="1" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="56" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="45" IN_PIN_ID="2" OUT_MODULE_ID="53" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="209" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="21" IN_PIN_ID="0" OUT_MODULE_ID="37" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="259"/>
+          <POINT X="-231" Y="259"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="21" IN_PIN_ID="1" OUT_MODULE_ID="33" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true" REVERSE="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="-56"/>
+          <POINT X="-1204" Y="-56"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="49" IN_PIN_ID="1" OUT_MODULE_ID="37" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="266"/>
+          <POINT X="-7" Y="266"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="49" IN_PIN_ID="2" OUT_MODULE_ID="21" OUT_PIN_ID="2" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="52" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="52" IN_PIN_ID="0" OUT_MODULE_ID="37" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="420"/>
+          <POINT X="-231" Y="420"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="52" IN_PIN_ID="1" OUT_MODULE_ID="33" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true" REVERSE="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="126"/>
+          <POINT X="-1414" Y="126"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="53" IN_PIN_ID="1" OUT_MODULE_ID="37" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="427"/>
+          <POINT X="-7" Y="427"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="53" IN_PIN_ID="2" OUT_MODULE_ID="52" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="66" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="56" IN_PIN_ID="1" OUT_MODULE_ID="3" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="30" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="2" IN_PIN_ID="7" OUT_MODULE_ID="60" OUT_PIN_ID="0">
+        <POINTS>
+          <POINT X="139" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="2" IN_PIN_ID="8" OUT_MODULE_ID="62" OUT_PIN_ID="0">
+        <POINTS>
+          <POINT X="41" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="8" IN_PIN_ID="1" OUT_MODULE_ID="55" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="139" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="41" IN_PIN_ID="0" OUT_MODULE_ID="32" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="651"/>
+          <POINT X="-329" Y="651"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="41" IN_PIN_ID="1" OUT_MODULE_ID="3" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="686"/>
+          <POINT X="-268" Y="686"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="42" IN_PIN_ID="0" OUT_MODULE_ID="32" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="644"/>
+          <POINT X="-203" Y="644"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="42" IN_PIN_ID="1" OUT_MODULE_ID="41" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="27" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="50" IN_PIN_ID="0" OUT_MODULE_ID="32" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="637"/>
+          <POINT X="-77" Y="637"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="50" IN_PIN_ID="1" OUT_MODULE_ID="42" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="46" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="54" IN_PIN_ID="0" OUT_MODULE_ID="32" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="602"/>
+          <POINT X="-329" Y="602"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="54" IN_PIN_ID="1" OUT_MODULE_ID="33" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true" REVERSE="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="371"/>
+          <POINT X="-616" Y="371"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="55" IN_PIN_ID="1" OUT_MODULE_ID="32" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="609"/>
+          <POINT X="-175" Y="609"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="55" IN_PIN_ID="2" OUT_MODULE_ID="54" OUT_PIN_ID="2" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="52" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="51" IN_PIN_ID="0" OUT_MODULE_ID="58" OUT_PIN_ID="1" NAME_X="0" NAME_Y="0" REVERSE="true">
+        <POINTS>
+          <POINT X="49" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="57" IN_PIN_ID="1" OUT_MODULE_ID="58" OUT_PIN_ID="1" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="49" Y="0"/>
+          <POINT X="49" Y="-28"/>
+          <POINT X="133" Y="-28"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="57" IN_PIN_ID="2" OUT_MODULE_ID="51" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="31" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="58" IN_PIN_ID="1" OUT_MODULE_ID="33" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="112"/>
+          <POINT X="-498" Y="112"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="59" IN_PIN_ID="1" OUT_MODULE_ID="57" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="34" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="60" IN_PIN_ID="1" OUT_MODULE_ID="28" OUT_PIN_ID="0">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="-119"/>
+          <POINT X="-56" Y="-119"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="60" IN_PIN_ID="2" OUT_MODULE_ID="66" OUT_PIN_ID="1">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="-217"/>
+          <POINT X="-697" Y="-217"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="61" IN_PIN_ID="1" OUT_MODULE_ID="29" OUT_PIN_ID="0">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="-98"/>
+          <POINT X="-191" Y="-98"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="61" IN_PIN_ID="2" OUT_MODULE_ID="59" OUT_PIN_ID="1">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="-126"/>
+          <POINT X="-697" Y="-126"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="62" IN_PIN_ID="1" OUT_MODULE_ID="60" OUT_PIN_ID="0">
+        <POINTS>
+          <POINT X="34" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="62" IN_PIN_ID="2" OUT_MODULE_ID="61" OUT_PIN_ID="0">
+        <POINTS>
+          <POINT X="34" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="63" IN_PIN_ID="0" OUT_MODULE_ID="65" OUT_PIN_ID="1" NAME_X="0" NAME_Y="0" REVERSE="true">
+        <POINTS>
+          <POINT X="49" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="64" IN_PIN_ID="1" OUT_MODULE_ID="65" OUT_PIN_ID="1" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="49" Y="0"/>
+          <POINT X="49" Y="-28"/>
+          <POINT X="133" Y="-28"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="64" IN_PIN_ID="2" OUT_MODULE_ID="63" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="31" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="65" IN_PIN_ID="1" OUT_MODULE_ID="33" OUT_PIN_ID="0">
+        <POINTS>
+          <POINT X="20" Y="0"/>
+          <POINT X="20" Y="112"/>
+          <POINT X="-498" Y="112"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="66" IN_PIN_ID="1" OUT_MODULE_ID="64" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="34" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+    </IN_CONNECTIONS>
+    <PARAM_CONNECTIONS>
+      <CONNECTION IN_MODULE_ID="11" IN_PIN_ID="1" OUT_MODULE_ID="16" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="133" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="13" IN_PIN_ID="1" OUT_MODULE_ID="16" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="42" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="7" IN_PIN_ID="0" OUT_MODULE_ID="23" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="27" Y="0"/>
+          <POINT X="27" Y="-56"/>
+          <POINT X="-85" Y="-56"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="48" IN_PIN_ID="0" OUT_MODULE_ID="44" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0" HIDDEN="true">
+        <POINTS>
+          <POINT X="352" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+      <CONNECTION IN_MODULE_ID="8" IN_PIN_ID="1" OUT_MODULE_ID="50" OUT_PIN_ID="0" NAME_X="0" NAME_Y="0">
+        <POINTS>
+          <POINT X="42" Y="0"/>
+        </POINTS>
+      </CONNECTION>
+    </PARAM_CONNECTIONS>
+  </CONNECTIONS>
+  <PROJECT_GRAPHICS>
+    <GRAPHICS TYPE="2" PAGE="KotelVentil_KV">
+      <NODES>
+        <NODE X="14" Y="13"/>
+        <NODE X="922" Y="510"/>
+      </NODES>
+      <PEN COLOR="0" MODE="4" STYLE="5" WIDTH="1"/>
+      <BRUSH COLOR="10874110" STYLE="0"/>
+    </GRAPHICS>
+    <GRAPHICS TYPE="4" PAGE="KotelVentil_KV" TEXT="Nastavení stavu">
+      <NODES>
+        <NODE X="24" Y="27"/>
+      </NODES>
+      <FONT NAME="Tahoma" BOLD="false" ITALIC="false" UNDERLINE="false" STRIKE_OUT="false" SIZE="14" COLOR="0" CHARSET="1"/>
+    </GRAPHICS>
+    <GRAPHICS TYPE="2" PAGE="KotelVentil_KV">
+      <NODES>
+        <NODE X="14" Y="963"/>
+        <NODE X="945" Y="1408"/>
+      </NODES>
+      <PEN COLOR="0" MODE="4" STYLE="5" WIDTH="1"/>
+      <BRUSH COLOR="16772812" STYLE="0"/>
+    </GRAPHICS>
+    <GRAPHICS TYPE="4" PAGE="KotelVentil_KV" TEXT="Equithermní regulace (1)">
+      <NODES>
+        <NODE X="26" Y="977"/>
+      </NODES>
+      <FONT NAME="Tahoma" BOLD="false" ITALIC="false" UNDERLINE="false" STRIKE_OUT="false" SIZE="14" COLOR="0" CHARSET="1"/>
+    </GRAPHICS>
+    <GRAPHICS TYPE="2" PAGE="KotelVentil_KV">
+      <NODES>
+        <NODE X="27" Y="1975"/>
+        <NODE X="909" Y="2240"/>
+      </NODES>
+      <PEN COLOR="0" MODE="4" STYLE="5" WIDTH="1"/>
+      <BRUSH COLOR="16769476" STYLE="0"/>
+    </GRAPHICS>
+    <GRAPHICS TYPE="4" PAGE="KotelVentil_KV" TEXT="Reset">
+      <NODES>
+        <NODE X="40" Y="1984"/>
+      </NODES>
+      <FONT NAME="Tahoma" BOLD="false" ITALIC="false" UNDERLINE="false" STRIKE_OUT="false" SIZE="14" COLOR="0" CHARSET="1"/>
+    </GRAPHICS>
+    <GRAPHICS TYPE="2" PAGE="KotelVentil_KV">
+      <NODES>
+        <NODE X="16" Y="535"/>
+        <NODE X="968" Y="936"/>
+      </NODES>
+      <PEN COLOR="0" MODE="4" STYLE="5" WIDTH="1"/>
+      <BRUSH COLOR="14548957" STYLE="0"/>
+    </GRAPHICS>
+    <GRAPHICS TYPE="4" PAGE="KotelVentil_KV" TEXT="Řízení pozice">
+      <NODES>
+        <NODE X="29" Y="547"/>
+      </NODES>
+      <FONT NAME="Tahoma" BOLD="false" ITALIC="false" UNDERLINE="false" STRIKE_OUT="false" SIZE="14" COLOR="0" CHARSET="1"/>
+    </GRAPHICS>
+    <GRAPHICS TYPE="2" PAGE="KotelVentil_KV">
+      <NODES>
+        <NODE X="54" Y="3023"/>
+        <NODE X="17" Y="3064"/>
+      </NODES>
+      <PEN COLOR="0" MODE="4" STYLE="5" WIDTH="1"/>
+      <BRUSH COLOR="128" STYLE="0"/>
+    </GRAPHICS>
+    <GRAPHICS TYPE="2" PAGE="KotelVentil_KV">
+      <NODES>
+        <NODE X="16" Y="1645"/>
+        <NODE X="945" Y="1875"/>
+      </NODES>
+      <PEN COLOR="0" MODE="4" STYLE="5" WIDTH="1"/>
+      <BRUSH COLOR="16768494" STYLE="0"/>
+    </GRAPHICS>
+    <GRAPHICS TYPE="4" PAGE="KotelVentil_KV" TEXT="Chlazení kotle (7)">
+      <NODES>
+        <NODE X="29" Y="1655"/>
+      </NODES>
+      <FONT NAME="Tahoma" BOLD="false" ITALIC="false" UNDERLINE="false" STRIKE_OUT="false" SIZE="14" COLOR="0" CHARSET="1"/>
+    </GRAPHICS>
+  </PROJECT_GRAPHICS>
+</PCC_PROJECT>

@@ -1,0 +1,110 @@
+25.05.2011	Scribo	- Objekt TVizVectorImage pro kreslení vektorové grafiky
+14.09.2011	Scribo	- Oprava prohlížení grafù za více dnù pøes sí
+09.11.2011	Scribo	- Oprava aktualizace viditelnosti stránek po naètení projektu
+09.11.2011	Scribo	- Oprava aktualizace menu stránek (povolení jednotlivých stránek) podle oprávnìní
+09.01.2012	Scribo	- Oprava pøihlášení k serveru pøi dlouhém názvu projektu
+12.04.2012	Scribo	- Pøidání komunikace RS422. VizPanel - pøidán styl PushButton.
+09.05.2012	Scribo	- VizPanel - pøidána vlastnost ImageIndex pro zobrazení obrázku ve stylu [Push]Button.
+20.07.2012	Scribo	- Výbìr signálu (F7): možnost tøídìní a vyhledávání textu
+			- Menu Signal - možnost režimu výbìru více signálù, jejich posuv, kopie, vložení...
+07.08.2012	Scribo	- Editor objektu ImageList : Pøídáno hromadné vložení obrázkù (Multiselect).
+08.08.2012	Scribo	- Výbìr skupiny objektù stiskem Ctrl a tažením obdélníku. 
+			  Pokud je Ctrl i v okamžiku uvolnìní myši, vyberou se všechny objekty, kterých 
+			  se obdélník dotýká i èásteènì, bez Ctrl jen objekty úplnì uvnitø obdélníku.
+			  Shift na zaèátku výbìru: Ponechat pøedchozí vybrané objekty, jinak výbìr zrušit.
+			- Alt bìhem pøesunu potlaèí pøichytávání k møížce (8 x 8 bodù).
+			- Bìhem pøesunu nebo zmìnì velikosti objektu lze stiskem Esc vrátit objekty do pùvodní polohy.
+02.10.2012	Scribo	- Pøidán formát zobrazení popisek v loggeru
+			- Sestavy v grafu se nyní ukládají podle názvu pole v DBF
+12.10.2012	Scribo	- Pøídáno tlaèítko Open Graph : HelpKeyword = NázevSestavy  [Tag = PoèetDnù]
+			- Úprava zobrazení hodnot køíže. Možnost automatické obnovy grafu.
+24.10.2012	Scribo	- Podpora archivace modulù v øadì, volba èísla stanice v oknì grafu.
+03.11.2012	Scribo	- Pøepoèet hodnot zobrazovaných v objektu TVizRowGrid konstantami K, Q.
+06.11.2012	Scribo	- Možnost scroll barù ve Scribu - nastavit PageControl.Align = alNone
+			  Možnost zmìny barvy záložek - TabSheet.TabColor, dále nastavit PageControl.OwnerDraw = True.
+16.11.2012	Scribo	- Pøidán parametr pøi spuštìní /LEFT pro zarovnání menu "Graf" doleva (jinak je doprava).
+17.11.2012	Scribo	- Pøidán dialog pro vytvoøení objektù TVizPanel / TLabel podle signálù v gridu. Použít Paste.
+28.11.2012	Scribo	- Hledání signálu podle názvu ve grafech a parametrech loggeru.
+02.12.2012	Scribo	- Pøidáno okno se zobrazením struktury projektu (F5).
+05.12.2012	Scribo	- TVizPanel - pøidán styl vsRadioButton. Hodnotu pøi stisku udává DataVizItem.BooleanHigh
+07.12.2012	Scribo	- Pøidána automatická synchronizace èasu jednotek v øadì. 
+			  Oprava Copy/Paste události Driver.OnTick.
+12.12.2012	Scribo	- Zlepšena stabilita ètení dlouhých zpráv z více stanic (RowNet).
+			- TVizPanel - DataHint mìní barvu v režimu vsButton, možnost zmìny textu pøi DataHint=true.
+16.12.2012	Scribo	- Pøidán label a tlaèítko Show_Hide pro zobrazení/skrytí panelu na listu (dle FocusControl resp. HelpKeyword). 
+24.01.2013	Scribo	- Pøidán komponent LinkButton - podle volby "Mode" provede danou operaci s cílovým objektem "Target"
+30.01.2013	Scribo	- Kopie všech vlastností objektu do schránky
+			- TVizPanel: možnost mìnit text (Caption, CaptionAfter) dle hodnoty DataVizItem. Napø. ${Nultý|První|Druhý}
+01.02.2013	Scribo	- Pøidán komponent TVizComboBox - hodnota v DataVizItem (od 0) ovládá ItemIndex combo boxu.
+04.02.2013	Scribo	- Objekt inspektor zobrazuje vlastnosti podle kategorií (dá se pøepnout v menu pravým tlaèítkem myši).
+			  Pøidána kategorie Basic obsahující nejdùležitìjší vlastnosti objektù. Seznam tìchto vlastností lze upravit dle dohody.
+			- TVizPanel - je-li Style = vsPanel a HintColor = clNone, pak DataHint øídí viditelnost panelu.
+06.02.2013	Scribo	- Vylepšeno zobrazení dat v tabulce s možností volby intervalu mezi øádky a se zobrazením formuláøe pro aktuální øádek.
+			  OpenGraph.HelpKeyword má tvar: NázevSestavy/TABLE/FORM=Height/MAX
+			  /TABLE zobrazí místo grafu tabulku, /FORM navíc zapne zobrazení formuláøe pod tabulkou (lze urèit jeho výšku).
+			  /MAX zobrazí graf maximalizovanì.
+07.02.2013	Scribo	- V menu Edit pøidány volby Zobrazit knihovnu a strukturu - zda se po F4 mají tato okna zobrazit.
+13.02.2013	Scribo	- Objekt TVizScrollBar
+28.02.2013	Scribo	- V oknì grafu (ražim tabulka - formuláø) pøidáno tlaèítko Suma pro výpoèet hodinového integrálu z vybraného období.
+07.03.2013	Scribo	- Pøidán výpoèet prùmìru v tabulce dat. Možnost pøerušit naèítání dat za více dnù podržením ESC.
+12.03.2013	Scribo	- Pøidáno zobrazení rozdílù mezi øádky tabulky dat. Možnost volby èasu prvního øádku tabulky (v hodinách).
+15.03.2013	Scribo	- Pøidán komponent TVizCheckBox
+			- Možnost uložení a nahrání hodnot z aktuálního gridu (v menu Signál). Pozn: Názvy signálù musí být jedineèné.
+20.03.2013	Scribo	- Pøepínání mezi tabulkou a grafem klávesou F12. Pøi pøepnutí do tabulky je vybrán øádek s èasem kurzoru v grafu.
+04.04.2013	Scribo	- V tabulce pøidáno filtrování øádkù podle zadané podmínky, napø. Pole >= 10. 
+			  Postupnì lze pøidat další podmínky (and). Lze zadat poèet øádkù nad a pod vyhovujícími øádky.
+29.04.2013	Scribo	- Rozšíøení filtrace na hledání prvního nebo posledního øádku ze skupiny vyhovující podmínce.
+19.06.2013	Scribo	- Okno struktury (F5) lze použít pro vyhledání objektù napojených na zadaný signál.
+			  Poklepáním na vybraný objekt ve struktuøe se kurzor myši pøesune na nìj.
+18.07.2013	Scribo	- Stejný zpùsob hledání položek v oknì signálù, loggeru a grafu. F7:zaèátek hledání   F3,Enter:další   F2:pøedchozí.
+07.08.2013	Scribo	- Zvýšení max. poètu grafù pod sebou ze 4 na 6. èíslo grafu lze nastavit klávesami F1 - F6.
+08.08.2013	Scribo	- Pøi otevírání projektu parametrem z pøíkazové øádky je dovoleno spustit pouze jednu instanci programu 
+			  se stejným názvem projektu. Lze potlaèit pøidáním /MULTI na konec pøíkazové øádky.
+23.08.2013	Scribo	- V komponentì TVizRowGrid je možno zobrazení až 4 rùzných stavù (barev) pomocí výbìru 1 nebo 2 bitù z Int promìnné.
+			- Pøi ètení dat z loggeru v PLC se kontroluje struktura tabulky na disku s požadovanou a pøípadnì se restrukturuje.
+02.09.2013	Scribo	- Èásteèná podpora zadávání hodnot pomocí klávesnice na obrazovce. 
+			  Zapíná se parametrem /TOUCH nebo ve Scribo.ini nebo <NázevProjektu>.ini takto :  [Options] Touch=1
+12.09.2013	Scribo	- Podpora nastavení vlastní periody obnovování hodnot na obrazovce (v Objekt Inspektoru vybrat VizData, vlastnost TmDelay).
+21.10.2013	Scribo	- Možnost spouštìní externích pøíkazù pøi zmìnì hodnoty itemu objektu TVizLogger - pøidáno pole Command s pøíkazovým øádkem. 
+04.11.2013	Scribo	- TVizPanel umožòuje zobrazit text ve více øádcích. Pøidán editor víceøádkového textu pro vlastnosti Caption[After].
+05.11.2013	Scribo	- TRowGridSignal: kreslení èáry a osy v režimu gmBar: nové vlastnosti LinePosition, LineColor, AxisTicks.
+08.11.2013	Scribo	- Konfigurace komunikace  (DbnConfig) - pøidán parametr DeviceOffset pro posunutí zobrazené adresy od adresy RowNet.
+20.11.2013	Scribo	- Pøi zapnutém dotykovém režimu zvìtšeny všechny ovládací prvky v oknì grafu. Zvìtšení lze také pøepínat klávesou F11.
+27.11.2013	Scribo	- Pøidána práce s komunikaèními profily v oknì Volby / Komunikace. Možnost mazání IP adres z historie klávesou Delete.
+08.12.2013	Scribo	- Pøidána vlastnost Mirror objektu TVizScrollBar. Drobné opravy TAnalogMeter.
+22.01.2014	Scribo	- Nový objekt TWindowPanel pro práci s okny. Volitelnì zobrazuje tlaèítko pro zavøení okna.
+			- Pøidáno menu Editace / Okna (F6) pro zobrazení seznamu oken a zobrazení daného okna. (Ctrl=neskrývat ostatní).
+03.02.2014	Scribo	- Nový objekt TRowSaveButton pro zápis hodnoty do celé øady jednotek.
+07.02.2014	Scribo	- TRowSaveButton má novou vlastnost Driver pro zápis do všech jednotek (když se nevyplní vlastnost RowGrid).
+			  TVizRowGrid - pøidány vlastnosti StationSelector a RangeLabel
+22.02.2014	Scribo	- Možnost otevøít nové okno mimo formuláø Scriba. Tlaèítko "Open Window", do HelpKeyword zadat název souboru okna.
+23.02.2014	Scribo	- Pøidána vlastnost Prj.Menu pro pøidání položek do hlavního menu programu.
+26.02.2014	Scribo	- Pøidána vlastnost Prj.HiddenMenus pro skrytí výchozích položek menu.
+05.03.2014	Scribo	- Zmìna pøi kreslení animaèních komponent - lze umísti napø. TLabel opticky nad TAnimateImage.
+09.05.2014	Scribo	- TSmartCheckBox: Pøidána kolelce Items pro øízení Enabled / Visible jiných objektù v závislosti na stavu check boxu.
+12.05.2014	Scribo	- TLinkButton: Možnost použít obrázek z TImageList (vlastnosti Images a ImageIndex)
+21.05.2014	Scribo	- TSpinBox: Pøidána vlastnost TrackBar pro pøipojení objektu TTrackBar pro nastavení hodnoty myší.
+27.05.2014	Scribo	- TVizSettingsManager: Pøidána vlastnost FileComboBox pro pøipojení Combo boxu se seznamem souborù s nastavením. 
+					  Hodnota Tag ComboBoxu udává kód funkce provedené pøi výbìru souboru z ComboBoxu (4 = nahrát z disku).
+29.05.2014	Scribo	- V oknì grafu pøidáno tlaèítko pro doèasné skrytí grafu 1-6. Klávesové zkratky Shift-F1..6.
+14.10.2014	Scribo	- Pøidán objekt TVizListBox pro zobrazení vybraných øádkù ze seznamu dle aktivních bitù v DataVizItem.
+04.11.2014	Scribo	- Do knihovny Scribo.sbl pøidány tlaèítka (TVizPanel): On/Off, PushButton, RadioButton
+09.12.2014	Scribo	- Objekt SpinBox - pøidány vlastnosti MaxSource, MinSource, MaxLabel, MinLabel
+			- Editor kolekcí: pøidáno Copy / Paste oznaèených položek. Okno zdrojového editoru nezavítat až do vložení položek do cíle.
+15.01.2015	Scribo	- Objekt VizRowGrid - aktualizace poètu sloupcù gridu pøi zmìnì konfigurace v menu Volby / Komunikace
+16.01.2015	Scribo	- Oprava uložení projektu na disk (rozmìry prvkù na skrytých listech)
+20.01.2015	Scribo	- TVizRowGrid - zákaz mazání krajních bodù køivky
+23.01.2015	Scribo	- TVizRowLogger - oprava ètení právì zapisované tabulky. Vylepšení víceøádkového editoru.
+27.01.2015	Scribo	- TVizRowGrid - Automatická osa Y u grafu, volba TRowGridSignal.AutoBarMax. Zrušeno AxisMajorTicks.
+05.02.2015	Scribo	- Okno struktury - možnost pøesunout ovládací prvky do jiného rodièe (pøed zaèátkem tažení držet ALT).
+26.03.2015	Scribo	- Možnost scrollování koleèkem myši v objektu TScrollBox, vèetnì návrhového režimu.
+27.03.2015	Scribo	- TVizVectorImage - pøidány styly pro kreslení šipek. Hodnoty X, Y lze použít bez pøipojení k signálu zápisem =Konstanta.
+			- V návrhovém režimu v objekt inspektoru lze rolovat koleèkem myši v seznamu hodnot (napø. pøi výbìru barvy ze seznamu).
+30.03.2015	Scribo	- TSpinBox - pøidány vlastnosti Items, LimitLow, LimitHigh.
+31.03.2015	Scribo	- TSimpleImage - pøidána vlastnost Items. Hint lze zadat jako víceøádkový pro jednotlivé varianty obrázku.
+07.04.2015	Scribo	- Prodloužení seznamu hodnot na 20 øádkù. Pøidány režimy v itemech TSimpleImage, TSpinBox.
+01.05.2015	Scribo	- Pøidány matematické funkce v itemech TSimpleImage, TSpinBox.
+24.07.2015	Scribo	- Objekt VizSettingsManager umožòuje pøejmenovat koncovku názvu signálù.
+04.08.2015	Scribo	- TDataComboBox má itemy ve tvaru Hodnota:Text, tzn. hodnota není dána poøadím.
+02.09.2015	Scribo	- Objekt TVizSettingsManager umožòuje pøedání zpráv i objektùm TVizRowGrid (Tag +400).
+03.09.2015	Scribo	- Objekt TVizRowGrid pøidána property Mirror pro zrcadlení osy X. Zpráva s Tag=11 invertuje Mirror.

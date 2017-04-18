@@ -1,0 +1,3 @@
+TVizPanel						TCheckButton  RadioButton = True
+DataVizItem.Signal				Signal
+DataVizItem.BooleanNrBit		BitNumber

@@ -1,0 +1,45 @@
+object VizProgramGrid1: TVizProgramGrid
+  AlignWithMargins = True
+  Left = 27
+  Top = 19
+  Width = 418
+  Height = 403
+  Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRowSizing, goColSizing, goColMoving, goEditing, goThumbTracking]
+  TabOrder = 0
+  Columns = <
+    item
+      SigValue = 2301
+      SigMaxValue = 2101
+      KeyCode = 10
+      Text = 'PRVNI'
+      ValueUnit = ' kN'
+    end
+    item
+      SigValue = 2101
+      KeyCode = 11
+      Text = 'Druh'#253
+      ValueUnit = ' mm'
+    end
+    item
+      KeyCode = 12
+      Text = 'T'#345'et'#237
+    end
+    item
+      KeyCode = 13
+      Text = #268'tvrt'#253
+    end>
+  VerticalShift = 20
+  VizData = FScribo.VizData
+  ColWidths = (
+    64
+    67
+    103
+    64
+    66)
+  RowHeights = (
+    24
+    24
+    24
+    224
+    24)
+end

@@ -1,0 +1,137 @@
+19.04.2011	P1	- Modul Switch až 250 vstupù
+20.04.2011	Dirio	- Objekt Text podporuje více øádkù
+08.06.2011	Dirio	- Pøídána funkce Screen Dump
+			- Oprava FW Loader: pøekreslování bìhem programování, zlepšeno chování pod Win7
+20.07.2011	Dirio	- Oprava funkce Screen Dump pro nový typ terminálu
+09.08.2011	Dirio	- Pøidání zálohování minulých verzí projektu do __history
+19.08.2011	P1	- Rozšíøení loggeru o podporu zápisu na SD kartu
+31.08.2011	Dirio	- Flashovací dialog zná typy modulù MI_P24 a MI_Disp
+07.09.2011	P1	- Rozšíøení modulu 8xDO s možností volby poètu pinù (u P3 ponechat na 8 !)
+09.11.2011	P1	- Timer - oprava simulace (po resetu)
+25.11.2011	Dirio	- Vylepšená práce s posuvníky na stránce (grafické objekty, hodnoty výstupù).
+28.11.2011	P1,Base	- Možnost nastavení hodnot výstupù vìtšiny modulù pøi simulaci na PC
+05.12.2011	Dirio	- Možnost vybrat všechny objekty na stránce (Ctrl-A)
+05.12.2011	P1	- Editor menu - možnost zvìtšit okna, tlaèítko pro posun položky doleva
+08.12.2011	Dirigo	- v IP konfiguraci pøibyla tabulka cílových IP adres
+12.12.2011	P1	- Bloky DbnWMtx - v konfiguraci pøibyl pøepínaè Pøímý zápis ètených dat
+16.12.2011	Help	- Rozšíøení popisu blokù Cnt a DbnWxxxMtx
+08.02.2012	Help	- Rozšíøení popisu bloku Cnt - poèítání impulsù na analog. vstupech
+10.02.2012	P1	- Export informací o bitech u vstupù bloku Logger do .arc
+			- Modul Int2Bits umožòuje nastavit poèet výstupù 1-16
+17.02.2012	P1	- Blok pro uživatelskou komunikaci (první verze).
+01.03.2012		- Režim simulace pomocí UDP - bloky DbnXxxx
+15.03.2012	Dirigo	- Možnost nastavit formát zobrazení hodnot u vstupù a výstupù
+16.03.2012	Dirigo	- Objekt Text vrací skuteènou velikost (pro výpoèet scroll-barù)
+22.03.2012	FW	- Pøidán FW Plc_Dimm.hex pro stmívaè na termostatu s 18F252. Profil = Sybas Termostat V1.1
+03.04.2012	Dirigo	- Pøidán editor objektù (F7)
+06.04.2012	P1	- Vylepšení editoru menu: 1. Možnost výbìru více itemù (Ctrl, Shift). 2. Kopie položky pøi Shift+Pøidat položku
+12.04.2012	Dirigo	- Pøidání funkce Undo / Redo (zatím beta verze...)
+			- Editor objektù: double-click na první (šedý) sloupec u modulu nebo signálu skoèí na daný objekt
+13.04.2012	Dirigo	- Možnost pøeskupení a skrývání sloupcù v editoru objektù, editor objektù lze schvat za hlavní okno.
+26.04.2012	Dirigo	- Editor objektù - podpora Copy/Paste
+09.05.2012	Dirigo	- Oprava Paste (list), Editor objektù - pøidáno ThreadId + Order, simulace-zápis do bitového výstupu bloku
+14.05.2012	Dirigo	- Oprava filtru u "Pøipojit pin", pøesun grafických objektù mezi stránkami, kopie oznaèených spojù k neoznaèenému modulu
+			- v menu Edit pøibyla položka "Kopírovat všechny spoje", po zapnutí se pøi Edit/Copy zkopírují všechny spoje.
+16.05.2012		- Oprava formátování float èísel pokud není zadán uživatelský formát. Zobrazení verze Diriga.
+23.05.2012	Dirigo	- Minimální zpoždìní mezi cykly ve vlastnostech projektu sníženo na 71 ms
+			- Informace v Log oknì pøi neúspìšném otevøení Com portu bìhem flashování programu, automatické uzavøení logu pokud je bez chyb
+			- Automatické uzavøení okna s výsledky kompilace pøi kliknutí mimo toto okno (pokud je bez chyb)
+24.05.2012	Dir,P1	- Oprava zápisu èísla konstanty do .arc souboru
+01.06.2012	Dirigo	- Zobrazení názvu projektu v hlavním oknì
+			- Otevøení editoru signálu z kontextového menu modulu a výstupu
+			- Editace formátu zobrazení v editoru objektù
+06.06.2012	Dirigo	- Editor objektù - tøídìní pøi kliknutí na název sloupce
+			- Seznam výstupù - po otevøení okna je vybrán øádek filtr
+08.06.2012	Dirigo	- Editor objektù - vylepšení tøídìní (text s èíslem na konci), opaèný smìr pøi Shift
+			- Zmìna èíselné hodnoty na vstupu - zachová nastavený formát zobrazení, promìnná šíøka editoru.
+21.06.2012	Profiles- Pøidán thread Idle (T4), thread IqRF v ETH pøeèíslován na T5.
+		Dirigo	- Editor objektù - vylepšení tøídìní podle Øádek a Bit, zobrazení aktuálního indexu v závorce.
+			- Oprava tøídení pøi èísle na konci jména modulu výst. pinu
+			- Prázdné thready nezabírají žádné místo v pamìti programu
+		P1	- Oprava alokace výstupu pøipojeného na blok Int2Bits.
+02.07.2012	Dirigo	- Použití Ctrl-Click na pin - pokud je cíl mimo viditelnou oblast, posune scroll bary (center).
+24.07.2012	Dirigo	- Možnost hromadnì skrýt èi zobrazit spoje ke vstupùm - oznaèit jeden nebo více modulù, pravým tlaèítkem
+			  kliknout na vstup a vybrat položku "Všechny vstupy" a požadovanou operaci z podmenu.
+31.07.2012	Dirigo	- Pøidáno Soubor / Historie. Oprava editace v møížce - Vložení víceøádkového textu ( CRLF -> ; )
+04.08.2012	Dirigo	- Pøidán export programu do binárního souboru.
+			- Editor objektù - tlaèítka Edit a Edit All.
+20.08.2012	Dirigo	- Pøidána volba velikosti papíru pro tisk.
+21.08.2012	Dirigo	- Oprava zobrazení rámeèkù u názvu pinù ve Win7 a pøi tisku.
+22.08.2012	Vše	- Rozšíøení modulu Yes : Volitelný poèet pinù, datový typ se pøi kompilaci nastaví podle pøipojeného výstupu.
+22.08.2012	Dirigo	- Vylepšení Paste v editoru objektù: lze vložit více sloupcù najednou. 
+			  Poèet øádkù a sloupcù dat ve schránce se musí shodovat s velikostí výbìru.
+			- Kliknutím na název øádku se celý øádek oznaèí (pro Copy / Paste)
+29.08.2012	Dirigo	- Okno parametrù - pøidán zápis a ètení parametrù z disku a aktualizace z HW (Watch).
+04.09.2012	Dirigo	- Nahrání firmware - pøidán pøepínaè pro pøeskoèení konstantních stránek (nepøemazat aplikaci).
+07.09.2012	Dirigo	- Nahrání firmware - pøi zápisu konfigurace nedojde ke zmìnì èasu a názvu FW
+20.09.2012	P1	- Kontrola vstupu bloku Int2Bits, zda je správnì pøipojen k pinu typu Int s indexem < 256.
+25.09.2012	Dirigo	- Editor objektù - odstranìní odøádkování pøi kopii výbìru. Bìhem ètení projektu navíc odstraní LF z pole Popis.
+			- Možnost výbìru konstant použitých ve vybraných modulech.
+		P1	- Bloky RS, And, Or, Xor : po startu simulace je na výstupu stav log. 0 (døíve zùstaval poslední stav).
+04.10.2012	Dirigo	- Export tabulky signálù : zvìtšení délky polí Info na 16 znakù
+05.08.2012	P1	- Blok SystemCmd
+09.08.2012	P1	- Oprava simulace - nedocházelo k aktualizaci hodnot konstant
+24.10.2012	Dirigo	- Oprava pøidání bodu spoje pøi použití scroll-barù
+28.10.2012	Dirigo	- Pøídán export hodonot parametrù (eeprom) do *.pbd. Rovnìž se aktualizoval RowFlasher.
+02.11.2012	Vše	- Vylepšení modulu Yes o možnost použití konstant na vstupech (nemosí být pøipojeny)
+		Dirigo	- Editor objektù - Hledání vstupù napojených na konstantu (poklepat na název konstanty, v menu vybrat pin).
+04.11.2012	Dir,P1	- P3Menu - možnost zakázat celé menu nebo jednotlivé položky. Skryté položky oznaèeny køížkem. Zmìna velikosti okna konstant.
+06.11.2012	Dirigo	- Vytvoøení kopie konstant použitých u vybraných modulù (napø. po Paste). Kliknout pravým tl. na modul, vybrat Duplikovat konstanty.
+			- Pøidáno odstranìní konstant ze všech vstupù. Zmìna tvorby názvu vkládaných modulù (Paste) na základì pùvodního názvu (další èíslo).
+06.11.2012	Profiles- Zvìtšení kapacity RAM dat u profilu Sybas P3 (2048 B Int, 512 B Long, 256 B Float)
+14.11.2012	Dirigo  - Oprava zmìny hodnoty na výstupu èítaèového modulu 9xDi_Cnt.
+			- Tlaèítková lišta se pøi menší šíøce okna nebuda sama roztahovat na více øádkù (lze ruènì).
+16.11.2012	Dirigo  - Hlídání rozmìru okna projektu, zákaz minimalizování, lze hýbat pouze s levou hranou projektu, ostatní se nastaví podle hlavního okna.
+29.11.2012	Dirigo  - Možnost pøipojení nezapojeného vstupu k jinému vstupu - pøipojí se ke stejnému výstupu nebo konstantì jako cílový vstup.
+		P1,Base - Export informací o bitech pøi logování výstupu "All" modulù 8xDI a IIC_9xDI
+30.11.2012	Dirigo  - Zobrazení nezapojených pojmenovaných výstupù svìtlejší barvou
+			- Pøi otevøení souboru se prochází od adresáøe nastavekého jako výchozí adresáø programu.
+04.12.2012	Dirigo  - Možnost zadání binární konstanty na vstupu ve tvaru napø. 0b11110000
+			- Opakování posledního propojení dvou pinù (o 1 pin níže na obou stranách) klávesou F4.
+05.12.2012	Vše     - Možnost zadání binární konstanty 0b... v dalších místech programu
+05.12.2012	P1      - Oprava alokace výstupu bloku IntVar pøipojeného k bloku Int2Bits.
+		Dirigo  - V oknì s výsledky kompilace pøibylo tlaøítko pro nahrání programu a spuštìní sledování.
+08.01.2013	P1      - Pøidán blok Set
+16.01.2013	Dirigo  - V oknì konstant pøidány tlaèítka Copy / Paste.
+11.06.2013	Dirigo  - Editor signálù: Filtr hledá i v poli Popis. 
+			- DblClick na vstupní pin se pøiøazenou konstantou zobrazí menu se seznamem všech vstupù s danou konstantou.
+			- Kontextové menu vstupního pinu s pøiøazenou konstantou obsahuje položku Editor... pro pøechod do editoru signálù.
+25.06.2013	Dirigo	- Historie stránek - klávesa F6 skoèí na minulou stránku. Alt-Left a Alt-Right prochází historii stránek (vzad a vpøed).
+			- Pøepínání stránek klávesami Page Up, Page Down, Ctrl+PgUp, Ctrl+PgDown
+26.06.2013	Dirigo	- V editoru signálù pøidána práce s textovými objekty (hledání, skok na text, zmìna textu).
+		P1	- Kontrola názvù polí v oknì konfigurace loggeru. Omezí délku názvu na 10 znakù, hlídá platné znaky a duplicitní názvy polí.
+08.07.2013	Dirigo	- IP konfigurace - možnost zadání nulového hesla v tabulce cílù.
+31.07.2013	Dirigo	- Automatický export promìnných pøi zápisu programu do PLC (lze vypnout v menu Komunilace).
+			- Zobrazení popisu pinù jako hint (viz menu Možnosti).
+03.07.2013	Dirigo	- Vylepšen filtr v editoru objektù s možnosti zvolení prohledávaného sloupce:
+			  N:text ... Název    D:text ... Popis    T:text ... Typ objektu. Více textù lze oddìlit støedníkem.
+22.11.2013	P1	- Druhý kanál pro modul StepDrv, nastavuje se v konfiguraci modulu.
+27.11.2013	Dirigo	- Pøidána práce s komunikaèními profily v oknì Volby / Komunikace. Možnost mazání IP adres z historie klávesou Delete.
+07.01.2014	Dirigo	- Podpora flashování 32-bitových CPU.
+29.01.2014	Dirigo	- Zobrazení záložek na více øádcích. Lze vypnout v menu Možnosti.
+08.02.2014	Vše	- Paramertùm v EEPROM lze urèit index v poli. Adresa v EEPROM = Index * Velikost.
+			  Dále lze v editoru F7 ve sloupci Poøadí urèit poøadí konstanty (od 1 do PoètuKonstant) = ID konstanty pro vizualizaci!
+28.05.2014	Dirigo	- Automatický pøeklad projektu pøi stisku Watch nebo Verify.
+26.08.2014	Dirigo	- Podpora rovnomìrného využití celé flash pamìti pro program Diriga (profil K5-ETH !), potøeba nahrát nový FW.
+09.09.2014	Dirigo	- Editor signálù: Rozlišení nevyužitých konstant barvou v prvním sloupci
+			  Ve sloupci List je uveden list prvního modulu, který využívá danou konstantu
+24.09.2014	Dirigo	- Editor signálù: automatické odstarnìní objektù smazaných v oknì Diriga pøi otevøeném editoru signálù.
+23.11.2014	P1	- Oprava konfigurace modulu Yes pøi zmenšení poètu pinù.
+10.02.2015	Dirigo	- Pøi kliknutí na již oznaèený grafický objekt se nezruší výbìr ostatních gr. objektù i když není stisknuto Ctrl.
+05.03.2015	Dirigo	- Pøi pøepojení vstupu na jiný výstup se ponechají vlastnosti spoje "Reverse" a "Hidden"
+02.07.2015	Vše	- Pøidány uživatelské bloky - makra.
+08.07.2015	Dirigo	- Na stránce s makry pøibyl combo box se seznamem všech použití makra v programu s možností navigace a výbìrem makra pro sledování hodnot.
+08.07.2015	Dirigo	- Možnost sledovat v grafu výstupy blokù uvnitø maker.
+14.07.2015	Dirigo	- Zachování vlastností spoje (skrytý, zpìtný) pøi konfiguraci modulu.
+		P1	- Modul 8xDI umožòuje jednotlivì zvolit dostupné výstupy DI0 - DI15.
+16.7.2015	P1	- Modul 8xDO umožòuje skrýt nepotøebné vstupy DO.
+22.07.2015	Vše	- Konfigurace pro blok SystemCmd - podle zvoleného profilu zobrazí možné varianty modulu.
+02.09.2015	Dirigo	- Pøidán parametr pøíkazové øádky /RUN pro spuštìní simulace projektu.
+17.09.2015	Dirigo	- Podpora pro flashování Ethernet PIC (Duino-E) pøes RS-485.
+05.11.2015	Dirigo	- Možnost kopírovat / vložit hodnoty v oknì Vlastnosti výstupu.
+05.11.2015	P1	- Podpora teplotních èidel Ni1000-5000 v oknì kalibrace P3 - 8xAI. Potøeba aktuálního FW do P3.
+03.03.2016	P1	- Oprava simulace modulu Set v pøípadì zápisu do vstupního pinu makra nebo do výstupu modulu Yes.
+11.03.2016	P1	- Oprava simulace modulu Timer v pøípadì nulového zpoždìní Delay.
+11.03.2016	Dirigo	- Pøi otevírání projektu s duplicitním jménem konstanty se toto jméno zobrazí.
+22.03.2016	P1	- Pøidána podpora více jazykù v bloku P3Menu. Funkci musí podporovat FW grafického displeje.
+05.04.2016	Dirigo	- Podpora kopie obrazovky displeje 128x64 pixelù.

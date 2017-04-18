@@ -1,0 +1,26 @@
+Program SendMail umožòuje odeslání jednoduché zprávy z pøíkazového øádku programu.
+
+Parametry jako smtp server a e-mail lze zadat z pøíkazového øádku nebo ze souboru 
+SendMail.ini umístìního vedle SendMail.exe.
+
+Pøíklad: 
+	SendMail /Smtp:smtp.rionet.cz /TO:babinec@sybas.cz /FROM:sybas@sybas.cz Zkouška Test zprávy
+
+
+Ve SCRIBu je potøeba nastavit odesílání takto:
+
+1. Volby / Parametry loggeru  
+	Pøidat nový signál, na jehož základì se má generovat hlášení. 
+	Ve sloupci Enabled vypnout zatržítko, aby se neukládal do logu. Zapnout Hidden.
+2. Editaèní režim, v Object Inspectoru vybrat objekt VizLogger. Otevøít Items.
+3. Najít item loggeru pøidaný v bodì 1 (asi poslední položka) a nastavit:
+	- Style napø. tsHighLimit,  HLimit napø. 90 (pøekroèení zpùsobí aktivaci)
+	- Command napøíklad: SendMail "Prekrocen limit hladiny 90 cm"
+	  nebo na zkoušku nastavit Command: CALC.EXE   (spustí kalkulaèku pøi aktivaci).
+
+
+Pokud je program SendMail.exe ve stejném adresáøi jako Scribo.exe a v SendMail.ini jsou zadány další
+parametry, odešle se pøi každém pøekroèení nastavené hodnoty e-mail s uvedeným textem.
+
+V textu lze použít (podobnì jako u TVizGrid) zkratky jako %f, %n, %p apod. pro nahrazení aktuální hodnotou èi názvem...
+

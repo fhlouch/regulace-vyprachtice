@@ -1,0 +1,19 @@
+Nové vlastnosti objektu TVizRowGrid / TRowGridSignal
+
+	property BitNumber: Integer	- Umožòuje vybrat daný bit nebo dva bity pro zobrazení stavu.
+					- Napø.   4 ... vybere 4. bit (váha $0010)    
+					-       204 ... vybere dva bity 2 a 4
+
+	property StateColor2: TColor	- Další dvì barvy pro ètyøstavový režim
+	property StateColor3: TColor
+
+
+	property BackgroundColor: TColor - Lze zmìnit pozadí bunìk daného øádku
+
+	property VerticalMargin: Integer - Nastavení výšky indikátoru / sloupce
+
+
+
+Nové vlastnosti objektu TVizRowGrid
+	property AutoSizeColumns	- Automatické pøizpùsobení šíøky sloupcù
+

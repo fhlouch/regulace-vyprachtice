@@ -1,0 +1,69 @@
+Ahoj,
+
+pøipravil jsem pro Scribo na zkoušku komponentu TVizRowData pro vyèítání hodnot z RowNetu jako náhradu za TVizRowPanel. Ten jsem prozatím deaktivoval, tzn. že data naète, takže je vidìt, které gridy je potøeba opravit.
+
+Do stávajícího projektu je potøeba vložit jeden nebo více objektù  TVizRowData a na nì napojit gridy, které data zobrazují. Pro data základní obrazovky vlož následující objekt (Copy / Paste do Scriba):
+
+
+
+
+  object RowDataMain: TVizRowData
+    Driver = VizDrvDbNet
+    VizData = FScribo.VizData
+    Signals = <
+      item
+        Signal = 72701
+        Text = 'Stojky L'
+        ReadOnly = True
+      end
+      item
+        Signal = 72801
+        Text = 'Stojky R'
+        ReadOnly = True
+      end
+      item
+        Signal = 72601
+        Text = 'Empty_SnimDrahy'
+      end
+      item
+        Signal = 72601
+        Text = 'presuv dopr'
+      end
+      item
+        Signal = 64701
+        Text = 'naklapeni strop'
+      end
+      item
+        Signal = 98501
+        Text = 'StatusBits'
+      end
+      item
+        Signal = 98601
+      end
+      item
+        Signal = 99601
+        Text = 'PostupSekce'
+      end
+      item
+        Signal = 87701
+      end
+      item
+        Signal = 172501
+      end
+      item
+        Signal = 207801
+      end
+      item
+        Signal = 208001
+      end
+      item
+        Signal = 208101
+      end
+      item
+        Signal = 299
+      end
+      item
+        Signal = 403
+      end>
+  end
+ 
