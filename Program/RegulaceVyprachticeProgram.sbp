@@ -1,22 +1,23 @@
 inline Prj: TScriboProject
   Align = alClient
   AutoScroll = True
-  ProjectWidth = 1351
-  ProjectHeight = 848
+  ProjectWidth = 1920
+  ProjectHeight = 976
   AutoTimeSync = True
-  DesignSize = (
-    1351
-    848)
   object ScriboPages: TVizPageControl
     Left = 0
     Top = 0
-    Width = 1351
-    Height = 848
+    Width = 1920
+    Height = 976
     ActivePage = ScriboPage1
     Align = alClient
     TabOrder = 0
+    ExplicitWidth = 1351
+    ExplicitHeight = 848
     object ScriboPage1: TVizTabSheet
       Caption = 'List 1'
+      ExplicitWidth = 1343
+      ExplicitHeight = 820
       object ScriboGrid1: TVizGrid
         Left = 0
         Top = 0
@@ -244,14 +245,14 @@ inline Prj: TScriboProject
         WID = 510
         Station = 1
         DataType = dbnIntMtx
-        RowCount = 151
+        RowCount = 192
       end
       item
         Name = 'LongData'
         WID = 511
         Station = 1
         DataType = dbnLongMtx
-        RowCount = 12
+        RowCount = 13
       end
       item
         Name = 'FloatData'
@@ -272,13 +273,13 @@ inline Prj: TScriboProject
     DbnConfig.Host = '192.168.97.10'
     DbnConfig.Timeout = 1000
     TimeStation = 1
-    TimeMode = tmIdle
+    TimeMode = tmError
     Left = 168
     Top = 200
   end
   object VizLogger: TVizLogger
     RootDir = 
-      'D:\Git\soukrome\regulace-vyprachtice\Program\RegulaceVyprachtice' +
+      'D:\Git\Soukrom'#233'\regulace-vyprachtice\Program\RegulaceVyprachtice' +
       'Program.DATA'
     Items = <>
     ScanTime = 10000
