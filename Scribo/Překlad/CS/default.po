@@ -1,0 +1,3358 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: SYBAS Scribo\n"
+"POT-Creation-Date: 2014-05-30 14:10+0100\n"
+"PO-Revision-Date: 2016-03-08 14:59+0100\n"
+"Last-Translator: PB\n"
+"Language-Team: \n"
+"Language: cs_CZ\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ../../../..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#. Programmer's name for it: SIqrfType01
+#: FIqrf.pas:112
+msgid "Radio Thermometer"
+msgstr "Rádiový teploměr"
+
+#. Programmer's name for it: ColIndex
+#. FScribo..DBFSig......Name
+#. FrmPcView..DBFSig......Name
+#: FrmSecPrj.pas:108 MainScribo.dfm:387 PcVizMain.dfm:310
+msgid "Index"
+msgstr ""
+
+#. Programmer's name for it: ColProject
+#. FScribo..MainMenu..MnuProject..Caption
+#. FrmPcView..MainMenu..File1..Caption
+#: FrmSecPrj.pas:109 MainScribo.dfm:84 PcVizMain.dfm:136
+msgid "Project"
+msgstr "Projekt"
+
+#. Programmer's name for it: ColAddress
+#: FrmSecPrj.pas:110
+msgid "Address"
+msgstr "Adresa"
+
+#. Programmer's name for it: ColDriver
+#. FScribo..DBFSig......Name
+#. FrmPcView..DBFSig......Name
+#: FrmSecPrj.pas:111 MainScribo.dfm:379 PcVizMain.dfm:302
+msgid "Driver"
+msgstr ""
+
+#. Programmer's name for it: SConfirm
+#. Programmer's name for it: SConfirm
+#. Programmer's name for it: SConfirm
+#: FrmUnitConfig.pas:101 MainScribo.pas:425 SbWindow.pas:42
+msgid "Confirm"
+msgstr "Potvrzení"
+
+#. Programmer's name for it: SDeleteProfile
+#: FrmUnitConfig.pas:102
+msgid "Delete profile %s ?"
+msgstr "Smazat profil %s ?"
+
+#. Programmer's name for it: SSaveProfileAs
+#: FrmUnitConfig.pas:103
+msgid "Save Profile As"
+msgstr "Uložit profil jako"
+
+#. Programmer's name for it: SProfileColon
+#: FrmUnitConfig.pas:104
+msgid "Profile Name:"
+msgstr "Jméno profilu:"
+
+#. Programmer's name for it: SProfileExists
+#: FrmUnitConfig.pas:105
+msgid "Profile already exists. Replace it?"
+msgstr "Profil již existuje. Nahradit ?"
+
+#. ' %d. bod';
+#. Programmer's name for it: SPointX
+#: FrmWeekProgram.pas:75
+msgid " Point %d"
+msgstr " %d. bod"
+
+#. Programmer's name for it: SColumnName
+#. FrmPcView..TabControl..VizGrid1......Caption
+#: MainScribo.pas:419 PcVizMain.dfm:88
+msgid " Name"
+msgstr "Jméno"
+
+#. Programmer's name for it: SColumnDescription
+#. FrmPcView..TabControl..VizGrid1......Caption
+#: MainScribo.pas:420 PcVizMain.dfm:98
+msgid " Description"
+msgstr "Popis"
+
+#. Programmer's name for it: SColumnValue
+#. FrmPcView..TabControl..VizGrid1......Caption
+#: MainScribo.pas:421 PcVizMain.dfm:106
+msgid " Value"
+msgstr "Hodnota"
+
+#. Programmer's name for it: SColumnUnit
+#. FrmPcView..TabControl..VizGrid1......Caption
+#: MainScribo.pas:422 PcVizMain.dfm:116
+msgid " Unit"
+msgstr "Jednotka"
+
+#. Programmer's name for it: SSaveChanges
+#: MainScribo.pas:424
+msgid "Save changes to project:"
+msgstr "Uložit změny v projektu:"
+
+#. Programmer's name for it: SNewProject
+#: MainScribo.pas:426
+msgid "New Project"
+msgstr "Nový projekt"
+
+#. Programmer's name for it: SOpenProject
+#: MainScribo.pas:427
+msgid "Open Project"
+msgstr "Otevřít projekt"
+
+#. Programmer's name for it: STabNotFound1
+#: MainScribo.pas:428
+msgid "Table not found: "
+msgstr "Tabulka neexistuje: "
+
+#. Programmer's name for it: STabNotFound2
+#: MainScribo.pas:429
+msgid "Export variables from the Dirigo first"
+msgstr "Nejdříve proveď export proměnných z Diriga"
+
+#. Programmer's name for it: STabNotFound
+#: MainScribo.pas:430
+msgid "Table not found"
+msgstr "Tabulka neexistuje"
+
+#. Programmer's name for it: SPrjNotFound1
+#: MainScribo.pas:431
+msgid "Project file not found: "
+msgstr "Soubor projektu nenalezen: "
+
+#. Programmer's name for it: SPrjNotFound2
+#: MainScribo.pas:432
+msgid "Do you want to create new project?"
+msgstr "Založit nový projekt?"
+
+#. Programmer's name for it: SPrjNotFound
+#: MainScribo.pas:433
+msgid "Project not found"
+msgstr "Projekt neexistuje"
+
+#. Programmer's name for it: SMinusActive
+#: MainScribo.pas:434
+msgid " - Active"
+msgstr " - Aktivní"
+
+#. Programmer's name for it: SMinusDesignMode
+#: MainScribo.pas:435
+msgid " - DESIGN MODE"
+msgstr " - NÁVRH"
+
+#. Programmer's name for it: SMinusUserColon
+#: MainScribo.pas:436
+msgid " - User: "
+msgstr " - Uživatel: "
+
+#. Programmer's name for it: SDeleteSignal
+#: MainScribo.pas:437
+msgid "Delete this signal?"
+msgstr "Smazat tento signál?"
+
+#. Programmer's name for it: SDeleteSelectedSig
+#: MainScribo.pas:438
+msgid "Delete all selected signals?"
+msgstr "Smazat všechny vybrané signály?"
+
+#. Programmer's name for it: SDeletePage
+#: MainScribo.pas:439
+msgid "Delete this page?"
+msgstr "Smazat tento list?"
+
+#. Programmer's name for it: SPageName
+#: MainScribo.pas:440
+msgid "Page %d"
+msgstr "List %d"
+
+#. Programmer's name for it: SCreateNewPage
+#: MainScribo.pas:441
+msgid "Create New Page"
+msgstr "Vytvořit nový list"
+
+#. Programmer's name for it: SNameColon
+#. FormData..Panel2..Panel3..LName..Caption
+#: MainScribo.pas:442 Comp/DataDlg.dfm:201
+msgid "Name:"
+msgstr "Jméno:"
+
+#. Programmer's name for it: SRenamePage
+#. FScribo..MainMenu..MnuPage..MnuPageOptions..MnuRenamePage..Caption
+#. FrmPcView..MainMenu..MnuPage..MnuPageOptions..MnuRenamePage..Caption
+#: MainScribo.pas:443 MainScribo.dfm:203 PcVizMain.dfm:195
+msgid "Rename Page"
+msgstr "Přejmenuj list"
+
+#. Programmer's name for it: SErrorReadingMemory
+#: MainScribo.pas:444
+msgid "Error reading memory"
+msgstr "Chyba při čtení paměti"
+
+#. Programmer's name for it: SErrorWritingMemory
+#: MainScribo.pas:445
+msgid "Error writing memory"
+msgstr "Chyba při zápisu do paměti"
+
+#. Programmer's name for it: SOptSaved1
+#: MainScribo.pas:446
+msgid "Options saved successfully."
+msgstr "Zápis dat byl úspěšný."
+
+#. Programmer's name for it: SOptSaved2
+#: MainScribo.pas:447
+msgid "Reload new parameters?"
+msgstr "Použít tyto nové parametry?"
+
+#. Programmer's name for it: SSeparator
+#: MainScribo.pas:448
+msgid "Separator"
+msgstr "Oddělovač"
+
+#. Programmer's name for it: STextColon
+#: MainScribo.pas:449
+msgid "Text:"
+msgstr ""
+
+#. Programmer's name for it: SMainProject
+#: MainScribo.pas:450
+msgid "Main Project"
+msgstr "Hlavní projekt"
+
+#. Programmer's name for it: SAdditionalProject
+#: MainScribo.pas:451
+msgid "Additional Project #%d"
+msgstr "Přídavný projekt #%d"
+
+#. Programmer's name for it: txNoDataset
+#: Comp/DataDlg.pas:170
+msgid "Property \"DataSet\" has no linked table!"
+msgstr "'Není připojena tabulka k vlastnosti \"DataSet\" !"
+
+#. Programmer's name for it: txSignalCount
+#: Comp/DataDlg.pas:171
+msgid "Signal Count: "
+msgstr "Počet signálů: "
+
+#. Programmer's name for it: txDelete
+#: Comp/DataDlg.pas:172
+msgid "Delete ?"
+msgstr "Smazat ?"
+
+#. Programmer's name for it: txNewItem
+#: Comp/DataDlg.pas:173
+msgid "New Item"
+msgstr "Nový prvek"
+
+#. Programmer's name for it: txMissingType
+#: Comp/DataDlg.pas:174
+msgid "Cannot save without specifying the data type."
+msgstr "Nelze uložit bez určení typu dat."
+
+#. Programmer's name for it: txNoDriver
+#: Comp/DataDlg.pas:175
+msgid "Driver not assigned."
+msgstr "Není přiřazen drver."
+
+#. Programmer's name for it: txUnsupportedType
+#: Comp/DataDlg.pas:176
+msgid "Unsupported data type."
+msgstr "Typ dat není podporován."
+
+#. Programmer's name for it: txDelete
+#: Comp/DataDlg.pas:180
+msgid "Smazat ?"
+msgstr ""
+
+#. Programmer's name for it: txDateTime
+#: Comp/FrmGraph.pas:518
+msgid "Date / time"
+msgstr "Datum a čas"
+
+#. Programmer's name for it: txDownloading
+#: Comp/FrmGraph.pas:519
+msgid "Downloading file list"
+msgstr "Stahuji seznam souborů"
+
+#. Programmer's name for it: txDownloadingFile
+#: Comp/FrmGraph.pas:520
+msgid "Downloading (%d/%d):  %s"
+msgstr "Stahuji (%d/%d):  %s"
+
+#. Programmer's name for it: txStationNum
+#: Comp/FrmGraph.pas:521
+msgid "Station number"
+msgstr "Číslo stanice"
+
+#. Programmer's name for it: SRowsNotFound
+#: Comp/FrmGraph.pas:522
+msgid "No matching rows found"
+msgstr "Nebyl nalezen žádký vyhovující řádek"
+
+#. Programmer's name for it: SDefaultRows
+#: Comp/FrmGraph.pas:523
+msgid "Default = 1440 Table Rows"
+msgstr "Výchozí = 1440 řádků v tabulce"
+
+#. Programmer's name for it: txDownloadingFile
+#: Comp/FrmGraph.pas:527
+msgid "Stahuji (%d/%d):  %s"
+msgstr ""
+
+#. Programmer's name for it: SYes
+#: Comp/UsersMgr.pas:61
+msgid "Yes"
+msgstr "Ano"
+
+#. Programmer's name for it: SNo
+#: Comp/UsersMgr.pas:62
+msgid "No"
+msgstr "Ne"
+
+#. 'Nejsou data'
+#. Programmer's name for it: SNoVizData
+#: Comp/VizData.pas:300
+msgid "Unassigned VizData"
+msgstr "Nejsou data"
+
+#. 'Neznámý signál'
+#. Programmer's name for it: SUnknownSignal
+#: Comp/VizData.pas:301
+msgid "Unknown Signal"
+msgstr "Neznámý signál"
+
+#. 'Chyba načítání tabulky s definicí dat';
+#. Programmer's name for it: SVizDataInit
+#: Comp/VizData.pas:315
+msgid "Error reading table with data definitions"
+msgstr "Chyba načítání tabulky s definicí dat"
+
+#. Programmer's name for it: SCantOpenUserTable
+#: Comp/VizLogin.pas:66
+msgid "Cannot open user table"
+msgstr "Nelze otevřít databázi uživatelů"
+
+#. Programmer's name for it: SLoginError
+#: Comp/VizLogin.pas:67
+msgid "Login Error"
+msgstr "Chyba přihlášení"
+
+#. Programmer's name for it: SErrLoginPwd
+#: Comp/VizLogin.pas:68
+msgid "Invalid User Name or Password"
+msgstr "Chybné jméno nebo heslo uživatele"
+
+#. Programmer's name for it: SNewPwdColon
+#: Comp/VizLogin.pas:69
+msgid "New Password"
+msgstr "Nové heslo:"
+
+#. Programmer's name for it: SEnterNewPwd
+#: Comp/VizLogin.pas:70
+msgid "Enter new Password"
+msgstr "Napište nové heslo"
+
+#. Programmer's name for it: SRepeatPwd
+#: Comp/VizLogin.pas:71
+msgid "Repeat new Password"
+msgstr "Napište heslo znovu"
+
+#. Programmer's name for it: SPwdNotMatch
+#: Comp/VizLogin.pas:72
+msgid "Passwords does not match"
+msgstr "Hesla nejsou stejná"
+
+#. Programmer's name for it: SPwdTooShort
+#: Comp/VizLogin.pas:73
+msgid "The Password must have at least 4 characters"
+msgstr "Heslo musí mít alespoň 4 znaky"
+
+#. Programmer's name for it: DefltHighBool
+#: Comp/VizStd.pas:639
+msgid "On"
+msgstr "Zapnuto"
+
+#. Programmer's name for it: DefltLowBool
+#. FGraph..PmRefresh..MnuAutoRefreshOff..Caption
+#: Comp/VizStd.pas:640 Comp/FrmGraph.dfm:3103
+msgid "Off"
+msgstr "Vypnuto"
+
+#. Programmer's name for it: STypeNotAssigned
+#: Comp/VizStd.pas:641
+msgid "Type not set"
+msgstr "Typ není přiřazen"
+
+#. Programmer's name for it: SGroupHasNoValue
+#: Comp/VizStd.pas:642
+msgid "Group has no value"
+msgstr "Skupina nemá hodnotu"
+
+#. Programmer's name for it: SNotFinished
+#: Comp/VizStd.pas:643
+msgid "Not finished"
+msgstr "Není dokončeno"
+
+#. Programmer's name for it: DefltHighBool
+#: Comp/VizStd.pas:645
+msgid "zapnuto"
+msgstr ""
+
+#. Programmer's name for it: DefltLowBool
+#: Comp/VizStd.pas:646
+msgid "vypnuto"
+msgstr ""
+
+#. FrmConfiguration..Caption
+#: FConfig.dfm:6
+msgid "Configuration"
+msgstr "Konfigurace"
+
+#. FrmConfiguration..BbWrite..Caption
+#: FConfig.dfm:21
+msgid "&Write"
+msgstr "&Zapsat"
+
+#. FrmConfiguration..Pages..TsMain..Caption
+#: FConfig.dfm:64
+msgid "Main"
+msgstr "Základní"
+
+#. FrmConfiguration..Pages..TsMain..GroupBox1..Caption
+#: FConfig.dfm:74
+msgid "Communications options"
+msgstr "Parametry komunikace"
+
+#. FrmConfiguration..Pages..TsMain..GroupBox1..Label1..Caption
+#: FConfig.dfm:81
+msgid "&Address"
+msgstr "&Adresa"
+
+#. FrmConfiguration..Pages..TsMain..GroupBox1..Label2..Caption
+#: FConfig.dfm:89
+msgid "&Baud rate"
+msgstr "&Baud. rychlost"
+
+#. FrmConfiguration..Pages..TsMain..GroupBox1..RbHex..Caption
+#: FConfig.dfm:107
+msgid "&Hex"
+msgstr ""
+
+#. FrmConfiguration..Pages..TsMain..GroupBox1..RbDec..Caption
+#: FConfig.dfm:118
+msgid "&Dec"
+msgstr ""
+
+#. FrmConfiguration..Pages..TsMain..RgMode..Caption
+#: FConfig.dfm:146
+msgid "Mode"
+msgstr "Režim"
+
+#. FrmConfiguration..Pages..TsMain..RgMode....Items.Strings
+#: FConfig.dfm:149
+msgid "&Stop"
+msgstr ""
+
+#. FrmConfiguration..Pages..TsMain..RgMode....Items.Strings
+#: FConfig.dfm:150
+msgid "&Run"
+msgstr ""
+
+#. FrmConfiguration..Pages..TsParams..Caption
+#: FConfig.dfm:155
+msgid "Parameters"
+msgstr "Parametry"
+
+#. FrmConfiguration..BbOk..Caption
+#. FWeekProgram..Panel1..BBOk..Caption
+#: FConfig.dfm:188 FrmWeekProgram.dfm:85
+msgid "O&K"
+msgstr ""
+
+#. FrmComponents..Caption
+#. FScribo..MainMenu..MnuEdit..MnuComponentLibrary..Caption
+#: FInsertComp.dfm:5 MainScribo.dfm:147
+msgid "Component Library"
+msgstr "Knihovna komponent"
+
+#. FrmComponents..PanelSave..Caption
+#: FInsertComp.dfm:49
+msgid "Save Component as Template"
+msgstr "Uložit komponentu jako šablonu"
+
+#. FrmComponents..PanelSave..Label1..Caption
+#: FInsertComp.dfm:61
+msgid "Template Name: "
+msgstr "Název šablony:"
+
+#. FrmComponents..PanelSave..BtnSave..Caption
+#. FScribo..MainMenu..MnuProject..MnuSave..Caption
+#. FrmPcView..MainMenu..File1..MnuSave..Caption
+#. FrmPictEditor..BtnSave..Caption
+#. FormData..Panel1..sbSave..Caption
+#: FInsertComp.dfm:76 MainScribo.dfm:98 PcVizMain.dfm:150
+#: PicturePropertyEditor.dfm:74 Comp/DataDlg.dfm:137
+msgid "Save"
+msgstr "Uložit"
+
+#. FrmComponents..PopupMenuTree..MnuRename..Caption
+#: FInsertComp.dfm:148
+msgid "Rename ..."
+msgstr "Přejmenovat ..."
+
+#. FrmComponents..PopupMenuTree..MnuDelete..Caption
+#. FScribo..MainMenu..MnuSignal..MnuDeleteSignal..Caption
+#. FScribo..MnuDesigner..MnuDeleteComp..Caption
+#. FrmPcView..MainMenu..MnuSignal..MnuDelete..Caption
+#. FormData..Panel1..sbDelete..Caption
+#: FInsertComp.dfm:152 MainScribo.dfm:244 MainScribo.dfm:598 PcVizMain.dfm:223
+#: Comp/DataDlg.dfm:114
+msgid "Delete"
+msgstr "Smazat"
+
+#. FrmComponents..PopupMenuTree..MnuShowComponent..Caption
+#. FScribo..MnuDesigner..MnuShowComponent..Caption
+#: FInsertComp.dfm:156 MainScribo.dfm:611
+msgid "Show Component"
+msgstr "Zobrazit komponentu"
+
+#. FormIqrf..Caption
+#: FIqrf.dfm:5
+msgid "IqRF Devices Configurator"
+msgstr "Konfigurace zařízení IqRF"
+
+#. FormIqrf..LWriteOK..Caption
+#: FIqrf.dfm:21
+msgid "Write OK"
+msgstr "Zápis OK"
+
+#. FormIqrf..LWriteOK..Font.Name
+#. FrmPcView..Font.Name
+#. SWindow..Font.Name
+#. FrmInspector..Inspector..CategoryFont.Name
+#. FUserManager..GbUsers..DgUsers..TitleFont.Name
+#: FIqrf.dfm:25 PcVizMain.dfm:11 SbWindow.dfm:10 ScriboInsp.dfm:37
+#: Comp/UsersMgr.dfm:198
+msgid "Tahoma"
+msgstr ""
+
+#. FormIqrf..GroupBox1..Caption
+#: FIqrf.dfm:35
+msgid "Found module:"
+msgstr "Nalezený modul:"
+
+#. FormIqrf..GroupBox1..LblType..Caption
+#. FormData..Panel2..Panel3..LType..Caption
+#: FIqrf.dfm:52 Comp/DataDlg.dfm:283
+msgid "Type:"
+msgstr "Typ:"
+
+#. FormIqrf..GroupBox1..LblVersion..Caption
+#: FIqrf.dfm:68
+msgid "Version:"
+msgstr "Verze:"
+
+#. FormIqrf..GroupBox1..LblNetwork..Caption
+#: FIqrf.dfm:76
+msgid "Network:"
+msgstr "Síť:"
+
+#. FormIqrf..GroupBox1..LblAddress..Caption
+#. FrmLoader..ToolBar1..Panel1..Label1..Caption
+#: FIqrf.dfm:84 FwLoader.dfm:97
+msgid "Address:"
+msgstr "Adresa:"
+
+#. FormIqrf..GroupBox1..LBlPeerAddr..Caption
+#: FIqrf.dfm:92
+msgid "Peer Addr:"
+msgstr "Adresa modulu:"
+
+#. FormIqrf..GroupBox1..BtnConfig..Caption
+#: FIqrf.dfm:102
+msgid "Configuration Mode"
+msgstr "Konfigurační režim"
+
+#. FormIqrf..Pages..TsThermometer..Caption
+#: FIqrf.dfm:147
+msgid "Thermometer Settings"
+msgstr "Nastavení teploměru"
+
+#. FormIqrf..Pages..TsThermometer..LTempCorr..Caption
+#: FIqrf.dfm:159
+msgid "Temperature Correction:"
+msgstr "Korekce teploty:"
+
+#. FormIqrf..Pages..TsGeneral..Caption
+#: FIqrf.dfm:175
+msgid "General Settings"
+msgstr "Obecné parametry"
+
+#. FormIqrf..Pages..TsGeneral..Label1..Caption
+#: FIqrf.dfm:181
+msgid "Config Memory:"
+msgstr "Konfigurační paměť:"
+
+#. FormIqrf..Pages..TsLog..Caption
+#: FIqrf.dfm:205
+msgid "Log"
+msgstr ""
+
+#. FormIqrf..BtnWrite..Caption
+#: FIqrf.dfm:228
+msgid "Write Config"
+msgstr "Zapsat CFG"
+
+#. FormIqrf..BtnReset..Caption
+#: FIqrf.dfm:237
+msgid "Reset Device"
+msgstr "Reset modulu"
+
+#. FormIqrf..BtnClose..Caption
+#. FormData..Panel1..sbClose..Caption
+#. FGraph..ControlBar1..TBarAnalyse..TBCloseAnalyse..Caption
+#: FIqrf.dfm:246 Comp/DataDlg.dfm:50 Comp/FrmGraph.dfm:1548
+msgid "Close"
+msgstr "Zavřít"
+
+#. Programmer's name for it: SSaveChanges
+#: SbWindow.pas:41
+msgid "Save changes to window"
+msgstr "Uložit změny okna"
+
+#. Programmer's name for it: SFileFilter
+#: SbWindow.pas:43
+msgid ""
+"Scribo windows         (*.sbw)|*.sbw|All Files                     (*.*)|*.*"
+msgstr ""
+"Okna programu Scribo          (*.sbw)|*.sbw|Všechny soubory            (*.*)|"
+"*.*"
+
+#. FrmCreateControls..Caption
+#: FrmCreateCtrls.dfm:5
+msgid "Create Controls"
+msgstr "Vytvořit ovládací prvky"
+
+#. FrmCreateControls..GbLabels..Caption
+#: FrmCreateCtrls.dfm:20
+msgid "        Create Labels"
+msgstr "        Vytvořit popisky"
+
+#. FrmCreateControls..GbLabels..Label1..Caption
+#: FrmCreateCtrls.dfm:28
+msgid "Label positon:"
+msgstr "Poloha popisku:"
+
+#. FrmCreateControls..GbLabels..Label2..Caption
+#: FrmCreateCtrls.dfm:37
+msgid "Label Text:"
+msgstr "Text popisku:"
+
+#. FrmCreateControls..GbLabels..Label10..Caption
+#: FrmCreateCtrls.dfm:46
+msgid "Label Name:"
+msgstr "Jméno popisku:"
+
+#. FrmCreateControls..GbLabels..CbLabelPos..Text
+#. FrmCreateControls..GbLabels..CbLabelPos....Items.Strings
+#. FGraph..ControlBar1..TBarNavigaceGrafu..TBLeft..Caption
+#: FrmCreateCtrls.dfm:59 FrmCreateCtrls.dfm:62 Comp/FrmGraph.dfm:1244
+msgid "Left"
+msgstr "Vlevo"
+
+#. FrmCreateControls..GbLabels..CbLabelPos....Items.Strings
+#: FrmCreateCtrls.dfm:63
+msgid "Top"
+msgstr "Nahoře"
+
+#. FrmCreateControls..GbLabels..CbLabelPos....Items.Strings
+#: FrmCreateCtrls.dfm:64
+msgid "Right"
+msgstr "Vpravo"
+
+#. FrmCreateControls..GbLabels..CbLabelText..Text
+#. FrmCreateControls..GbLabels..CbLabelText....Items.Strings
+#. FrmCreateControls..GroupBox1..CbBefore....Items.Strings
+#. FrmCreateControls..GroupBox1..CbAfter....Items.Strings
+#: FrmCreateCtrls.dfm:84 FrmCreateCtrls.dfm:86 FrmCreateCtrls.dfm:187
+#: FrmCreateCtrls.dfm:216
+msgid "%P"
+msgstr ""
+
+#. FrmCreateControls..GbLabels..CbLabelText....Items.Strings
+#. FrmCreateControls..GroupBox1..CbBefore....Items.Strings
+#. FrmCreateControls..GroupBox1..CbAfter..Text
+#. FrmCreateControls..GroupBox1..CbAfter....Items.Strings
+#: FrmCreateCtrls.dfm:87 FrmCreateCtrls.dfm:188 FrmCreateCtrls.dfm:214
+#: FrmCreateCtrls.dfm:217
+msgid "%1I"
+msgstr ""
+
+#. FrmCreateControls..GbLabels..CbLabelText....Items.Strings
+#. FrmCreateControls..GroupBox1..CbBefore....Items.Strings
+#. FrmCreateControls..GroupBox1..CbAfter....Items.Strings
+#: FrmCreateCtrls.dfm:88 FrmCreateCtrls.dfm:189 FrmCreateCtrls.dfm:218
+msgid "%P [%1I]"
+msgstr ""
+
+#. FrmCreateControls..GbLabels..ELblName..Text
+#: FrmCreateCtrls.dfm:96
+msgid "Label1"
+msgstr ""
+
+#. FrmCreateControls..GroupBox1..Caption
+#: FrmCreateCtrls.dfm:104
+msgid "        Create Controls"
+msgstr "        Vytvořit prvky"
+
+#. FrmCreateControls..GroupBox1..Label3..Caption
+#: FrmCreateCtrls.dfm:112
+msgid "Before Value:"
+msgstr "Před hodnotou:"
+
+#. FrmCreateControls..GroupBox1..Label4..Caption
+#: FrmCreateCtrls.dfm:121
+msgid "Control Type:"
+msgstr "Typ prvku:"
+
+#. FrmCreateControls..GroupBox1..Label5..Caption
+#: FrmCreateCtrls.dfm:130
+msgid "After Value:"
+msgstr "Za hodnotou:"
+
+#. FrmCreateControls..GroupBox1..Label6..Caption
+#: FrmCreateCtrls.dfm:139
+msgid "Read Only:"
+msgstr "Jen pro čtení:"
+
+#. FrmCreateControls..GroupBox1..Label8..Caption
+#: FrmCreateCtrls.dfm:148
+msgid "Height:"
+msgstr "Výška:"
+
+#. FrmCreateControls..GroupBox1..Label9..Caption
+#: FrmCreateCtrls.dfm:157
+msgid "Width:"
+msgstr "Šířka:"
+
+#. FrmCreateControls..GroupBox1..LabelName..Caption
+#: FrmCreateCtrls.dfm:166
+msgid "Control Name:"
+msgstr "Jméno prvku:"
+
+#. FrmCreateControls..GroupBox1..CbType..Text
+#. FrmCreateControls..GroupBox1..CbType....Items.Strings
+#: FrmCreateCtrls.dfm:201 FrmCreateCtrls.dfm:203
+msgid "TVizPanel"
+msgstr ""
+
+#. FrmCreateControls..GroupBox1..CbReadOnly..Text
+#. FrmCreateControls..GroupBox1..CbReadOnly....Items.Strings
+#: FrmCreateCtrls.dfm:230 FrmCreateCtrls.dfm:232
+msgid "False"
+msgstr ""
+
+#. FrmCreateControls..GroupBox1..CbReadOnly....Items.Strings
+#: FrmCreateCtrls.dfm:233
+msgid "True"
+msgstr ""
+
+#. FrmCreateControls..GroupBox1..EName..Text
+#: FrmCreateCtrls.dfm:261
+msgid "ED_%n"
+msgstr ""
+
+#. FrmCreateControls..GroupBox2..Caption
+#. FScribo..MainMenu..MnuOptions..Caption
+#. FrmPcView..MainMenu..MnuOptions..Caption
+#: FrmCreateCtrls.dfm:269 MainScribo.dfm:316 PcVizMain.dfm:250
+msgid "Options"
+msgstr "Volby"
+
+#. FrmCreateControls..GroupBox2..Label7..Caption
+#: FrmCreateCtrls.dfm:277
+msgid "Vertical step:"
+msgstr "Sviský krok:"
+
+#. FrmCreateControls..BBOk..Caption
+#. FGraph..ControlBar1..TBarTisk..TbCopy..Hint
+#: FrmCreateCtrls.dfm:294 Comp/FrmGraph.dfm:1332
+msgid "Copy to Clipboard"
+msgstr "Kopie do schránky"
+
+#. FrmCreateControls..BBCancel..Caption
+#. FWeekProgram..Panel1..BBCancel..Caption
+#. FrmPictEditor..BtnCancel..Caption
+#. FUserManager..bbCancel..Caption
+#: FrmCreateCtrls.dfm:324 FrmWeekProgram.dfm:99 PicturePropertyEditor.dfm:56
+#: Comp/UsersMgr.dfm:265
+msgid "Cancel"
+msgstr "Storno"
+
+#. DIpConfig..Caption
+#: FrmIpConfig.dfm:5
+msgid "IP Configuration"
+msgstr "Konfigurace IP"
+
+#. DIpConfig..GBUDP..Caption
+#: FrmIpConfig.dfm:26
+msgid " Configuration: "
+msgstr " Konfigurace: "
+
+#. DIpConfig..GBUDP..Label2..Caption
+#: FrmIpConfig.dfm:34
+msgid "IP Address:"
+msgstr "IP Adresa:"
+
+#. DIpConfig..GBUDP..Label1..Caption
+#: FrmIpConfig.dfm:43
+msgid "Mask:"
+msgstr "Maska:"
+
+#. DIpConfig..GBUDP..Label3..Caption
+#: FrmIpConfig.dfm:52
+msgid "Default gateway:"
+msgstr "Výchozí brána:"
+
+#. DIpConfig..GBUDP..Label6..Caption
+#: FrmIpConfig.dfm:61
+msgid "Primary DNS server:"
+msgstr "Primární server DNS:"
+
+#. DIpConfig..GBUDP..Label7..Caption
+#: FrmIpConfig.dfm:70
+msgid "Secondary DNS server:"
+msgstr "Sekundární server DNS:"
+
+#. DIpConfig..GBUDP..Label10..Caption
+#: FrmIpConfig.dfm:79
+msgid "NetBIOS Name:"
+msgstr "Jméno NetBIOS:"
+
+#. DIpConfig..GBUDP..Label4..Caption
+#: FrmIpConfig.dfm:88
+msgid "DbNet/IP Port Number:"
+msgstr "DbNet/IP číslo portu:"
+
+#. DIpConfig..GBUDP..Label5..Caption
+#: FrmIpConfig.dfm:97
+msgid "DbNet/IP Password:"
+msgstr "DbNet/IP Heslo:"
+
+#. DIpConfig..GBUDP..Label11..Caption
+#: FrmIpConfig.dfm:106
+msgid "DbNet Address:"
+msgstr "DbNet Adresa:"
+
+#. DIpConfig..GBUDP..EIpAddr..Text
+#. DIpConfig..GBUDP..EGateway..Text
+#. DIpConfig..GBUDP..EPrimaryDNS..Text
+#. DIpConfig..GBUDP..ESecondaryDNS..Text
+#. FrmPcView..DrvDbNet..DbnConfig.Host
+#. ScriboProject..VizDrvDbNet..DbnConfig.Host
+#: FrmIpConfig.dfm:115 FrmIpConfig.dfm:133 FrmIpConfig.dfm:142
+#: FrmIpConfig.dfm:151 PcVizMain.dfm:430 SFrame.dfm:64
+msgid "192.168.97.10"
+msgstr ""
+
+#. DIpConfig..GBUDP..EMask..Text
+#: FrmIpConfig.dfm:124
+msgid "255.255.255.0"
+msgstr ""
+
+#. DIpConfig..GBUDP..ENetbiosName..Text
+#: FrmIpConfig.dfm:162
+msgid "SYBAS-PLC"
+msgstr ""
+
+#. DIpConfig..GBUDP..CbStaticIP..Caption
+#: FrmIpConfig.dfm:195
+msgid "IP Address: Static "
+msgstr "IP adresa: Pevná"
+
+#. DIpConfig..GBUDP..CbDynamicIP..Caption
+#: FrmIpConfig.dfm:206
+msgid " DHCP"
+msgstr ""
+
+#. DIpConfig..BBOk..Caption
+#. FUserManager..bbOk..Caption
+#: FrmIpConfig.dfm:216 Comp/UsersMgr.dfm:232
+msgid "OK"
+msgstr ""
+
+#. FrmSecondaryProjects..Caption
+#: FrmSecPrj.dfm:5
+msgid "Additional Projects"
+msgstr "Přídavné projekty"
+
+#. FrmSecondaryProjects..SbAdd..Hint
+#: FrmSecPrj.dfm:24
+msgid "Add Project ..."
+msgstr "Přidat projekt ..."
+
+#. FrmSecondaryProjects..BtnDel..Hint
+#: FrmSecPrj.dfm:46
+msgid "Remove Project"
+msgstr "Odstranit projekt"
+
+#. FrmSecondaryProjects..BtnUp..Hint
+#. FScribo..MainMenu..MnuPage..MnuPageOptions..MnuMovePageUp..Caption
+#. FScribo..MainMenu..MnuSignal..MnuMoveSignalUp..Caption
+#. FrmPcView..MainMenu..MnuPage..MnuPageOptions..MnuMovePageUp..Caption
+#. FrmPcView..MainMenu..MnuSignal..MoveUp1..Caption
+#. FrmLogging..Panel1..BtnUp..Hint
+#: FrmSecPrj.dfm:68 MainScribo.dfm:212 MainScribo.dfm:250 PcVizMain.dfm:204
+#: PcVizMain.dfm:229 PVLogPar.dfm:105
+msgid "Move Up"
+msgstr "Posun nahoru"
+
+#. FrmSecondaryProjects..BtnDown..Hint
+#. FScribo..MainMenu..MnuPage..MnuPageOptions..MnuMovePageDown..Caption
+#. FScribo..MainMenu..MnuSignal..MnuMoveSignalDown..Caption
+#. FrmPcView..MainMenu..MnuPage..MnuPageOptions..MnuMovePageDown..Caption
+#. FrmPcView..MainMenu..MnuSignal..MoveDown1..Caption
+#. FrmLogging..Panel1..BtnDown..Hint
+#: FrmSecPrj.dfm:90 MainScribo.dfm:217 MainScribo.dfm:256 PcVizMain.dfm:209
+#: PcVizMain.dfm:235 PVLogPar.dfm:83
+msgid "Move Down"
+msgstr "Posun dolů"
+
+#. FrmSecondaryProjects..OpenPrjDialog..DefaultExt
+#: FrmSecPrj.dfm:133
+msgid "dbf"
+msgstr ""
+
+#. FrmSecondaryProjects..OpenPrjDialog....Filter
+#: FrmSecPrj.dfm:136
+msgid ""
+"Variables                  (*.dbf)|*.dbf|All Files                     (*.*)|"
+"*.*"
+msgstr ""
+"Proměnné                     (*.dbf)|*.dbf|Všechny soubory          (*.*)|*.*"
+
+#. FrmSecondaryProjects..OpenPrjDialog..Title
+#: FrmSecPrj.dfm:138
+msgid "Add Project"
+msgstr "Přidat projekt"
+
+#. DUnitConfig..Caption
+#: FrmUnitConfig.dfm:6
+msgid "Unit config"
+msgstr "Konfigurace jednotky"
+
+#. DUnitConfig..PanelBottom..CbUploadEeprom..Caption
+#: FrmUnitConfig.dfm:52
+msgid "Upload &EEPROM data"
+msgstr ""
+
+#. DUnitConfig..PanelConfig..Label1..Caption
+#: FrmUnitConfig.dfm:74
+msgid "Communication:"
+msgstr "Komunikace:"
+
+#. DUnitConfig..PanelConfig..Label6..Caption
+#: FrmUnitConfig.dfm:84
+msgid "PC Address:"
+msgstr "Adresa PC:"
+
+#. DUnitConfig..PanelConfig..LAddress..Caption
+#: FrmUnitConfig.dfm:94
+msgid "PLC Address:"
+msgstr "Adresa PLC:"
+
+#. DUnitConfig..PanelConfig..GBUDP..Caption
+#: FrmUnitConfig.dfm:103
+msgid "UDP"
+msgstr ""
+
+#. DUnitConfig..PanelConfig..GBUDP..Label2..Caption
+#: FrmUnitConfig.dfm:114
+msgid "Host:"
+msgstr ""
+
+#. DUnitConfig..PanelConfig..GBUDP..Label3..Caption
+#: FrmUnitConfig.dfm:122
+msgid "Port PC:"
+msgstr ""
+
+#. DUnitConfig..PanelConfig..GBUDP..Label4..Caption
+#: FrmUnitConfig.dfm:130
+msgid "Port:"
+msgstr ""
+
+#. DUnitConfig..PanelConfig..GBUDP..Label5..Caption
+#. FormLogin..LPwd..Caption
+#: FrmUnitConfig.dfm:138 Comp/VizLogin.dfm:33
+msgid "Password:"
+msgstr "Heslo:"
+
+#. DUnitConfig..PanelConfig..GBUDP..Label7..Caption
+#: FrmUnitConfig.dfm:148
+msgid "Timeout:"
+msgstr ""
+
+#. DUnitConfig..PanelConfig..CBCommunication....Items.Strings
+#: FrmUnitConfig.dfm:209
+msgid "RS485 DbNet Master"
+msgstr ""
+
+#. DUnitConfig..PanelConfig..CBCommunication....Items.Strings
+#: FrmUnitConfig.dfm:210
+msgid "RS485 DbNet MultiMaster"
+msgstr ""
+
+#. DUnitConfig..PanelConfig..CBCommunication....Items.Strings
+#: FrmUnitConfig.dfm:211
+msgid "UDP     DbNet Master"
+msgstr ""
+
+#. DUnitConfig..PanelConfig..CBCommunication....Items.Strings
+#: FrmUnitConfig.dfm:212
+msgid "RS422 RowNet Master"
+msgstr ""
+
+#. DUnitConfig..PanelConfig..GBRS485..LCom..Caption
+#: FrmUnitConfig.dfm:246
+msgid "Com:"
+msgstr ""
+
+#. DUnitConfig..PanelConfig..GBRS485..LBaudRate..Caption
+#: FrmUnitConfig.dfm:254
+msgid "Baud rate:"
+msgstr "Baud. rychlost:"
+
+#. DUnitConfig..PanelConfig..GBRS485..panelRNet..LblFrom..Caption
+#: FrmUnitConfig.dfm:301
+msgid "Device:"
+msgstr "Jednotka:"
+
+#. DUnitConfig..PanelConfig..GBRS485..panelRNet..LblCurrent..Caption
+#: FrmUnitConfig.dfm:318
+msgid "Current Device:"
+msgstr "Aktuální jednotka:"
+
+#. DUnitConfig..PanelConfig..GBRS485..panelRNet..LblOffset..Caption
+#: FrmUnitConfig.dfm:327
+msgid "Device Offset:"
+msgstr "Offset jednotek:"
+
+#. DUnitConfig..PanelConfig..GBRS485..panelRNet..cbRange..Caption
+#: FrmUnitConfig.dfm:335
+msgid "Range of devices"
+msgstr "Rozsah jednotek"
+
+#. DUnitConfig..PanelConfig..GBRS485..panelRNet..cbRowNetRoute..Hint
+#: FrmUnitConfig.dfm:364
+msgid "Route to local device"
+msgstr "Routovat k místním jednotkám"
+
+#. DUnitConfig..PanelConfig..GBRS485..panelRNet..cbRowNetRoute..Caption
+#: FrmUnitConfig.dfm:365
+msgid "Route"
+msgstr ""
+
+#. DUnitConfig..PanelTop..Label8..Caption
+#: FrmUnitConfig.dfm:408
+msgid "Profile:"
+msgstr ""
+
+#. DUnitConfig..PanelTop..SbDetails..Hint
+#: FrmUnitConfig.dfm:416
+msgid "Details"
+msgstr "Detaily"
+
+#. DUnitConfig..PanelTop..SbSave..Hint
+#: FrmUnitConfig.dfm:472
+msgid "Save Profile As ..."
+msgstr "Uložit profil jako ..."
+
+#. DUnitConfig..PanelTop..SbDelete..Hint
+#: FrmUnitConfig.dfm:525
+msgid "Delete Profile"
+msgstr "Smazat profil"
+
+#. DUnitConfig..RegsMRU..Key
+#. FrmLoader..RegsMRU..Key
+#: FrmUnitConfig.dfm:592 FwLoader.dfm:1979
+msgid "Software\\SYBAS\\CfgModul"
+msgstr ""
+
+#. FWeekProgram..Caption
+#: FrmWeekProgram.dfm:6
+msgid "Week program"
+msgstr "Týdenní program"
+
+#. FWeekProgram..Panel1..BBCopyDen..Caption
+#: FrmWeekProgram.dfm:30
+msgid "&Copy day"
+msgstr "&Kopírovat den"
+
+#. FWeekProgram..Panel1..BBVlozitDen..Caption
+#: FrmWeekProgram.dfm:57
+msgid "&Paste day"
+msgstr "&Vložit den"
+
+#. FWeekProgram..Panel1..BBReadHw..Caption
+#: FrmWeekProgram.dfm:131
+msgid "&Read from HW"
+msgstr "&Přečíst z HW"
+
+#. FWeekProgram..Panel1..BBWriteHw..Caption
+#: FrmWeekProgram.dfm:158
+msgid "&Write to HW"
+msgstr "&Zapsat do HW"
+
+#. FWeekProgram..Panel1..BBLoad..Caption
+#: FrmWeekProgram.dfm:185
+msgid "&Load from file"
+msgstr "&Nahrát z disku"
+
+#. FWeekProgram..Panel1..BBSave..Caption
+#: FrmWeekProgram.dfm:207
+msgid "&Save to file"
+msgstr "&Uložit na disk"
+
+#. FWeekProgram..OpenDialog..DefaultExt
+#. FWeekProgram..SaveDialog..DefaultExt
+#: FrmWeekProgram.dfm:295 FrmWeekProgram.dfm:305
+msgid "WP"
+msgstr ""
+
+#. FWeekProgram..OpenDialog..FileName
+#. FWeekProgram..SaveDialog..FileName
+#: FrmWeekProgram.dfm:296 FrmWeekProgram.dfm:306
+msgid "Program.WP"
+msgstr ""
+
+#. FWeekProgram..OpenDialog....Filter
+#. FWeekProgram..SaveDialog....Filter
+#: FrmWeekProgram.dfm:299 FrmWeekProgram.dfm:309
+msgid ""
+"Week Programs          (*.wp)|*.wp|All Files                       (*.*)|*.*"
+msgstr ""
+"Týdenní programy          (*.wp)|*.wp|Všechny soubory            (*.*)|*.*"
+
+#. FrmStructure..Caption
+#. FScribo..MainMenu..MnuEdit..MnuStructure..Caption
+#: FStructure.dfm:6 MainScribo.dfm:153
+msgid "Structure"
+msgstr "Struktura"
+
+#. FrmStructure..GbFilter..Caption
+#. FGraph..PanelTabulka..ControlBarTable..TBarTable..TbFilter..Hint
+#. FGraph..PanelTabulka..ControlBarTable..TBarTable..TbFilter..Caption
+#. FGraph..PanelTabulka..ControlBarTable..TBarFilter..Caption
+#. FGraph..PanelTabulka..ControlBarTable..TBarFilter..TbAddFilter..Caption
+#: FStructure.dfm:55 Comp/FrmGraph.dfm:532 Comp/FrmGraph.dfm:533
+#: Comp/FrmGraph.dfm:546 Comp/FrmGraph.dfm:666
+msgid "Filter"
+msgstr "Filtr"
+
+#. FrmStructure..GbFilter..LFilter..Caption
+#: FStructure.dfm:66
+msgid "Filter:"
+msgstr "Filtr:"
+
+#. FrmStructure..GbFilter..Label1..Caption
+#: FStructure.dfm:74
+msgid "Signal:"
+msgstr "Signál:"
+
+#. FrmStructure..GbFilter..CbControls..Caption
+#: FStructure.dfm:103
+msgid "Visual controls"
+msgstr "Ovládací prvky"
+
+#. FrmStructure..GbFilter..CbComponents..Caption
+#: FStructure.dfm:114
+msgid "Components"
+msgstr "Komponenty"
+
+#. FormTime..Caption
+#: FTime.dfm:6
+msgid "Set Device Time"
+msgstr "Nastavit čas v zařízení"
+
+#. FormTime..LEHw..Caption
+#: FTime.dfm:23
+msgid "Device Time:"
+msgstr "Čas v zařízení:"
+
+#. FormTime..LEPc..Caption
+#: FTime.dfm:31
+msgid "System Time:"
+msgstr "Systémový čas:"
+
+#. FormTime..Label1..Caption
+#: FTime.dfm:57
+msgid "Device (Project):"
+msgstr "Jednotka (projekt):"
+
+#. FormTime..Panel1..BBNastav..Hint
+#. FormTime..Panel1..BBSetAll..Hint
+#: FTime.dfm:72 FTime.dfm:176
+msgid "Set device time"
+msgstr "Nastavit čas v zařízení"
+
+#. FormTime..Panel1..BBNastav..Caption
+#: FTime.dfm:73
+msgid "&Set Time"
+msgstr "&Nastavit čas"
+
+#. FormTime..Panel1..BBNechat..Caption
+#. FUserManager..bbClose..Caption
+#: FTime.dfm:145 Comp/UsersMgr.dfm:156
+msgid "&Close"
+msgstr "&Zavřít"
+
+#. FormTime..Panel1..BBSetAll..Caption
+#: FTime.dfm:177
+msgid "&Set All"
+msgstr ""
+
+#. FormTime..CbUtc..Hint
+#: FTime.dfm:250
+msgid "Device time in UTC"
+msgstr "Čas v zařízení je v UTC"
+
+#. FormTime..CbUtc..Caption
+#. FrmLogging..Panel1..CbUtc..Caption
+#: FTime.dfm:252 PVLogPar.dfm:258
+msgid "UTC"
+msgstr ""
+
+#. FormTime..CbAutoTime..Hint
+#: FTime.dfm:260
+msgid "Automatically synchronize PLC time with PC"
+msgstr "Automaticky synchronizuj čas PLC s PC"
+
+#. FormTime..CbAutoTime..Caption
+#: FTime.dfm:261
+msgid "Automatic time correction"
+msgstr "Automatická korekce času"
+
+#. FormTime..CbDevice..TabChar
+#: FTime.dfm:271
+msgid "|"
+msgstr ""
+
+#. FormTime..CbDevice..ColumnDefs
+#: FTime.dfm:272
+msgid "30 "
+msgstr ""
+
+#. FrmLoader..Caption
+#: FwLoader.dfm:5
+msgid "Loader"
+msgstr "Nahrání FW"
+
+#. FrmLoader..ToolBar1..TbSearch..Caption
+#. FrmLogging..PopupMenu1..MnuSearch..Caption
+#. FGraph..PopupMenuMain..MnuSearch..Caption
+#: FwLoader.dfm:31 PVLogPar.dfm:417 Comp/FrmGraph.dfm:3162
+msgid "Search"
+msgstr "Hledání"
+
+#. FrmLoader..ToolBar1..TbLoad..Caption
+#. FrmPictEditor..BtnLoad..Caption
+#: FwLoader.dfm:47 PicturePropertyEditor.dfm:65
+msgid "Load"
+msgstr "Nahrát"
+
+#. FrmLoader..ToolBar1..TbConfig..Caption
+#: FwLoader.dfm:57
+msgid "Config"
+msgstr "Konfig."
+
+#. FrmLoader..ToolBar1..TbWrite..Caption
+#: FwLoader.dfm:72
+msgid "Program"
+msgstr "Program."
+
+#. FrmLoader..ToolBar1..TbVerify..Caption
+#: FwLoader.dfm:80
+msgid "Verify"
+msgstr "Kontrola"
+
+#. FrmLoader..Status..Font.Name
+#: FwLoader.dfm:155
+msgid "Courier New"
+msgstr ""
+
+#. FrmLoader..OpenDialog..DefaultExt
+#: FwLoader.dfm:1970
+msgid "hex"
+msgstr ""
+
+#. FrmLoader..OpenDialog....Filter
+#: FwLoader.dfm:1973
+msgid "Intel HEX files    (*.hex)|*.hex|All files               (*.*)|*.*"
+msgstr ""
+"Soubory Intel HEX            (*.hex)|*.hex|Všechny soubory               (*."
+"*)|*.*"
+
+#. FrmLoader..MnuSearch..MnuRefreshdata..Caption
+#: FwLoader.dfm:1992
+msgid "Refresh data"
+msgstr "Obnovit data"
+
+#. FrmLoader..MnuSearch..N1..Caption
+#. FScribo..MainMenu..MnuProject..N2..Caption
+#. FScribo..MainMenu..MnuProject..N1..Caption
+#. FScribo..MainMenu..MnuProject..N9..Caption
+#. FScribo..MainMenu..MnuEdit..N13WindowList..Caption
+#. FScribo..MainMenu..MnuEdit..N10..Caption
+#. FScribo..MainMenu..MnuPage..MnuPageSep..Caption
+#. FScribo..MainMenu..MnuSignal..N11..Caption
+#. FScribo..MainMenu..MnuSignal..N12..Caption
+#. FScribo..MainMenu..MnuSignal..N3..Caption
+#. FScribo..MainMenu..MnuOptions..N5..Caption
+#. FScribo..MnuDesigner..MnuSpliter..Caption
+#. FScribo..MnuDesigner..MnuAlign..N6..Caption
+#. FScribo..MnuDesigner..MnuAlign..N4..Caption
+#. FScribo..MnuDesigner..MnuDsgnCopy2..Caption
+#. FScribo..MnuDesigner..MnuDsgnPaste2..Caption
+#. FrmPcView..MainMenu..File1..N2..Caption
+#. FrmPcView..MainMenu..File1..N1..Caption
+#. FrmPcView..MainMenu..MnuPage..MnuPageSep..Caption
+#. FrmPcView..MainMenu..MnuSignal..N3..Caption
+#. FrmPcView..MainMenu..MnuOptions..N5..Caption
+#. FormData..pmTree..N1..Caption
+#. FGraph..PmRefresh..N1..Caption
+#: FwLoader.dfm:1996 MainScribo.dfm:104 MainScribo.dfm:114 MainScribo.dfm:122
+#: MainScribo.dfm:161 MainScribo.dfm:175 MainScribo.dfm:193 MainScribo.dfm:262
+#: MainScribo.dfm:298 MainScribo.dfm:307 MainScribo.dfm:339 MainScribo.dfm:522
+#: MainScribo.dfm:531 MainScribo.dfm:554 MainScribo.dfm:578 MainScribo.dfm:602
+#: PcVizMain.dfm:156 PcVizMain.dfm:166 PcVizMain.dfm:185 PcVizMain.dfm:241
+#: PcVizMain.dfm:269 Comp/DataDlg.dfm:1126 Comp/FrmGraph.dfm:3099
+msgid "-"
+msgstr ""
+
+#. FrmLoader..MnuSearch..MnuDiffMode..Caption
+#: FwLoader.dfm:2000
+msgid "Diff mode"
+msgstr "Rozdílový režim"
+
+#. FScribo..Caption
+#. FScribo..VizDdeServer..Application
+#. FrmPcView..Caption
+#. FrmPcView..VizDdeServer1..Application
+#: MainScribo.dfm:4 MainScribo.dfm:480 PcVizMain.dfm:4 PcVizMain.dfm:463
+msgid "Scribo"
+msgstr ""
+
+#. FScribo..GrBtn..Caption
+#. FrmPcView..GrBtn..Caption
+#: MainScribo.dfm:25 PcVizMain.dfm:27
+msgid "Graf"
+msgstr ""
+
+#. FScribo..GrBtn..LoginUser
+#. FScribo..TcpDriver..LoginUser
+#. FScribo..VizServer..LoginUser
+#. FrmPcView..GrBtn..LoginUser
+#. FrmPcView..TcpDriver..LoginUser
+#. FrmPcView..VizServer..LoginUser
+#: MainScribo.dfm:52 MainScribo.dfm:503 MainScribo.dfm:511 PcVizMain.dfm:54
+#: PcVizMain.dfm:486 PcVizMain.dfm:494
+msgid "user"
+msgstr ""
+
+#. FScribo..GrBtn..LoginPassword
+#. FScribo..TcpDriver..LoginPassword
+#. FScribo..VizServer..LoginPassword
+#. FrmPcView..GrBtn..LoginPassword
+#. FrmPcView..TcpDriver..LoginPassword
+#. FrmPcView..VizServer..LoginPassword
+#: MainScribo.dfm:53 MainScribo.dfm:504 MainScribo.dfm:512 PcVizMain.dfm:55
+#: PcVizMain.dfm:487 PcVizMain.dfm:495
+msgid "password"
+msgstr ""
+
+#. FScribo..MainMenu..MnuProject..MnuNewProject..Caption
+#. FrmPcView..MainMenu..File1..MnuNewProject..Caption
+#: MainScribo.dfm:88 PcVizMain.dfm:140
+msgid "New"
+msgstr "Nový"
+
+#. FScribo..MainMenu..MnuProject..OpenProject1..Caption
+#. FrmPcView..MainMenu..File1..OpenProject1..Caption
+#: MainScribo.dfm:93 PcVizMain.dfm:145
+msgid "Open"
+msgstr "Otevřít"
+
+#. FScribo..MainMenu..MnuProject..MnuActive..Caption
+#. FrmPcView..MainMenu..File1..MnuActive..Caption
+#: MainScribo.dfm:108 PcVizMain.dfm:160
+msgid "Active"
+msgstr "Aktivní"
+
+#. FScribo..MainMenu..MnuProject..MnuLogin..Caption
+#: MainScribo.dfm:117
+msgid "Login ..."
+msgstr "Přihlášení ..."
+
+#. FScribo..MainMenu..MnuProject..MnuExit..Caption
+#. FrmPcView..MainMenu..File1..Exit1..Caption
+#: MainScribo.dfm:125 PcVizMain.dfm:169
+msgid "Exit"
+msgstr "Konec"
+
+#. FScribo..MainMenu..MnuEdit..Caption
+#. FScribo..MainMenu..MnuSignal..MnuEditSignal..Caption
+#: MainScribo.dfm:131 MainScribo.dfm:238
+msgid "Edit"
+msgstr "Editace"
+
+#. FScribo..MainMenu..MnuEdit..MnuDesignMode..Caption
+#: MainScribo.dfm:135
+msgid "Design Mode"
+msgstr "Režim návrhu"
+
+#. FScribo..MainMenu..MnuEdit..MnuObjectInspector..Caption
+#. FrmInspector..Caption
+#: MainScribo.dfm:141 ScriboInsp.dfm:6
+msgid "Object Inspector"
+msgstr "Objekt Inspector"
+
+#. FScribo..MainMenu..MnuEdit..MnuWindowList..Caption
+#: MainScribo.dfm:158
+msgid "Windows"
+msgstr "Okna"
+
+#. FScribo..MainMenu..MnuEdit..MnuShowLibrary..Caption
+#: MainScribo.dfm:167
+msgid "Show Library"
+msgstr "Zobrazit knihovnu"
+
+#. FScribo..MainMenu..MnuEdit..MnuShowStructure..Caption
+#: MainScribo.dfm:172
+msgid "Show Structure"
+msgstr "Zobrazit strukturu"
+
+#. FScribo..MainMenu..MnuEdit..MnuUsers..Caption
+#: MainScribo.dfm:178
+msgid "User Manager ..."
+msgstr "Správce uživatelů ..."
+
+#. FScribo..MainMenu..MnuPage..Caption
+#. FrmPcView..MainMenu..MnuPage..Caption
+#: MainScribo.dfm:184 PcVizMain.dfm:176
+msgid "Page"
+msgstr "List"
+
+#. FScribo..MainMenu..MnuPage..MnuPage1..Caption
+#. FrmPcView..TabControl....Tabs.Strings
+#. FrmPcView..MainMenu..MnuPage..MnuPage1..Caption
+#: MainScribo.dfm:186 PcVizMain.dfm:67 PcVizMain.dfm:178
+msgid "Page 1"
+msgstr "List 1"
+
+#. FScribo..MainMenu..MnuPage..MnuPageOptions..Caption
+#. FrmPcView..MainMenu..MnuPage..MnuPageOptions..Caption
+#: MainScribo.dfm:196 PcVizMain.dfm:188
+msgid "Pages"
+msgstr "Listy"
+
+#. FScribo..MainMenu..MnuPage..MnuPageOptions..MnuNewPage..Caption
+#. FrmPcView..MainMenu..MnuPage..MnuPageOptions..MnuNewPage..Caption
+#: MainScribo.dfm:199 PcVizMain.dfm:191
+msgid "New Page"
+msgstr "Nový list"
+
+#. FScribo..MainMenu..MnuPage..MnuPageOptions..MnuDeletePage..Caption
+#. FrmPcView..MainMenu..MnuPage..MnuPageOptions..MnuDeletePage..Caption
+#: MainScribo.dfm:207 PcVizMain.dfm:199
+msgid "Delete Page"
+msgstr "Smaž list"
+
+#. FScribo..MainMenu..MnuSignal..Caption
+#. FrmPcView..MainMenu..MnuSignal..Caption
+#: MainScribo.dfm:223 PcVizMain.dfm:215
+msgid "Signal"
+msgstr "Signál"
+
+#. FScribo..MainMenu..MnuSignal..MnuAddSignal..Caption
+#. FrmPcView..MainMenu..MnuSignal..MnuAddSignal..Caption
+#: MainScribo.dfm:226 PcVizMain.dfm:217
+msgid "Add"
+msgstr "Přidat"
+
+#. FScribo..MainMenu..MnuSignal..MnuAddSeparator..Caption
+#: MainScribo.dfm:232
+msgid "Add Separator"
+msgstr "Přidat oddělovač"
+
+#. FScribo..MainMenu..MnuSignal..MnuCopySignals..Caption
+#: MainScribo.dfm:265
+msgid "Copy Signals"
+msgstr "Kopírovat signály"
+
+#. FScribo..MainMenu..MnuSignal..MnuCutSignals..Caption
+#: MainScribo.dfm:271
+msgid "Cut Signals"
+msgstr "Vyjmout signály"
+
+#. FScribo..MainMenu..MnuSignal..MnuPasteSignals..Caption
+#: MainScribo.dfm:277
+msgid "Paste Signals"
+msgstr "Vložit signály"
+
+#. FScribo..MainMenu..MnuSignal..MnuSavAsPreset..Caption
+#: MainScribo.dfm:283
+msgid "Save as Preset ..."
+msgstr "Uložit parametry ..."
+
+#. FScribo..MainMenu..MnuSignal..MnuLoadPreset..Caption
+#: MainScribo.dfm:288
+msgid "Load Preset ..."
+msgstr "Nahrát parametry ..."
+
+#. FScribo..MainMenu..MnuSignal..MnuSignalsToControls..Caption
+#: MainScribo.dfm:293
+msgid "Create Controls ..."
+msgstr "Vytvořit ovl. prvky ..."
+
+#. FScribo..MainMenu..MnuSignal..MnuSelectRange..Caption
+#: MainScribo.dfm:302
+msgid "Select Range"
+msgstr "Výběr rozsahu"
+
+#. FScribo..MainMenu..MnuSignal..MnuSignalEditor..Caption
+#. FrmPcView..MainMenu..MnuSignal..MnuSignalEditor..Caption
+#. FormData..Caption
+#: MainScribo.dfm:310 PcVizMain.dfm:244 Comp/DataDlg.dfm:5
+msgid "Signal Editor"
+msgstr "Editor signálů"
+
+#. FScribo..MainMenu..MnuOptions..Communication1..Caption
+#. FrmPcView..MainMenu..MnuOptions..Communication1..Caption
+#: MainScribo.dfm:319 PcVizMain.dfm:253
+msgid "Communication ..."
+msgstr "Komunikace ..."
+
+#. FScribo..MainMenu..MnuOptions..MnuLoggerOptions..Caption
+#. FrmPcView..MainMenu..MnuOptions..MnuLoggerOptions..Caption
+#: MainScribo.dfm:323 PcVizMain.dfm:257
+msgid "Logger Options ..."
+msgstr "Parametry loggeru ..."
+
+#. FScribo..MainMenu..MnuOptions..MnuProjectOptions..Caption
+#. FrmPcView..MainMenu..MnuOptions..MnuProjectOptions..Caption
+#: MainScribo.dfm:328 PcVizMain.dfm:262
+msgid "Project Options ..."
+msgstr "Parametry projektu ..."
+
+#. FScribo..MainMenu..MnuOptions..MnuSecondaryProjects..Caption
+#: MainScribo.dfm:332
+msgid "Additional Projects ..."
+msgstr "Přídavné projekty ..."
+
+#. FScribo..MainMenu..MnuOptions..MnuWeekPrograms..Caption
+#. FrmPcView..MainMenu..MnuOptions..MnuWeekPrograms..Caption
+#: MainScribo.dfm:336 PcVizMain.dfm:266
+msgid "Week Programs"
+msgstr "Týdenní programy"
+
+#. FScribo..MainMenu..MnuOptions..MnuSystemTime..Caption
+#. FrmPcView..MainMenu..MnuOptions..MnuSystemTime..Caption
+#: MainScribo.dfm:342 PcVizMain.dfm:272
+msgid "System Time ..."
+msgstr "Systémový čas ..."
+
+#. FScribo..MainMenu..MnuOptions..MnuIpConfig..Caption
+#. FrmPcView..MainMenu..MnuOptions..MnuIpConfig..Caption
+#: MainScribo.dfm:346 PcVizMain.dfm:276
+msgid "IP Configuration ..."
+msgstr "Konfigurace IP ..."
+
+#. FScribo..MainMenu..MnuOptions..MnuIqRFDevicesConfig..Caption
+#: MainScribo.dfm:351
+msgid "IqRF Devices Config ..."
+msgstr "Konfigurace zařízení IqRF ..."
+
+#. FScribo..MainMenu..MnuOptions..MnuFWLoader..Caption
+#. FrmPcView..MainMenu..MnuOptions..MnuFWLoader..Caption
+#: MainScribo.dfm:356 PcVizMain.dfm:280
+msgid "FW Loader ..."
+msgstr "Nahrát firmware ..."
+
+#. FScribo..MainMenu..MnuGraph..Caption
+#. FrmPcView..MainMenu..MnuGraph..Caption
+#: MainScribo.dfm:362 PcVizMain.dfm:285
+msgid "Graph  "
+msgstr "Graf"
+
+#. FScribo..DBFSig......Name
+#. FrmPcView..DBFSig......Name
+#. FUserManager..GbUsers..DgUsers......Title.Caption
+#: MainScribo.dfm:371 PcVizMain.dfm:294 Comp/UsersMgr.dfm:204
+msgid "ID"
+msgstr ""
+
+#. FScribo..DBFSig......Name
+#. FrmPcView..DBFSig......Name
+#: MainScribo.dfm:375 PcVizMain.dfm:298
+msgid "Owner"
+msgstr ""
+
+#. FScribo..DBFSig......Name
+#. FrmPcView..DBFSig......Name
+#: MainScribo.dfm:383 PcVizMain.dfm:306
+msgid "Typ"
+msgstr ""
+
+#. FScribo..DBFSig......Name
+#. FrmPcView..DBFSig......Name
+#: MainScribo.dfm:391 PcVizMain.dfm:314
+msgid "RowIndex"
+msgstr ""
+
+#. FScribo..DBFSig......Name
+#. FrmPcView..DBFSig......Name
+#: MainScribo.dfm:395 PcVizMain.dfm:318
+msgid "ColIndex"
+msgstr ""
+
+#. FScribo..DBFSig......Name
+#. FrmPcView..DBFSig......Name
+#: MainScribo.dfm:399 PcVizMain.dfm:322
+msgid "Name"
+msgstr ""
+
+#. FScribo..DBFSig......Name
+#. FrmPcView..DBFSig......Name
+#: MainScribo.dfm:404 PcVizMain.dfm:327
+msgid "Popis"
+msgstr ""
+
+#. FScribo..DBFSig......Name
+#. FScribo..VizDdeServer..Topic
+#. FrmPcView..DBFSig......Name
+#. FrmPcView..VizDdeServer1..Topic
+#. FGraph..ControlBar1..TBarKriz..Caption
+#: MainScribo.dfm:409 MainScribo.dfm:481 PcVizMain.dfm:332 PcVizMain.dfm:464
+#: Comp/FrmGraph.dfm:1086
+msgid "Data"
+msgstr ""
+
+#. FScribo..DBFSig......Name
+#. FrmPcView..DBFSig......Name
+#: MainScribo.dfm:413 PcVizMain.dfm:336
+msgid "K"
+msgstr ""
+
+#. FScribo..DBFSig......Name
+#. FrmPcView..DBFSig......Name
+#: MainScribo.dfm:417 PcVizMain.dfm:340
+msgid "Q"
+msgstr ""
+
+#. FScribo..DBFSig......Name
+#. FrmPcView..DBFSig......Name
+#: MainScribo.dfm:421 PcVizMain.dfm:344
+msgid "Rights"
+msgstr ""
+
+#. FScribo..DBFSig......Name
+#. FrmPcView..DBFSig......Name
+#: MainScribo.dfm:425 PcVizMain.dfm:348
+msgid "Umisteni"
+msgstr ""
+
+#. FScribo..DBFSig......Name
+#. FrmPcView..DBFSig......Name
+#: MainScribo.dfm:430 PcVizMain.dfm:353
+msgid "Svorka"
+msgstr ""
+
+#. FScribo..DBFSig......Name
+#. FrmPcView..DBFSig......Name
+#: MainScribo.dfm:435 PcVizMain.dfm:358
+msgid "Info1"
+msgstr ""
+
+#. FScribo..DBFSig......Name
+#. FrmPcView..DBFSig......Name
+#: MainScribo.dfm:440 PcVizMain.dfm:363
+msgid "Info2"
+msgstr ""
+
+#. FScribo..DBFSig......Name
+#. FrmPcView..DBFSig......Name
+#: MainScribo.dfm:445 PcVizMain.dfm:368
+msgid "Info3"
+msgstr ""
+
+#. FScribo..OpenPrjDialog..DefaultExt
+#: MainScribo.dfm:463
+msgid "sbp"
+msgstr ""
+
+#. FScribo..OpenPrjDialog....Filter
+#: MainScribo.dfm:466
+msgid ""
+"Scribo projects       (*.sbp,*.pcv)|*.pcv;*.sbp|Variables                  "
+"(*.dbf)|*.dbf|All Files                     (*.*)|*.*"
+msgstr ""
+"Projekty Scribo             (*.sbp,*.pcv)|*.pcv;*.sbp|"
+"Proměnné                     (*.dbf)|*.dbf|Všechny soubory          (*.*)|*.*"
+
+#. FScribo..OpenPrjDialog..Title
+#. FrmPcView..OpenPrjDialog..Title
+#: MainScribo.dfm:468 PcVizMain.dfm:442
+msgid "Open project"
+msgstr "Otevřít projekt"
+
+#. FScribo..WebServer..ServerSoftware
+#. FrmPcView..WebServer..ServerSoftware
+#: MainScribo.dfm:487 PcVizMain.dfm:470
+msgid "Sybas_Scribo/1.0"
+msgstr ""
+
+#. FScribo..WebServer..ServerName
+#. FrmPcView..WebServer..ServerName
+#: MainScribo.dfm:492 PcVizMain.dfm:475
+msgid "Visualisation"
+msgstr ""
+
+#. FScribo..TcpDriver..Host
+#. FrmPcView..TcpDriver..Host
+#: MainScribo.dfm:501 PcVizMain.dfm:484
+msgid "127.0.0.1"
+msgstr ""
+
+#. FScribo..MnuDesigner..MnuAlign..Caption
+#: MainScribo.dfm:525
+msgid "Align"
+msgstr "Zarovnání"
+
+#. FScribo..MnuDesigner..MnuAlign..MnuAligntoGrid..Caption
+#: MainScribo.dfm:527
+msgid "Align to &Grid"
+msgstr "Zarovnat ke mřížce"
+
+#. FScribo..MnuDesigner..MnuAlign..MnuAlignLeftSides..Caption
+#: MainScribo.dfm:535
+msgid "&Left Sides"
+msgstr "&Levé strany"
+
+#. FScribo..MnuDesigner..MnuAlign..MnuAlignRightSides..Caption
+#: MainScribo.dfm:540
+msgid "&Right Sides"
+msgstr "&Pravé strany"
+
+#. FScribo..MnuDesigner..MnuAlign..MnuAlignTopSides..Caption
+#: MainScribo.dfm:545
+msgid "&Top Sides"
+msgstr "&Horní strany"
+
+#. FScribo..MnuDesigner..MnuAlign..MnuAlignBottomSides..Caption
+#: MainScribo.dfm:550
+msgid "&Bottom Sides"
+msgstr "&Spodní strany"
+
+#. FScribo..MnuDesigner..MnuAlign..MnuAlignSameWidth..Caption
+#: MainScribo.dfm:558
+msgid "Same &Width"
+msgstr "Stejnou šíř&ku"
+
+#. FScribo..MnuDesigner..MnuAlign..MnuAlignSameHeight..Caption
+#: MainScribo.dfm:563
+msgid "Same &Height"
+msgstr "Stejnou &výšku"
+
+#. FScribo..MnuDesigner..MnuBringtoFront..Caption
+#: MainScribo.dfm:569
+msgid "Bring to &Front"
+msgstr "Přesunout &dopředu"
+
+#. FScribo..MnuDesigner..MnuSendtoBack..Caption
+#: MainScribo.dfm:574
+msgid "Send to &Back"
+msgstr "Odsunout do&zadu"
+
+#. FScribo..MnuDesigner..MnuCopytoClipboard..Caption
+#. FGraph..ControlBar1..TBarTisk..TbCopy..Caption
+#: MainScribo.dfm:583 Comp/FrmGraph.dfm:1333
+msgid "Copy"
+msgstr "Kopírovat"
+
+#. FScribo..MnuDesigner..MnuPaste..Caption
+#: MainScribo.dfm:588
+msgid "Paste"
+msgstr "Vložit"
+
+#. FScribo..MnuDesigner..MnuCut..Caption
+#: MainScribo.dfm:593
+msgid "Cut"
+msgstr "Vyjmout"
+
+#. FScribo..MnuDesigner..MnuSaveAsTemplate..Caption
+#: MainScribo.dfm:607
+msgid "Save as Template"
+msgstr "Uložit jako šablonu"
+
+#. FScribo..MnuDesigner..MnuListProperties..Caption
+#: MainScribo.dfm:615
+msgid "Copy All Properies"
+msgstr "Kopírovat všechny vlastnosti"
+
+#. FScribo..DlgLoadParams..DefaultExt
+#. FScribo..DlgSaveParams..DefaultExt
+#: MainScribo.dfm:626 MainScribo.dfm:636
+msgid "par"
+msgstr ""
+
+#. FScribo..DlgLoadParams....Filter
+#. FScribo..DlgSaveParams....Filter
+#: MainScribo.dfm:629 MainScribo.dfm:639
+msgid ""
+"Parameter Values       (*.par)|*.par|All Files                        (*.*)|"
+"*.*"
+msgstr ""
+"Hodnoty parametrů                 (*.par)|*.par|Všechny "
+"soubory                    (*.*)|*.*"
+
+#. FScribo..DlgLoadParams..Title
+#: MainScribo.dfm:631
+msgid "Load Parameters"
+msgstr "Nahrát parametry"
+
+#. FScribo..DlgSaveParams..Title
+#: MainScribo.dfm:641
+msgid "Save Parameters"
+msgstr "Uložit parametry"
+
+#. FrmProjectOptions..Caption
+#: PcPrjOpt.dfm:5
+msgid "Project Options"
+msgstr "Parametry projektu"
+
+#. FrmProjectOptions..GBbNetwork..Caption
+#: PcPrjOpt.dfm:20
+msgid "Network Options"
+msgstr "Parametry sítě"
+
+#. FrmProjectOptions..GBbNetwork..RgNet..Caption
+#: PcPrjOpt.dfm:27
+msgid "Network Mode"
+msgstr "Režim v síti"
+
+#. FrmProjectOptions..GBbNetwork..RgNet....Items.Strings
+#: PcPrjOpt.dfm:30
+msgid "Local mode"
+msgstr "Lokální režim"
+
+#. FrmProjectOptions..GBbNetwork..RgNet....Items.Strings
+#: PcPrjOpt.dfm:31
+msgid "Server mode"
+msgstr "Server"
+
+#. FrmProjectOptions..GBbNetwork..RgNet....Items.Strings
+#: PcPrjOpt.dfm:32
+msgid "Client mode"
+msgstr "Klient"
+
+#. FrmProjectOptions..GBbNetwork..EDataPort..EditLabel.Caption
+#: PcPrjOpt.dfm:42
+msgid "Data Port:"
+msgstr "Port pro data:"
+
+#. FrmProjectOptions..GBbNetwork..EGraphPort..EditLabel.Caption
+#: PcPrjOpt.dfm:53
+msgid "Graph Port:"
+msgstr "Port pro graf:"
+
+#. FrmProjectOptions..GBbNetwork..EHost..EditLabel.Caption
+#: PcPrjOpt.dfm:64
+msgid "Server Address:"
+msgstr "IP adresa serveru:"
+
+#. FrmProjectOptions..GbWebServer..Caption
+#: PcPrjOpt.dfm:93
+msgid "Web Server Options"
+msgstr "Volby pro Web server"
+
+#. FrmProjectOptions..GbWebServer..CbEnableWebSvr..Caption
+#: PcPrjOpt.dfm:100
+msgid "Enable Web Server"
+msgstr "Povolit Web server"
+
+#. FrmProjectOptions..GbWebServer..EHttpPort..EditLabel.Caption
+#: PcPrjOpt.dfm:110
+msgid "Http Port:"
+msgstr ""
+
+#. FrmProjectOptions..GbWebServer..EUserName..EditLabel.Caption
+#: PcPrjOpt.dfm:121
+msgid "User Name:"
+msgstr "Jméno uživatele:"
+
+#. FrmProjectOptions..GbWebServer..EUserPassword..EditLabel.Caption
+#: PcPrjOpt.dfm:131
+msgid "User Password:"
+msgstr "Heslo  uživatele:"
+
+#. FrmProjectOptions..GbWebServer..EAdminName..EditLabel.Caption
+#: PcPrjOpt.dfm:141
+msgid "Admin Name:"
+msgstr "Jméno správce:"
+
+#. FrmProjectOptions..GbWebServer..EAdminPassword..EditLabel.Caption
+#: PcPrjOpt.dfm:151
+msgid "Admin Password:"
+msgstr "Heslo správce:"
+
+#. FrmProjectOptions..GbOther..Caption
+#: PcPrjOpt.dfm:160
+msgid "Other Options"
+msgstr "Další volby"
+
+#. FrmProjectOptions..GbOther..CbOpcServer..Caption
+#: PcPrjOpt.dfm:167
+msgid "Enable OPC Server"
+msgstr "Povolit OPC server"
+
+#. FrmProjectOptions..GbOther..CbDdeServer..Caption
+#: PcPrjOpt.dfm:175
+msgid "Enable DDE Server"
+msgstr "Povolit DDE server"
+
+#. FrmPcView..TabControl..VizGrid1......Text
+#: PcVizMain.dfm:90
+msgid " %n"
+msgstr ""
+
+#. FrmPcView..TabControl..VizGrid1......Text
+#: PcVizMain.dfm:100
+msgid " %p"
+msgstr ""
+
+#. FrmPcView..TabControl..VizGrid1......Text
+#: PcVizMain.dfm:109
+msgid "%.1f "
+msgstr ""
+
+#. FrmPcView..TabControl..VizGrid1......Text
+#: PcVizMain.dfm:118
+msgid " %1I"
+msgstr ""
+
+#. FrmPcView..DrvDbNet......Name
+#. ScriboProject..VizDrvDbNet......Name
+#: PcVizMain.dfm:388 SFrame.dfm:22
+msgid "IntData"
+msgstr ""
+
+#. FrmPcView..DrvDbNet......Name
+#. ScriboProject..VizDrvDbNet......Name
+#: PcVizMain.dfm:395 SFrame.dfm:29
+msgid "LongData"
+msgstr ""
+
+#. FrmPcView..DrvDbNet......Name
+#. ScriboProject..VizDrvDbNet......Name
+#: PcVizMain.dfm:402 SFrame.dfm:36
+msgid "FloatData"
+msgstr ""
+
+#. FrmPcView..DrvDbNet......Name
+#. ScriboProject..VizDrvDbNet......Name
+#: PcVizMain.dfm:409 SFrame.dfm:43
+msgid "EprIntData"
+msgstr ""
+
+#. FrmPcView..DrvDbNet......Name
+#. ScriboProject..VizDrvDbNet......Name
+#: PcVizMain.dfm:416 SFrame.dfm:50
+msgid "EprLongData"
+msgstr ""
+
+#. FrmPcView..DrvDbNet......Name
+#. ScriboProject..VizDrvDbNet......Name
+#: PcVizMain.dfm:423 SFrame.dfm:57
+msgid "EprFloatData"
+msgstr ""
+
+#. FrmPcView..DrvDbNet..DbnConfig.Com
+#. ScriboProject..VizDrvDbNet..DbnConfig.Com
+#: PcVizMain.dfm:429 SFrame.dfm:63
+msgid "COM1"
+msgstr ""
+
+#. FrmPcView..OpenPrjDialog..DefaultExt
+#: PcVizMain.dfm:437
+msgid "pcv"
+msgstr ""
+
+#. FrmPcView..OpenPrjDialog....Filter
+#: PcVizMain.dfm:440
+msgid ""
+"Scribo projects       (*.pcv)|*.pcv|Variables                  (*.dbf)|*.dbf|"
+"All Files                     (*.*)|*.*"
+msgstr ""
+
+#. FrmPcView..VizLogger..DataTable
+#. ScriboProject..VizLogger..DataTable
+#: PcVizMain.dfm:456 SFrame.dfm:74
+msgid "yyyy_mm\"\\Data_\"yy_mm_dd\".dbf\""
+msgstr ""
+
+#. FrmPcView..VizLogger..EventTable
+#. ScriboProject..VizLogger..EventTable
+#: PcVizMain.dfm:457 SFrame.dfm:75
+msgid "yyyy_mm\"\\Events_\"yy_mm\".dbf\""
+msgstr ""
+
+#. FrmPictEditor..Caption
+#: PicturePropertyEditor.dfm:4
+msgid "Picture Editor"
+msgstr "Editor obrázku"
+
+#. FrmPictEditor..BtnOk..Caption
+#: PicturePropertyEditor.dfm:45
+msgid "Ok"
+msgstr ""
+
+#. FrmPictEditor..BtnClear..Caption
+#: PicturePropertyEditor.dfm:83
+msgid "Clear"
+msgstr "Vyčistit"
+
+#. FrmLogging..Caption
+#: PVLogPar.dfm:5
+msgid "Data Logging"
+msgstr "Záznam dat"
+
+#. FrmLogging..Panel1..BtnDel..Hint
+#: PVLogPar.dfm:61
+msgid "Remove Signal"
+msgstr "Smazat signál"
+
+#. FrmLogging..Panel1..Label1..Caption
+#: PVLogPar.dfm:128
+msgid "Sample Period:"
+msgstr "Vzorkovací perioda:"
+
+#. FrmLogging..Panel1..Label2..Caption
+#: PVLogPar.dfm:137
+msgid "Signal Caption:"
+msgstr "Titulek signálů: "
+
+#. FrmLogging..Panel1..SbAdd..Hint
+#: PVLogPar.dfm:145
+msgid "Add Signal"
+msgstr "Přidat signál"
+
+#. FrmLogging..Panel1..SbFind..Hint
+#: PVLogPar.dfm:167
+msgid "Find"
+msgstr "Najít"
+
+#. FrmLogging..Panel1..SbTitleForAll..Hint
+#: PVLogPar.dfm:191
+msgid "Set For All Items"
+msgstr "Nastavit pro všechny položky"
+
+#. FrmLogging..Panel1..CbPeriod....Items.Strings
+#: PVLogPar.dfm:219
+msgid "250 ms"
+msgstr ""
+
+#. FrmLogging..Panel1..CbPeriod....Items.Strings
+#: PVLogPar.dfm:220
+msgid "500 ms"
+msgstr ""
+
+#. FrmLogging..Panel1..CbPeriod....Items.Strings
+#. FGraph..PanelTabulka..ControlBarTable..TBarTable..PanelTable..CbTimeStep....Items.Strings
+#: PVLogPar.dfm:221 Comp/FrmGraph.dfm:445
+msgid "1 s"
+msgstr ""
+
+#. FrmLogging..Panel1..CbPeriod....Items.Strings
+#. FGraph..PmRefresh..N2s1..Caption
+#: PVLogPar.dfm:222 Comp/FrmGraph.dfm:3112
+msgid "2 s"
+msgstr ""
+
+#. FrmLogging..Panel1..CbPeriod....Items.Strings
+#: PVLogPar.dfm:223
+msgid "3 s"
+msgstr ""
+
+#. FrmLogging..Panel1..CbPeriod....Items.Strings
+#: PVLogPar.dfm:224
+msgid "4 s"
+msgstr ""
+
+#. FrmLogging..Panel1..CbPeriod....Items.Strings
+#. FGraph..PmRefresh..N5s1..Caption
+#: PVLogPar.dfm:225 Comp/FrmGraph.dfm:3120
+msgid "5 s"
+msgstr ""
+
+#. FrmLogging..Panel1..CbPeriod....Items.Strings
+#. FGraph..PanelTabulka..ControlBarTable..TBarTable..PanelTable..CbTimeStep....Items.Strings
+#. FGraph..PmRefresh..N10s1..Caption
+#: PVLogPar.dfm:226 Comp/FrmGraph.dfm:446 Comp/FrmGraph.dfm:3128
+msgid "10 s"
+msgstr ""
+
+#. FrmLogging..Panel1..CbPeriod....Items.Strings
+#: PVLogPar.dfm:227
+msgid "20 s"
+msgstr ""
+
+#. FrmLogging..Panel1..CbPeriod....Items.Strings
+#. FGraph..PmRefresh..N30s1..Caption
+#: PVLogPar.dfm:228 Comp/FrmGraph.dfm:3136
+msgid "30 s"
+msgstr ""
+
+#. FrmLogging..Panel1..CbPeriod....Items.Strings
+#. FGraph..PanelTabulka..ControlBarTable..TBarTable..PanelTable..CbTimeStep....Items.Strings
+#: PVLogPar.dfm:229 Comp/FrmGraph.dfm:447
+msgid "1 min"
+msgstr ""
+
+#. FrmLogging..Panel1..CbPeriod....Items.Strings
+#: PVLogPar.dfm:230
+msgid "2 min"
+msgstr ""
+
+#. FrmLogging..Panel1..CbPeriod....Items.Strings
+#: PVLogPar.dfm:231
+msgid "5 min"
+msgstr ""
+
+#. FrmLogging..Panel1..CbPeriod....Items.Strings
+#. FGraph..PanelTabulka..ControlBarTable..TBarTable..PanelTable..CbTimeStep....Items.Strings
+#: PVLogPar.dfm:232 Comp/FrmGraph.dfm:448
+msgid "10 min"
+msgstr ""
+
+#. FrmLogging..Panel1..CbSignalCaption..Text
+#. FrmLogging..Panel1..CbSignalCaption....Items.Strings
+#: PVLogPar.dfm:243 PVLogPar.dfm:247
+msgid "%p"
+msgstr ""
+
+#. FrmLogging..Panel1..CbSignalCaption....Items.Strings
+#: PVLogPar.dfm:246
+msgid "%n"
+msgstr ""
+
+#. FrmLogging..Panel1..CbSignalCaption....Items.Strings
+#: PVLogPar.dfm:248
+msgid "%n %p"
+msgstr ""
+
+#. FrmLogging..Panel1..CbSignalCaption....Items.Strings
+#: PVLogPar.dfm:249
+msgid "%n : %p"
+msgstr ""
+
+#. FrmLogging..Panel1..CbSignalCaption....Items.Strings
+#: PVLogPar.dfm:250
+msgid "%p (%n)"
+msgstr ""
+
+#. FrmLogging..Panel1..CbUtc..Hint
+#: PVLogPar.dfm:257
+msgid "Use UTC Time"
+msgstr "Čas je ukládán jako UTC"
+
+#. FrmLogging..PanelSearch..LSearch..Caption
+#. FGraph..PSignals..PanelSearch..LSearch..Caption
+#: PVLogPar.dfm:282 Comp/FrmGraph.dfm:746
+msgid "Search:"
+msgstr "Hledat:"
+
+#. FrmLogging..PanelSearch..SbSearchUp..Hint
+#. FGraph..PSignals..PanelSearch..SbSearchUp..Hint
+#. FormSeznam..Panel1..bbPrev..Hint
+#: PVLogPar.dfm:293 Comp/FrmGraph.dfm:756 Comp/VizDTree.dfm:176
+msgid "Find Prev (F2)"
+msgstr "Najít předchozí (F2)"
+
+#. FrmLogging..PanelSearch..SbSearchDown..Hint
+#. FGraph..PSignals..PanelSearch..SbSearchDown..Hint
+#. FormSeznam..Panel1..bbNext..Hint
+#: PVLogPar.dfm:347 Comp/FrmGraph.dfm:811 Comp/VizDTree.dfm:230
+msgid "Find Next (F3)"
+msgstr "Najít další (F3)"
+
+#. FrmLogging..PopupMenu1..MnuSearchNext..Caption
+#. FGraph..ControlBar1..TBRange..TbNextDay..Caption
+#. FGraph..PopupMenuSearch..MnuSearchNext..Caption
+#: PVLogPar.dfm:423 Comp/FrmGraph.dfm:1039 Comp/FrmGraph.dfm:3224
+msgid "Next"
+msgstr "Další"
+
+#. FrmLogging..PopupMenu1..Prev1..Caption
+#. FGraph..PopupMenuSearch..MnuSearchPrev..Caption
+#: PVLogPar.dfm:429 Comp/FrmGraph.dfm:3230
+msgid "Prev"
+msgstr ""
+
+#. FrmInspector..Inspector..DefaultPropName
+#: ScriboInsp.dfm:39
+msgid "DataVizItem"
+msgstr ""
+
+#. FormData..Panel1..sbImport..Caption
+#: Comp/DataDlg.dfm:26
+msgid "Import"
+msgstr ""
+
+#. FormData..Panel1..sbRefresh..Caption
+#: Comp/DataDlg.dfm:73
+msgid "Read DBF"
+msgstr "Načti DBF"
+
+#. FormData..Panel1..sbInsert..Caption
+#: Comp/DataDlg.dfm:91
+msgid "Insert"
+msgstr "Vložit"
+
+#. FormData..Panel2..Panel3..LActualValue..Caption
+#: Comp/DataDlg.dfm:194
+msgid "Actual Value:"
+msgstr "Aktuální hodnota:"
+
+#. FormData..Panel2..Panel3..LDescription..Caption
+#: Comp/DataDlg.dfm:209
+msgid "Description:"
+msgstr "Popis:"
+
+#. FormData..Panel2..Panel3..LPlacement..Caption
+#: Comp/DataDlg.dfm:216
+msgid "Placement:"
+msgstr "Umístění"
+
+#. FormData..Panel2..Panel3..LTerminal..Caption
+#: Comp/DataDlg.dfm:223
+msgid "Terminal:"
+msgstr "Svorka"
+
+#. FormData..Panel2..Panel3..LblIndex..Caption
+#: Comp/DataDlg.dfm:230
+msgid "Index:"
+msgstr ""
+
+#. FormData..Panel2..Panel3..Label7..Caption
+#: Comp/DataDlg.dfm:238
+msgid "K:"
+msgstr ""
+
+#. FormData..Panel2..Panel3..Label8..Caption
+#: Comp/DataDlg.dfm:246
+msgid "Q:"
+msgstr ""
+
+#. FormData..Panel2..Panel3..Label6..Caption
+#: Comp/DataDlg.dfm:254
+msgid "Info 1"
+msgstr ""
+
+#. FormData..Panel2..Panel3..Label9..Caption
+#: Comp/DataDlg.dfm:261
+msgid "Info 2"
+msgstr ""
+
+#. FormData..Panel2..Panel3..Label10..Caption
+#: Comp/DataDlg.dfm:268
+msgid "Info 3"
+msgstr ""
+
+#. FormData..Panel2..Panel3..Label11..Caption
+#: Comp/DataDlg.dfm:275
+msgid "Driver:"
+msgstr ""
+
+#. FormData..Panel2..Panel3..LRow..Caption
+#: Comp/DataDlg.dfm:291
+msgid "Row:"
+msgstr "Řádek:"
+
+#. FormData..Panel2..Panel3..LColumn..Caption
+#: Comp/DataDlg.dfm:299
+msgid "Column:"
+msgstr "Sloupec:"
+
+#. FormData..Panel2..Panel3..eHodnota..Text
+#. FormData..Panel2..Panel3..eJmeno..Text
+#. FormData..Panel2..Panel3..ePopis..Text
+#. FormData..Panel2..Panel3..eUmisteni..Text
+#. FormData..Panel2..Panel3..eSvorka..Text
+#. FormData..Panel2..Panel3..eInfo1..Text
+#. FormData..Panel2..Panel3..eInfo2..Text
+#. FormData..Panel2..Panel3..eInfo3..Text
+#: Comp/DataDlg.dfm:308 Comp/DataDlg.dfm:316 Comp/DataDlg.dfm:324
+#: Comp/DataDlg.dfm:332 Comp/DataDlg.dfm:340 Comp/DataDlg.dfm:375
+#: Comp/DataDlg.dfm:383 Comp/DataDlg.dfm:391
+msgid "----------"
+msgstr ""
+
+#. FormData..Panel2..Panel3..cbTyp....Items.Strings
+#: Comp/DataDlg.dfm:415
+msgid "Unassigned"
+msgstr "Nepřiřazeno"
+
+#. FormData..Panel2..Panel3..cbTyp....Items.Strings
+#: Comp/DataDlg.dfm:416
+msgid "Group"
+msgstr "Skupina"
+
+#. FormData..Panel2..Panel3..cbTyp....Items.Strings
+#: Comp/DataDlg.dfm:417
+msgid "Float"
+msgstr "Plovoucí čárka"
+
+#. FormData..Panel2..Panel3..cbTyp....Items.Strings
+#: Comp/DataDlg.dfm:418
+msgid "Integer (32 bits)"
+msgstr "Celé číslo (32 bitů)"
+
+#. FormData..Panel2..Panel3..cbTyp....Items.Strings
+#: Comp/DataDlg.dfm:419
+msgid "Integer (16 bits)"
+msgstr "Celé číslo (16 bitů)"
+
+#. FormData..Panel2..Panel3..cbTyp....Items.Strings
+#: Comp/DataDlg.dfm:420
+msgid "Integer (8 bits)"
+msgstr "Celé číslo (8 bitů)"
+
+#. FormData..Panel2..Panel3..cbTyp....Items.Strings
+#: Comp/DataDlg.dfm:421
+msgid "Bit"
+msgstr ""
+
+#. FormData..Panel2..Panel3..cbTyp....Items.Strings
+#: Comp/DataDlg.dfm:422
+msgid "Integer (64 bits)"
+msgstr "Celé číslo (64 bitů)"
+
+#. FormData..Panel2..Panel3..cbTyp....Items.Strings
+#: Comp/DataDlg.dfm:423
+msgid "Text"
+msgstr ""
+
+#. FormData..Panel2..Panel3..BtnPack..Caption
+#: Comp/DataDlg.dfm:430
+msgid "Clear deleted items from the database"
+msgstr "Vyčisti db od nepoužitých položek"
+
+#. FormData..Panel2..Panel3..CbHex..Caption
+#: Comp/DataDlg.dfm:455
+msgid "Hex"
+msgstr ""
+
+#. FormData..pmTree..MnuAddItem..Caption
+#: Comp/DataDlg.dfm:1107
+msgid "Insert Item"
+msgstr "Vložit položku"
+
+#. FormData..pmTree..MnuAddChild..Caption
+#: Comp/DataDlg.dfm:1112
+msgid "Insert Child"
+msgstr "Vlož potomka"
+
+#. FormData..pmTree..MnuInsertChilds..Caption
+#: Comp/DataDlg.dfm:1117
+msgid "Insert all childs"
+msgstr "Vlož potomky"
+
+#. FormData..pmTree..MnuRename..Caption
+#: Comp/DataDlg.dfm:1121
+msgid "Rename"
+msgstr "Přejmenovat"
+
+#. FormData..pmTree..MnuDelete..Caption
+#: Comp/DataDlg.dfm:1129
+msgid "Delete Item"
+msgstr "Smazat položku"
+
+#. FormData..pmTree..MnuSwap..Caption
+#: Comp/DataDlg.dfm:1134
+msgid "Swap"
+msgstr ""
+
+#. FGraph..Caption
+#. FGraph..ControlBar1..TBarRezimGrafu..Caption
+#. FGraph..ControlBar1..TBarNavigaceGrafu..Caption
+#. FGraph..ControlBar1..TBarGraphTable..TBGraf..Caption
+#: Comp/FrmGraph.dfm:5 Comp/FrmGraph.dfm:1158 Comp/FrmGraph.dfm:1201
+#: Comp/FrmGraph.dfm:1397
+msgid "Graph"
+msgstr "Graf"
+
+#. FGraph..Font.Name
+#. FGraph..ControlBar1..TBarAnalyse..LPoint1..Font.Name
+#. FGraph..ControlBar1..TBarAnalyse..LPoint2..Font.Name
+#. FGraph..ControlBar1..TBarAnalyse..LPointDif..Font.Name
+#. FGraph..PanelBusy..Font.Name
+#. FGraph..PanelBusy..LblDownloading..Font.Name
+#. FormSeznam..Font.Name
+#. FormSeznam..TreeSeznam..Font.Name
+#: Comp/FrmGraph.dfm:12 Comp/FrmGraph.dfm:1451 Comp/FrmGraph.dfm:1491
+#: Comp/FrmGraph.dfm:1530 Comp/FrmGraph.dfm:1589 Comp/FrmGraph.dfm:1604
+#: Comp/VizDTree.dfm:16 Comp/VizDTree.dfm:35
+msgid "Microsoft Sans Serif"
+msgstr ""
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarTable..Caption
+#. FGraph..ControlBar1..TBarGraphTable..TBTable..Caption
+#: Comp/FrmGraph.dfm:334 Comp/FrmGraph.dfm:1408
+msgid "Table"
+msgstr "Tabulka"
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarTable..PanelTable..LJumpTo..Caption
+#: Comp/FrmGraph.dfm:354
+msgid "   Jump to: "
+msgstr "   Skok na: "
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarTable..PanelTable..LTimeShift..Caption
+#: Comp/FrmGraph.dfm:364
+msgid "   Start: "
+msgstr "   Začátek: "
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarTable..PanelTable..LTimeStep..Caption
+#: Comp/FrmGraph.dfm:374
+msgid "Time Step: "
+msgstr "Časový krok: "
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarTable..PanelTable..CbShift..Hint
+#: Comp/FrmGraph.dfm:395
+msgid "Start time [hour]"
+msgstr "Počáteční čas [hodin]"
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarTable..PanelTable..CbTimeStep..Text
+#. FGraph..PanelTabulka..ControlBarTable..TBarTable..PanelTable..CbTimeStep....Items.Strings
+#: Comp/FrmGraph.dfm:441 Comp/FrmGraph.dfm:444
+msgid "Default"
+msgstr "Výchozí"
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarTable..PanelTable..CbTimeStep....Items.Strings
+#: Comp/FrmGraph.dfm:449
+msgid "30 min"
+msgstr ""
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarTable..PanelTable..CbTimeStep....Items.Strings
+#: Comp/FrmGraph.dfm:450
+msgid "1 h"
+msgstr ""
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarTable..PanelTable..CbTimeStep....Items.Strings
+#: Comp/FrmGraph.dfm:451
+msgid "6 h"
+msgstr ""
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarTable..PanelTable..CbTimeStep....Items.Strings
+#: Comp/FrmGraph.dfm:452
+msgid "12 h"
+msgstr ""
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarTable..PanelTable..CbTimeStep....Items.Strings
+#: Comp/FrmGraph.dfm:453
+msgid "24 h"
+msgstr ""
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarTable..TbForm..Hint
+#: Comp/FrmGraph.dfm:466
+msgid "Show the Form"
+msgstr "Zobrazit formulář"
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarTable..TbForm..Caption
+#: Comp/FrmGraph.dfm:467
+msgid "Form"
+msgstr ""
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarTable..TbCopyRow..Hint
+#: Comp/FrmGraph.dfm:482
+msgid "Copy Current Row to Clipboard"
+msgstr "Kopie řádku do schránky"
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarTable..TbCopyRow..Caption
+#: Comp/FrmGraph.dfm:483
+msgid "Copy Row"
+msgstr "Kopírovat řádek"
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarTable..TbSum..Hint
+#: Comp/FrmGraph.dfm:497
+msgid "Sum [ * Hours]"
+msgstr "Suma [ * Hodiny]"
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarTable..TbSum..Caption
+#: Comp/FrmGraph.dfm:498
+msgid "Sum"
+msgstr "Suma"
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarTable..TbAvg..Hint
+#: Comp/FrmGraph.dfm:507
+msgid "Average"
+msgstr "Průměr"
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarTable..TbAvg..Caption
+#: Comp/FrmGraph.dfm:508
+msgid "Avg"
+msgstr ""
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarTable..TbDiff..Hint
+#: Comp/FrmGraph.dfm:516
+msgid "Differences"
+msgstr "Rozdíly"
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarTable..TbDiff..Caption
+#: Comp/FrmGraph.dfm:517
+msgid "Diff"
+msgstr ""
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarFilter..PanelFiltr..Label5..Caption
+#: Comp/FrmGraph.dfm:569
+msgid "Condition: "
+msgstr "Podmínka: "
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarFilter..PanelFiltr..CbOper..Text
+#. FGraph..PanelTabulka..ControlBarTable..TBarFilter..PanelFiltr..CbOper....Items.Strings
+#: Comp/FrmGraph.dfm:614 Comp/FrmGraph.dfm:616
+msgid "="
+msgstr ""
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarFilter..PanelFiltr..CbOper....Items.Strings
+#: Comp/FrmGraph.dfm:617
+msgid "<>"
+msgstr ""
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarFilter..PanelFiltr..CbOper....Items.Strings
+#: Comp/FrmGraph.dfm:618
+msgid ">"
+msgstr ""
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarFilter..PanelFiltr..CbOper....Items.Strings
+#: Comp/FrmGraph.dfm:619
+msgid ">="
+msgstr ""
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarFilter..PanelFiltr..CbOper....Items.Strings
+#: Comp/FrmGraph.dfm:620
+msgid "<"
+msgstr ""
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarFilter..PanelFiltr..CbOper....Items.Strings
+#: Comp/FrmGraph.dfm:621
+msgid "<="
+msgstr ""
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarFilter..PanelFiltr..CbOper....Items.Strings
+#: Comp/FrmGraph.dfm:622
+msgid "First"
+msgstr "První"
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarFilter..PanelFiltr..CbOper....Items.Strings
+#: Comp/FrmGraph.dfm:623
+msgid "Last"
+msgstr "Poslední"
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarFilter..PanelFiltr..SbMoreRows..Hint
+#: Comp/FrmGraph.dfm:647
+msgid "Number of rows to add above/below matching rows"
+msgstr "Počet řádků přidaných před a za řádky vyhovující podmínce"
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarFilter..TbAddFilter..Hint
+#: Comp/FrmGraph.dfm:665
+msgid "Add Filter"
+msgstr "Přidat filtr"
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarFilter..TbClearFilter..Hint
+#: Comp/FrmGraph.dfm:673
+msgid "Clear Filter"
+msgstr "Zrušit filtr"
+
+#. FGraph..PanelTabulka..ControlBarTable..TBarFilter..TbClearFilter..Caption
+#: Comp/FrmGraph.dfm:674
+msgid "All"
+msgstr ""
+
+#. FGraph..ControlBar1..TBSignals..Caption
+#: Comp/FrmGraph.dfm:893
+msgid "Signals"
+msgstr "Seznam signálů"
+
+#. FGraph..ControlBar1..TBSignals..TBShowSignals..Hint
+#: Comp/FrmGraph.dfm:900
+msgid "Show Signal List"
+msgstr "Zobrazí seznam signálů"
+
+#. FGraph..ControlBar1..TBSignals..TBShowSignals..Caption
+#: Comp/FrmGraph.dfm:902
+msgid "Signal List"
+msgstr "Seznam signálů"
+
+#. FGraph..ControlBar1..TBSignals..TBDecVyber..Hint
+#: Comp/FrmGraph.dfm:918
+msgid "Decrement selected signal's graph number by 1"
+msgstr "Sníží číslo grafu označeného signálu o 1"
+
+#. FGraph..ControlBar1..TBSignals..TBDecVyber..Caption
+#: Comp/FrmGraph.dfm:919
+msgid "Decrement Graph Number by 1"
+msgstr "Zmenšit číslo grafu o 1"
+
+#. FGraph..ControlBar1..TBSignals..TBIncVyber..Hint
+#: Comp/FrmGraph.dfm:926
+msgid "Increment selected signal's graph number by 1"
+msgstr "Zvýší číslo grafu označeného signálu o 1"
+
+#. FGraph..ControlBar1..TBSignals..TBIncVyber..Caption
+#: Comp/FrmGraph.dfm:927
+msgid "Increment Graph Number by 1"
+msgstr "Zvětšit číslo grafu o 1"
+
+#. FGraph..ControlBar1..TBSignals..TBZrusitCelyVyber..Hint
+#: Comp/FrmGraph.dfm:934
+msgid "Clear graph numbers of all signals"
+msgstr "Zruší čísla grafů (výběr) všech signálů"
+
+#. FGraph..ControlBar1..TBSignals..TBZrusitCelyVyber..Caption
+#: Comp/FrmGraph.dfm:935
+msgid "Clear selection"
+msgstr "Zrušit celý výběr"
+
+#. FGraph..ControlBar1..TBSignals..TbShowHideGraph..Hint
+#: Comp/FrmGraph.dfm:942
+msgid "Show/Hide graphs"
+msgstr "Zobrazit / skrýt grafy"
+
+#. FGraph..ControlBar1..TBSignals..TbShowHideGraph..Caption
+#: Comp/FrmGraph.dfm:943
+msgid "Hide Graphs"
+msgstr "Skrýt grafy"
+
+#. FGraph..ControlBar1..TBSignals..TBSavePreset..Hint
+#: Comp/FrmGraph.dfm:968
+msgid "Save current preset"
+msgstr "Uloží aktuální sestavu"
+
+#. FGraph..ControlBar1..TBSignals..TBSavePreset..Caption
+#: Comp/FrmGraph.dfm:969
+msgid "Save Preset"
+msgstr "Uložit sestavu"
+
+#. FGraph..ControlBar1..TBRange..Caption
+#: Comp/FrmGraph.dfm:981
+msgid "Interval"
+msgstr ""
+
+#. FGraph..ControlBar1..TBRange..TbPrevDay..Hint
+#: Comp/FrmGraph.dfm:989
+msgid "Previous Day"
+msgstr "Předchozí den"
+
+#. FGraph..ControlBar1..TBRange..TbPrevDay..Caption
+#: Comp/FrmGraph.dfm:990
+msgid "Previous"
+msgstr "Předchozí"
+
+#. FGraph..ControlBar1..TBRange..DTPDatumOd..Hint
+#: Comp/FrmGraph.dfm:1006
+msgid "Start Date"
+msgstr "Začátek zobrazeného období"
+
+#. FGraph..ControlBar1..TBRange..DTPDatumDo..Hint
+#: Comp/FrmGraph.dfm:1019
+msgid "End Date"
+msgstr "Konec zobrazeného období"
+
+#. FGraph..ControlBar1..TBRange..TbNextDay..Hint
+#: Comp/FrmGraph.dfm:1038
+msgid "Next Day"
+msgstr "Další den"
+
+#. FGraph..ControlBar1..TBRange..TbReload..Hint
+#: Comp/FrmGraph.dfm:1053
+msgid "Refresh Data"
+msgstr "Aktualizace dat"
+
+#. FGraph..ControlBar1..TBRange..TbReload..Caption
+#: Comp/FrmGraph.dfm:1054
+msgid "Reload"
+msgstr ""
+
+#. FGraph..ControlBar1..TBRange..TbOffline..Hint
+#: Comp/FrmGraph.dfm:1062
+msgid "Offline mode"
+msgstr "Offline režim"
+
+#. FGraph..ControlBar1..TBRange..TbOffline..Caption
+#: Comp/FrmGraph.dfm:1064
+msgid "Offline"
+msgstr ""
+
+#. FGraph..ControlBar1..TBRange..TbRefreshFiles..Hint
+#: Comp/FrmGraph.dfm:1072
+msgid "Data Synchronization"
+msgstr "Synchronizace dat"
+
+#. FGraph..ControlBar1..TBRange..TbRefreshFiles..Caption
+#: Comp/FrmGraph.dfm:1073
+msgid "RefreshFiles"
+msgstr ""
+
+#. FGraph..ControlBar1..TBarKriz..TBGrid..Hint
+#: Comp/FrmGraph.dfm:1093
+msgid "Toggle Grid On / Off"
+msgstr "Zapne / Vypne mřížku"
+
+#. FGraph..ControlBar1..TBarKriz..TBGrid..Caption
+#: Comp/FrmGraph.dfm:1094
+msgid "Grid"
+msgstr "Mřížka"
+
+#. FGraph..ControlBar1..TBarKriz..TBCross..Hint
+#: Comp/FrmGraph.dfm:1103
+msgid "Toggle Cross On / Off"
+msgstr "Zapne / Vypne kříž pro odečítání hodnot"
+
+#. FGraph..ControlBar1..TBarKriz..TBCross..Caption
+#: Comp/FrmGraph.dfm:1104
+msgid "Cross"
+msgstr "Kříž"
+
+#. FGraph..ControlBar1..TBarRezimGrafu..TBSelect..Hint
+#: Comp/FrmGraph.dfm:1165
+msgid "Select mode"
+msgstr "Režim grafu pro označení"
+
+#. FGraph..ControlBar1..TBarRezimGrafu..TBSelect..Caption
+#: Comp/FrmGraph.dfm:1166
+msgid "Select"
+msgstr "Výběr"
+
+#. FGraph..ControlBar1..TBarRezimGrafu..TBPan..Hint
+#: Comp/FrmGraph.dfm:1176
+msgid "Pan mode"
+msgstr "Režim grafu pro posuv"
+
+#. FGraph..ControlBar1..TBarRezimGrafu..TBPan..Caption
+#: Comp/FrmGraph.dfm:1177
+msgid "Pan"
+msgstr "Posuv"
+
+#. FGraph..ControlBar1..TBarRezimGrafu..TBZoom..Hint
+#: Comp/FrmGraph.dfm:1186
+msgid "Zoom mode"
+msgstr "Režim grafu pro zoom"
+
+#. FGraph..ControlBar1..TBarRezimGrafu..TBZoom..Caption
+#: Comp/FrmGraph.dfm:1187
+msgid "Zoom"
+msgstr "Lupa"
+
+#. FGraph..ControlBar1..TBarNavigaceGrafu..TBLockedHorizontalAxis..Hint
+#: Comp/FrmGraph.dfm:1208
+msgid "Lock / Unlock horizontal axes"
+msgstr "Uzamčení / odemčení horizontálních os"
+
+#. FGraph..ControlBar1..TBarNavigaceGrafu..TBLockedHorizontalAxis..Caption
+#: Comp/FrmGraph.dfm:1209
+msgid "Lock Axes"
+msgstr "Zamknuté osy"
+
+#. FGraph..ControlBar1..TBarNavigaceGrafu..TBHome..Hint
+#: Comp/FrmGraph.dfm:1225
+msgid "Rewind graph in horizontal direction fully left"
+msgstr "Horizontální převinutí grafu úplně vlevo"
+
+#. FGraph..ControlBar1..TBarNavigaceGrafu..TBHome..Caption
+#: Comp/FrmGraph.dfm:1226
+msgid "Home"
+msgstr "Na začátek"
+
+#. FGraph..ControlBar1..TBarNavigaceGrafu..TBFastLeft..Hint
+#: Comp/FrmGraph.dfm:1234
+msgid "Fast rewind graph in horizont direction to the left"
+msgstr "Horizontální převinutí grafu rychle vlevo"
+
+#. FGraph..ControlBar1..TBarNavigaceGrafu..TBFastLeft..Caption
+#: Comp/FrmGraph.dfm:1235
+msgid "Fast left"
+msgstr "Rychle vlevo"
+
+#. FGraph..ControlBar1..TBarNavigaceGrafu..TBLeft..Hint
+#: Comp/FrmGraph.dfm:1243
+msgid "Rewind graph in horizont direction to the left"
+msgstr "Horizontální převinutí grafu vlevo"
+
+#. FGraph..ControlBar1..TBarNavigaceGrafu..TBRight..Hint
+#: Comp/FrmGraph.dfm:1252
+msgid "Rewind graph in horizont direction to the right"
+msgstr "Horizontální převinutí grafu vpravo"
+
+#. FGraph..ControlBar1..TBarNavigaceGrafu..TBRight..Caption
+#: Comp/FrmGraph.dfm:1253
+msgid "Rigth"
+msgstr "Vpravo"
+
+#. FGraph..ControlBar1..TBarNavigaceGrafu..TBFastRight..Hint
+#: Comp/FrmGraph.dfm:1261
+msgid "Fast rewind graph in horizont direction to the right"
+msgstr "Horizontální převinutí grafu rychle vpravo"
+
+#. FGraph..ControlBar1..TBarNavigaceGrafu..TBFastRight..Caption
+#: Comp/FrmGraph.dfm:1262
+msgid "Fast right"
+msgstr "Rychle vpravo"
+
+#. FGraph..ControlBar1..TBarNavigaceGrafu..TBEnd..Hint
+#: Comp/FrmGraph.dfm:1270
+msgid "Rewind graph in horizontal direction fully right"
+msgstr "Horizontální převinutí grafu úplně vpravo"
+
+#. FGraph..ControlBar1..TBarNavigaceGrafu..TBEnd..Caption
+#: Comp/FrmGraph.dfm:1271
+msgid "End"
+msgstr "Na konec"
+
+#. FGraph..ControlBar1..TBarNavigaceGrafu..TBZoomIn..Hint
+#: Comp/FrmGraph.dfm:1286
+msgid "Horizontal Zoom In"
+msgstr "Horizontální přiblížení"
+
+#. FGraph..ControlBar1..TBarNavigaceGrafu..TBZoomIn..Caption
+#: Comp/FrmGraph.dfm:1287
+msgid "Zoom In"
+msgstr "Zvětšení"
+
+#. FGraph..ControlBar1..TBarNavigaceGrafu..TBZoomOut..Hint
+#: Comp/FrmGraph.dfm:1295
+msgid "Horizontal Zoom Out"
+msgstr "Horizontální oddálení"
+
+#. FGraph..ControlBar1..TBarNavigaceGrafu..TBZoomOut..Caption
+#: Comp/FrmGraph.dfm:1296
+msgid "Zoom Out"
+msgstr "Zmenšení"
+
+#. FGraph..ControlBar1..TBarNavigaceGrafu..TBAll..Hint
+#: Comp/FrmGraph.dfm:1304
+msgid "Horizontal Zoom All"
+msgstr "Úplné horizontální oddálení"
+
+#. FGraph..ControlBar1..TBarNavigaceGrafu..TBAll..Caption
+#: Comp/FrmGraph.dfm:1305
+msgid "Zoom All"
+msgstr ""
+
+#. FGraph..ControlBar1..TBarTisk..Caption
+#. FGraph..ControlBar1..TBarTisk..TBPrint..Caption
+#: Comp/FrmGraph.dfm:1317 Comp/FrmGraph.dfm:1325
+msgid "Print"
+msgstr "Tisk"
+
+#. FGraph..ControlBar1..TBarTisk..TBPrint..Hint
+#: Comp/FrmGraph.dfm:1324
+msgid "Graph Print"
+msgstr "Tisk grafu"
+
+#. FGraph..ControlBar1..TBAxis..Caption
+#: Comp/FrmGraph.dfm:1346
+msgid "X-Axis"
+msgstr "Osa X"
+
+#. FGraph..ControlBar1..TBAxis..TBHorizontalAxisTime..Hint
+#: Comp/FrmGraph.dfm:1353
+msgid "Horizontal axes labels as time"
+msgstr "Popisky horizontální osy zobrazovány jako čas"
+
+#. FGraph..ControlBar1..TBAxis..TBHorizontalAxisTime..Caption
+#: Comp/FrmGraph.dfm:1354
+msgid "Time"
+msgstr "Čas"
+
+#. FGraph..ControlBar1..TBAxis..TBHorizontalAxisDate..Hint
+#: Comp/FrmGraph.dfm:1363
+msgid "Horizontal axes labels as date"
+msgstr "Popisky horizontální osy zobrazovány jako datum"
+
+#. FGraph..ControlBar1..TBAxis..TBHorizontalAxisDate..Caption
+#: Comp/FrmGraph.dfm:1364
+msgid "Date"
+msgstr "Datum"
+
+#. FGraph..ControlBar1..TBAxis..TBHorizontalAxisDateTime..Hint
+#: Comp/FrmGraph.dfm:1373
+msgid "Horizontal axes labels as date and time"
+msgstr "Popisky horizontální osy zobrazovány jako datum a čas"
+
+#. FGraph..ControlBar1..TBAxis..TBHorizontalAxisDateTime..Caption
+#: Comp/FrmGraph.dfm:1374
+msgid "Date and time"
+msgstr "Datum a čas"
+
+#. FGraph..ControlBar1..TBarGraphTable..Caption
+#. FGraph..ControlBar1..TBarDisplay..Caption
+#: Comp/FrmGraph.dfm:1389 Comp/FrmGraph.dfm:1560
+msgid "Display"
+msgstr "Zobrazení"
+
+#. FGraph..ControlBar1..TBarGraphTable..TBGraf..Hint
+#: Comp/FrmGraph.dfm:1396
+msgid "Display the Graph (F12)"
+msgstr "Zobrazí graf (F12)"
+
+#. FGraph..ControlBar1..TBarGraphTable..TBTable..Hint
+#: Comp/FrmGraph.dfm:1407
+msgid "Display the Table (F12)"
+msgstr "Zobrazí tabulku (F12)"
+
+#. FGraph..ControlBar1..TBarAnalyse..Label1..Caption
+#: Comp/FrmGraph.dfm:1433
+msgid "1:  "
+msgstr ""
+
+#. FGraph..ControlBar1..TBarAnalyse..Label2..Caption
+#: Comp/FrmGraph.dfm:1472
+msgid "2:  "
+msgstr ""
+
+#. FGraph..ControlBar1..TBarAnalyse..Label3..Caption
+#: Comp/FrmGraph.dfm:1512
+msgid "Dif:  "
+msgstr ""
+
+#. FGraph..ControlBar1..TBarAnalyse..TBCloseAnalyse..Hint
+#: Comp/FrmGraph.dfm:1547
+msgid "Close Analyse Panel"
+msgstr "Uzavřít odměřování"
+
+#. FGraph..ControlBar1..TBarDisplay..TBShowAnalyse..Hint
+#: Comp/FrmGraph.dfm:1567
+msgid "Show Analyse Panel"
+msgstr "Zobraz odměřování"
+
+#. FGraph..ControlBar1..TBarDisplay..TBShowAnalyse..Caption
+#: Comp/FrmGraph.dfm:1569
+msgid "Analyse"
+msgstr ""
+
+#. FGraph..PanelBusy..Caption
+#: Comp/FrmGraph.dfm:1585
+msgid "Reading data"
+msgstr "Probíha čtení dat"
+
+#. FGraph..PmRefresh..AutoRefresh1..Caption
+#: Comp/FrmGraph.dfm:3096
+msgid "Auto Refresh"
+msgstr ""
+
+#. FGraph..PmRefresh..N60s1..Caption
+#: Comp/FrmGraph.dfm:3144
+msgid "60 s"
+msgstr ""
+
+#. FGraph..PopupMenuMain..MnuSwitchGraphTable..Caption
+#: Comp/FrmGraph.dfm:3167
+msgid "SwitchGraphTable"
+msgstr ""
+
+#. FGraph..PopupMenuMain..MnuSwitchIconSize..Caption
+#: Comp/FrmGraph.dfm:3172
+msgid "Switch Icon Size"
+msgstr ""
+
+#. FGraph..PopupMenuSignals..MnuIncGraphNum..Caption
+#: Comp/FrmGraph.dfm:3241
+msgid "IncGrNum"
+msgstr ""
+
+#. FGraph..PopupMenuSignals..MnuDelGraphNum..Caption
+#: Comp/FrmGraph.dfm:3247
+msgid "DelGrNum"
+msgstr ""
+
+#. FGraph..PopupMenuSignals..MnuSetGraphNum1..Caption
+#: Comp/FrmGraph.dfm:3253
+msgid "SetGrNum1"
+msgstr ""
+
+#. FGraph..PopupMenuSignals..MnuSetGraphNum2..Caption
+#: Comp/FrmGraph.dfm:3259
+msgid "SetGrNum2"
+msgstr ""
+
+#. FGraph..PopupMenuSignals..MnuSetGraphNum3..Caption
+#: Comp/FrmGraph.dfm:3265
+msgid "SetGrNum3"
+msgstr ""
+
+#. FGraph..PopupMenuSignals..MnuSetGraphNum4..Caption
+#: Comp/FrmGraph.dfm:3271
+msgid "SetGrNum4"
+msgstr ""
+
+#. FGraph..PopupMenuSignals..MnuSetGrNum5..Caption
+#: Comp/FrmGraph.dfm:3277
+msgid "SetGrNum5"
+msgstr ""
+
+#. FGraph..PopupMenuSignals..MnuSetGrNum6..Caption
+#: Comp/FrmGraph.dfm:3283
+msgid "SetGrNum6"
+msgstr ""
+
+#. FGraph..PmGraphs..MnuGraph1..Caption
+#: Comp/FrmGraph.dfm:6574
+msgid "Graph &1"
+msgstr "Graf &1"
+
+#. FGraph..PmGraphs..MnuGraph2..Caption
+#: Comp/FrmGraph.dfm:6582
+msgid "Graph &2"
+msgstr "Graf &2"
+
+#. FGraph..PmGraphs..MnuGraph3..Caption
+#: Comp/FrmGraph.dfm:6590
+msgid "Graph &3"
+msgstr "Graf &3"
+
+#. FGraph..PmGraphs..MnuGraph4..Caption
+#: Comp/FrmGraph.dfm:6598
+msgid "Graph &4"
+msgstr "Graf &4"
+
+#. FGraph..PmGraphs..MnuGraph5..Caption
+#: Comp/FrmGraph.dfm:6606
+msgid "Graph &5"
+msgstr "Graf &5"
+
+#. FGraph..PmGraphs..MnuGraph6..Caption
+#: Comp/FrmGraph.dfm:6614
+msgid "Graph &6"
+msgstr "Graf &6"
+
+#. FUserManager..Caption
+#. FUserManager..GbActiveUser..ClbPermissions....Items.Strings
+#: Comp/UsersMgr.dfm:5 Comp/UsersMgr.dfm:68
+msgid "User Manager"
+msgstr "Správce uživatelů"
+
+#. FUserManager..GbActiveUser..Caption
+#: Comp/UsersMgr.dfm:24
+msgid "Selected User"
+msgstr "Vybraný uživatel"
+
+#. FUserManager..GbActiveUser..Label2..Caption
+#: Comp/UsersMgr.dfm:31
+msgid "Enabled Operations"
+msgstr "Povolené operace"
+
+#. FUserManager..GbActiveUser..Label3..Caption
+#: Comp/UsersMgr.dfm:39
+msgid "&Name"
+msgstr "&Jméno"
+
+#. FUserManager..GbActiveUser..Label1..Caption
+#: Comp/UsersMgr.dfm:47
+msgid "&Password"
+msgstr "&Heslo:"
+
+#. FUserManager..GbActiveUser..Label4..Caption
+#: Comp/UsersMgr.dfm:55
+msgid "Groups:"
+msgstr "Skupiny:"
+
+#. FUserManager..GbActiveUser..ClbPermissions....Items.Strings
+#: Comp/UsersMgr.dfm:67
+msgid "Exit the Application"
+msgstr "Ukončit aplikaci"
+
+#. FUserManager..GbActiveUser..ClbPermissions....Items.Strings
+#: Comp/UsersMgr.dfm:69
+msgid "Edit Application Parameters"
+msgstr "Měnit parametry aplikace"
+
+#. FUserManager..GbActiveUser..ClbPermissions....Items.Strings
+#: Comp/UsersMgr.dfm:70
+msgid "Client - Read Permission"
+msgstr "Klient - oprávnění ke čtení"
+
+#. FUserManager..GbActiveUser..ClbPermissions....Items.Strings
+#: Comp/UsersMgr.dfm:71
+msgid "Client - Write Permission"
+msgstr "Klient - oprávnění k zápisu"
+
+#. FUserManager..GbActiveUser..ClbPermissions....Items.Strings
+#: Comp/UsersMgr.dfm:82
+msgid "Auto Logon"
+msgstr "Automatické přihlášení"
+
+#. FUserManager..GbActiveUser..EdUserName..DataField
+#. FUserManager..GbUsers..DgUsers......FieldName
+#: Comp/UsersMgr.dfm:90 Comp/UsersMgr.dfm:210
+msgid "UserName"
+msgstr ""
+
+#. FUserManager..GbActiveUser..CbHide..Hint
+#: Comp/UsersMgr.dfm:101
+msgid "Do not include this user in the Login Dialog's User List"
+msgstr ""
+"Nezobrazovat tohoto uživatele v seznamu uživatelů v přihlašovacím dialogu"
+
+#. FUserManager..GbActiveUser..CbHide..Caption
+#: Comp/UsersMgr.dfm:102
+msgid "Hide User in the List"
+msgstr "Skrýt uživatele v seznamu"
+
+#. FUserManager..GbActiveUser..CbHide..DataField
+#. FUserManager..GbUsers..DgUsers......FieldName
+#: Comp/UsersMgr.dfm:103 Comp/UsersMgr.dfm:218
+msgid "Hidden"
+msgstr ""
+
+#. FUserManager..GbActiveUser..CbHide..ValueChecked
+#: Comp/UsersMgr.dfm:106
+msgid "T;Y;Yes;Ano;True"
+msgstr ""
+
+#. FUserManager..GbActiveUser..CbHide..ValueUnchecked
+#: Comp/UsersMgr.dfm:107
+msgid "F;N;No;Ne;False"
+msgstr ""
+
+#. FUserManager..GbActiveUser..edPassword..DataField
+#: Comp/UsersMgr.dfm:115
+msgid "Password"
+msgstr ""
+
+#. FUserManager..GbActiveUser..edPassword..PasswordChar
+#. FormLogin..eHeslo..PasswordChar
+#: Comp/UsersMgr.dfm:117 Comp/VizLogin.dfm:53
+msgid "*"
+msgstr ""
+
+#. FUserManager..GbActiveUser..ClbGroups....Items.Strings
+#: Comp/UsersMgr.dfm:131
+msgid "A: Group 1"
+msgstr "A: Skupina 1"
+
+#. FUserManager..GbActiveUser..ClbGroups....Items.Strings
+#: Comp/UsersMgr.dfm:132
+msgid "B: Group 2"
+msgstr "B: Skupina 2"
+
+#. FUserManager..GbActiveUser..ClbGroups....Items.Strings
+#: Comp/UsersMgr.dfm:133
+msgid "C: Group 3"
+msgstr "C: Skupina 3"
+
+#. FUserManager..GbActiveUser..ClbGroups....Items.Strings
+#: Comp/UsersMgr.dfm:134
+msgid "D: Group 4"
+msgstr "D: Skupina 4"
+
+#. FUserManager..GbActiveUser..ClbGroups....Items.Strings
+#: Comp/UsersMgr.dfm:135
+msgid "E: Group 5"
+msgstr "E: Skupina 5"
+
+#. FUserManager..GbActiveUser..ClbGroups....Items.Strings
+#: Comp/UsersMgr.dfm:136
+msgid "F: Group 6"
+msgstr "F: Skupina 6"
+
+#. FUserManager..GbActiveUser..ClbGroups....Items.Strings
+#: Comp/UsersMgr.dfm:137
+msgid "G: Group 7"
+msgstr "G: Skupina 7"
+
+#. FUserManager..GbActiveUser..ClbGroups....Items.Strings
+#: Comp/UsersMgr.dfm:138
+msgid "H: Group 8"
+msgstr "H: Skupina 8"
+
+#. FUserManager..GbActiveUser..ClbGroups....Items.Strings
+#: Comp/UsersMgr.dfm:139
+msgid "I: Group 9"
+msgstr "I: Skupina 9"
+
+#. FUserManager..GbActiveUser..ClbGroups....Items.Strings
+#: Comp/UsersMgr.dfm:140
+msgid "J: Group 10"
+msgstr "J: Skupina 10"
+
+#. FUserManager..GbActiveUser..ClbGroups....Items.Strings
+#: Comp/UsersMgr.dfm:141
+msgid "K: Group 11"
+msgstr "K: Skupina 11"
+
+#. FUserManager..GbActiveUser..ClbGroups....Items.Strings
+#: Comp/UsersMgr.dfm:142
+msgid "L: Group 12"
+msgstr "L: Skupina 12"
+
+#. FUserManager..GbActiveUser..ClbGroups....Items.Strings
+#: Comp/UsersMgr.dfm:143
+msgid "M: Group 13"
+msgstr "M: Skupina 13"
+
+#. FUserManager..GbActiveUser..ClbGroups....Items.Strings
+#: Comp/UsersMgr.dfm:144
+msgid "N: Group 14"
+msgstr "N: Skupina 14"
+
+#. FUserManager..GbActiveUser..ClbGroups....Items.Strings
+#: Comp/UsersMgr.dfm:145
+msgid "O: Group 15"
+msgstr "O: Group 15"
+
+#. FUserManager..GbActiveUser..ClbGroups....Items.Strings
+#: Comp/UsersMgr.dfm:146
+msgid "P: Group 16"
+msgstr "P: Skupina 16"
+
+#. FUserManager..GbUsers..Caption
+#: Comp/UsersMgr.dfm:185
+msgid "&Users"
+msgstr "&Uživatelé"
+
+#. FUserManager..GbUsers..DgUsers......FieldName
+#: Comp/UsersMgr.dfm:203
+msgid "UserID"
+msgstr ""
+
+#. FUserManager..GbUsers..DgUsers......Title.Caption
+#: Comp/UsersMgr.dfm:211
+msgid "User Name"
+msgstr "Jméno uživatele"
+
+#. FUserManager..GbUsers..DgUsers......Title.Caption
+#: Comp/UsersMgr.dfm:220
+msgid "Hide"
+msgstr "Skrýt"
+
+#. FUserManager..bbOk..Hint
+#: Comp/UsersMgr.dfm:231
+msgid "Save the Changes"
+msgstr "Uložit změny"
+
+#. FUserManager..bbCancel..Hint
+#: Comp/UsersMgr.dfm:263
+msgid "Cancel the Changes"
+msgstr "Zrušit změny"
+
+#. FUserManager..bbNew..Hint
+#: Comp/UsersMgr.dfm:295
+msgid "Add New User"
+msgstr "Přidat nového uživatele"
+
+#. FUserManager..bbNew..Caption
+#: Comp/UsersMgr.dfm:296
+msgid "&New"
+msgstr "&Nový"
+
+#. FUserManager..bbEdit..Hint
+#: Comp/UsersMgr.dfm:322
+msgid "Edit User's details"
+msgstr "Opravit uživatele"
+
+#. FUserManager..bbEdit..Caption
+#: Comp/UsersMgr.dfm:323
+msgid "&Edit"
+msgstr "&Editace"
+
+#. FormSeznam..Caption
+#: Comp/VizDTree.dfm:6
+msgid "Available signals"
+msgstr "Seznam signálů"
+
+#. FormSeznam..Panel1..Label1..Caption
+#: Comp/VizDTree.dfm:111
+msgid "Search &Text:"
+msgstr "Hledaný &Text:"
+
+#. FormSeznam..Panel1..bbUse..Caption
+#: Comp/VizDTree.dfm:119
+msgid "Use"
+msgstr "Použít"
+
+#. FormSeznam..Panel1..bbSort..Hint
+#: Comp/VizDTree.dfm:140
+msgid "Sort items by name"
+msgstr "Seřadit dle názvu"
+
+#. FormSeznam..Panel1..bbSort..Caption
+#: Comp/VizDTree.dfm:141
+msgid "&Sort"
+msgstr "&Seřadit"
+
+#. FormSeznam..Panel1..bbSortId..Hint
+#: Comp/VizDTree.dfm:284
+msgid "Sort items by ID"
+msgstr "Seřadit dle ID"
+
+#. FormSeznam..Panel1..bbSortId..Caption
+#: Comp/VizDTree.dfm:285
+msgid "By &ID"
+msgstr "Dle &ID"
+
+#. FormLogin..Caption
+#: Comp/VizLogin.dfm:5
+msgid " Login"
+msgstr " Přihlášení k programu"
+
+#. FormLogin..Font.Name
+#: Comp/VizLogin.dfm:12
+msgid "Verdana"
+msgstr ""
+
+#. FormLogin..LUser..Caption
+#: Comp/VizLogin.dfm:25
+msgid "&User Name"
+msgstr "&Jméno uživatele"
+
+#. FormLogin..Panel1..bbLogin..Caption
+#: Comp/VizLogin.dfm:72
+msgid "Login"
+msgstr "Přihlásit"
+
+#. FormLogin..Panel1..bbPwd..Hint
+#: Comp/VizLogin.dfm:114
+msgid "Change the Password"
+msgstr "Změnit heslo"
+
+#. FormLogin..Panel1..bbPwd..Caption
+#: Comp/VizLogin.dfm:115
+msgid "&Change"
+msgstr "&Změnit"
+
+#, fuzzy
+#~ msgid "Select Control"
+#~ msgstr "Vytvořit ovládací prvky"
+
+#~ msgid "  Table of values:"
+#~ msgstr "  Tabulka hodnot:"

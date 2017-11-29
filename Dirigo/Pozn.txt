@@ -135,3 +135,19 @@
 11.03.2016	Dirigo	- Pøi otevírání projektu s duplicitním jménem konstanty se toto jméno zobrazí.
 22.03.2016	P1	- Pøidána podpora více jazykù v bloku P3Menu. Funkci musí podporovat FW grafického displeje.
 05.04.2016	Dirigo	- Podpora kopie obrazovky displeje 128x64 pixelù.
+09.06.2016	Dirigo	- Symbol inverze vstupu je ve stejné barvì jako spoj. Zvìtšena vzdálenost rámeèku hodnoty vstupu od rámeèku modulu.
+09.08.2016	Dirigo	- Pøi zmìnì stránky se odznaèí všechny vybrané objekty.
+01.09.2016	P1	- Oprava modulu UserComm uvnitø makra.
+16.09.2016	Dirigo	- Automatické uložení zálohy projektu pøi každé akci z menu Komunikace. Záloha jde otevøít v menu Historie jako soubor *.~SAV~.
+			  Pøidáno nastavení výchozích parametrù komunikace pro daný projekt. Rozdíly oproti výchozím parametrùm jsou zvýraznìny èervenì.
+20.09.2016	Dirigo	- Zrychlení ukládání a naèítání projektù.
+03.10.2016	P1	- V dialogu P3 menu je možno rozšíøit pravou èást dialogu s názvy promìnných.
+18.10.2016	P1	- Oprava exportu názvu bitù modulu 8xDI
+		Help	- Nová grafická verze nápovìdy (Martin)
+03.10.2016	P1	- Oprava zobrazení druhé hodnoty v P3menu. Zrušeno AutoComplete u combo boxù konstan K, Q.
+04.11.2016	Dirigo	- Tisk projektu s razítkem. Ukládání nastavené velikosti papíru do projektu.
+10.11.2016	Dirigo	- Pøidáno automatiké pøeèíslování modulù pøed kompilací.
+06.03.2017	P1	- Okno konfigurace bloku Logger - posun názvu polí pøi zmìnì poètu vstupù
+10.03.2017	Dirigo	- Pøidáno tlaèítko pro pøeèíslování projektu.
+22.03.2017	Dirigo	- ve výsledcích kompilace se zobrazuje poèet modulù projektu.
+30.03.2017	P1	- Oprava editoru P3Menu, v combo boxech K, Q nešlo vybrat první položku (konstantu).

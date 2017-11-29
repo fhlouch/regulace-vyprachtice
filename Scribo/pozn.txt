@@ -108,3 +108,26 @@
 04.08.2015	Scribo	- TDataComboBox má itemy ve tvaru Hodnota:Text, tzn. hodnota není dána poøadím.
 02.09.2015	Scribo	- Objekt TVizSettingsManager umožòuje pøedání zpráv i objektùm TVizRowGrid (Tag +400).
 03.09.2015	Scribo	- Objekt TVizRowGrid pøidána property Mirror pro zrcadlení osy X. Zpráva s Tag=11 invertuje Mirror.
+06.11.2015	Scribo	- Objekt TVizSettingsManager podporuje ètení dat ze serveru dle typu. TypeComboBox.Tag = funkce (obvykle 1301).
+22.11.2015	Scribo	- Ovládání grafù koleèkem myši (zoom / pan)
+24.11.2015	Scribo	- V uživatelském menu (Prj.Menu) lze zadat zkratkovou klávesu a viditelnost. 
+11.01.2016	Scribo	- TVizRowGrid - pøidáno uživatelské menu pro øádky gridu.
+14.01.2016	Scribo	- Pøidán objekt TSelectPanel.
+22.01.2016	Scribo	- Objekt TSimpleImage - pøidán test na unikátnost sousedních funkcí.
+21.06.2016	Scribo	- V objektu TWindowsPanel pøibyla vlastnost Items a ShowOnLoad.
+21.07.2016	Scribo	- TVizPanel umožòuje editovat promìnné typu Bit jako hodnotu 0/1, pokud nastavíme DataVizItem.DisplayFormat na %f 
+21.07.2016	Scribo	- TWindowPanel nová property VizibleGroups pro øízení viditelnosti okna na základì oprávnìní pøihlášeného operátora. 
+08.08.2016	Scribo	- TUserMenu - nová property VizibleGroups pro øízení viditelnosti okna na základì oprávnìní pøihlášeného operátora. Oprava práce s lokální tabulkou oprávnìní.
+27.08.2016	Scribo	- TVizAnimateImage - oprava ukládání vlastnosti BreakOnTrue objektu TVizImgItem.
+05.09.2016	Scribo	- Prj.LoggedActions umožòuje zápis vybraných událostí v projektu do databáze (Events_yy_mm.dbf).
+07.09.2016	Scribo	- Do souboru projektu se novì ukládá stav okna (Normal/Maximized/Minimized).
+19.09.2016	Scribo	- Oprava zobrazení systémového èasu místo lokálního v oknì prohlížeèe událostí (F9).
+29.08.2016	Scribo	- OpenGraph.HelpKeyword pøidán parametr /STEP=[0-9] pro nastavení èasového kroku v tabulce dat
+25.10.2016	Scribo	- Rozšíøená editace loggeru v oknì Parametry loggeru
+07.11.2016	Scribo	- V objektu TWindowsPanel pøibyla vlastnost UserProfile udávající cestu k souboru s rozmístìním oken. Lze použít makra $(OPERATOR_NAME) a $(OPERATOR_ID).
+09.11.2016	Scribo	- V objektu TWindowsPanel pøibyla vlastnost Timeout pro automatické zavøení okna po otevøení projektu.
+02.03.2017	Scribo	- Optimalizace ètení pouze potøebného rozsahu øádkù promìnných.
+			- Pøidána vlatnost Prj.IdleTimeout - doba ve vteøinách, po které se pøi nepoužívání PC pøepne vizualizace na poslední list.
+31.03.2017	Scribo	- Prvotní implementace PascalScript jako objekt TScript.
+02.06.2017	Scribo	- Oprava pøesunu více položek v editoru kolekcí. Pøidán pøístup k hodnotám dat vizualizce z PascalScriptu (IVizData).
+14.06.2017	Scribo	- Editor scriptù jako nemodální okno. Pøidán pøístup k datùm objektu TVizRowData pomocí rozhraní IPsFunction.

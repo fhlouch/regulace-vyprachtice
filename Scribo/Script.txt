@@ -1,0 +1,205 @@
+Integrace Pascal Srript se Scribem
+
+Objekt TScript v knihovnÏ Scribo.SBL /System
+  Vlastnost Script (TStrings) obsahuje vlastnÌ kÛd scriptu (program).
+
+SpuötÏnÌ funkce ze scriptu se prov·dÌ zasl·nÌm zpr·vy s ID=2004 do objektu TScript.
+Podle hodnoty Tag (wParam) se spustÌ funkce s n·zvem Proc_x , kde X se nahradÌ
+hodnotou Tag.
+HlavnÌ program lze spustit z CtrlItems pomocÌ mdUpdate (zpr·va s Id = $B243)
+
+P¯Ìstup k objekt˘m projektu Scriba zajiöùujÌ n·sledujÌcÌ funkce:
+  function Control(const s: string): TControl;
+  function Component(const s: string): TComponent;
+  procedure SetObjProp(O: TObject; const pName: string; const V: Variant);
+  function GetObjProp(O: TObject; const pName: string): Variant;
+  function GetProp(const cName, sName: string): Variant;
+  procedure SetProp(const cName, pName: string; const V: Variant);
+  procedure SetAnchors(C: TControl; A: TAnchors);
+  function GetAnchors(C: TControl): TAnchors;
+
+Funkce Control resp. Component vracÌ objekt zadan˝ n·zvem (vlastnost Name).
+Control se pouûÌv· pro zÌsk·nÌ ovl·dacÌho prvku, Component pro nevizu·lnÌ prvky.
+Vlastnosti objekt˘ lze ËÌst nebo zapsat funkcemi:
+        GetObjProp, SetObjProp, GetProp, SetProp
+
+nap¯.
+......
+var
+  Lbl: TControl;
+begin
+  Lbl := Control('Label1');
+  Lbl.Left := 100;
+  SetObjProp(Lbl, 'Caption', 'Nov˝ text');
+  SetProp('VizPanel1', 'ShowValue', False);
+end;
+
+
+
+StandardnÌ funkce PScript:
+
+  function IntToStr(I: Int64): string;
+  function StrToInt(S: string): LongInt;
+  function StrToIntDef(S: string; def: LongInt): LongInt;
+  function Copy(S: AnyString; iFrom, iCount: LongInt): AnyString;
+  function Pos(SubStr, S: AnyString): LongInt;
+  procedure Delete(var S: AnyString; iFrom, iCount: LongInt);
+  procedure Insert(S: AnyString; var s2: AnyString; iPos: LongInt);
+  function GetArrayLength(A): Integer;
+  procedure SetArrayLength(A, Count);
+  function StrGet(var S: string; I: Integer): Char;'
+  function StrGet2(S: string; I: Integer): Char;'
+  procedure StrSet(C: Char; I: Integer; var S: string);'
+  function WStrGet(var S: AnyString; I: Integer): WideChar;'
+  procedure WStrSet(C: AnyString; I: Integer; var S: AnyString);'
+  function VarArrayGet(var S: Variant; I: Integer): Variant;
+  procedure VarArraySet(C: Variant; I: Integer; var S: Variant);
+  function AnsiUpperCase(S: string): string;
+  function AnsiLowerCase(S: string): string;');;
+  function UpperCase(S: AnyString): AnyString;
+  function LowerCase(S: AnyString): AnyString;
+  function Trim(S: AnyString): AnyString;
+  function Length: Integer;').Decl.AddParam.OrgName := 'S';
+  with procedure SetLength(S, NewLength);
+  function Low: Int64;
+  function High: Int64;
+  procedure Dec(x);
+  procedure Inc(x);
+  procedure Include(s, m);
+  procedure Exclude(s, m);
+  function Sin(E: Extended): Extended;
+  function Cos(E: Extended): Extended;
+  function Sqrt(E: Extended): Extended;
+  function Round(E: Extended): LongInt;
+  function Trunc(E: Extended): LongInt;
+  function Int(E: Extended): Extended;
+  function Pi: Extended;
+  function Abs(E: Extended): Extended;
+  function StrToFloat(S: string): Extended;
+  function FloatToStr(E: Extended): string;
+  function PadL(S: AnyString; I: LongInt): AnyString;
+  function PadR(S: AnyString; I: LongInt): AnyString;
+  function PadZ(S: AnyString; I: LongInt): AnyString;
+  function Replicate(C: Char; I: LongInt): string;
+  function StringOfChar(C: Char; I: LongInt): string;
+
+  function Unassigned: Variant;
+  function VarIsEmpty(const V: Variant): Boolean;
+  function VarIsClear(const V: Variant): Boolean;
+  function Null: Variant;
+  function VarIsNull(const V: Variant): Boolean;
+  function VarType(const V: Variant): TVarType;
+  procedure RaiseLastException;
+  procedure RaiseException(Ex: TIFException; Param: string);
+  function ExceptionType: TIFException;
+  function ExceptionParam: string;
+  function ExceptionProc: Cardinal;
+  function ExceptionPos: Cardinal;
+  function ExceptionToString(er: TIFException; Param: string): string;
+  function StrToInt64(S: string): Int64;
+  function Int64ToStr(I: Int64): string;
+  function StrToInt64Def(S: string; def: Int64): Int64;
+
+const
+  varEmpty = varempty;
+  varNull = varnull;
+  varSmallInt = varsmallint;
+  varInteger = varinteger;
+  varSingle = varsingle;
+  varDouble = vardouble;
+  varCurrency = varcurrency;
+  varDate = vardate;
+  varOleStr = varolestr;
+  varDispatch = vardispatch;
+  varError = varerror;
+  varBoolean = varboolean;
+  varVariant = varvariant;
+  varUnknown = varunknown;
+  varShortInt = varshortint;
+  varByte = varbyte;
+  varWord = varword;
+  varLongWord = varlongword;
+  varInt64 = varint64;
+  varStrArg = varstrarg;
+  varAny = varany;
+  varString = varstring;
+  varTypeMask = vartypemask;
+  varArray = vararray;
+  varByRef = varByRef;
+  varUString = varUString;
+
+ addTypeS('TIFException', '(ErNoError, erCannotImport, erInvalidType, ErInternalError, '+
+   'erInvalidHeader, erInvalidOpcode, erInvalidOpcodeParameter, erNoMainProc, erOutOfGlobalVarsRange, '+
+    'erOutOfProcRange, ErOutOfRange, erOutOfStackRange, ErTypeMismatch, erUnexpectedEof, '+
+    'erVersionError, ErDivideByZero, ErMathError,erCouldNotCallProc, erOutofRecordRange, '+
+    'erOutOfMemory, erException, erNullPointerException, erNullVariantError, erInterfaceNotSupported, erCustomError)');
+
+KlÌËov· slova jazyku PascalScript:
+
+  AND
+  ARRAY
+  AS
+  BEGIN
+  CASE
+  CHR
+  CLASS
+  CONST
+  CONSTRUCTOR
+  DESTRUCTOR
+  DIV
+  DO
+  DOWNTO
+  ELSE
+  END
+  EXCEPT
+  EXIT
+  EXPORT
+  EXTERNAL
+  FINALIZATION
+  FINALLY
+  FOR
+  FORWARD
+  FUNCTION
+  GOTO
+  IF
+  IMPLEMENTATION
+  IN
+  INHERITED
+  INITIALIZATION
+  INTERFACE
+  IS
+  LABEL
+  MOD
+  NIL
+  NOT
+  OF
+  OR
+  ORD
+  OUT
+  OVERRIDE
+  ame
+  PRIVATE
+  PROCEDURE
+  PROGRAM
+  PROPERTY
+  PROTECTED
+  PUBLIC
+  PUBLISHED
+  RECORD
+  REPEAT
+  SET
+  SHL
+  SHR
+  THEN
+  TO
+  TRY
+  TYPE
+  UNIT
+  UNTIL
+  USES
+  VAR
+  VIRTUAL
+  WHILE
+  WITH
+  XOR
+
