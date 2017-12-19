@@ -23477,3 +23477,4 @@
 15.6.2017 13:14:20  TRowParamCache.WriteParams 39-39  1600+204  200  4 Result: True
 15.6.2017 13:14:20  TRowParamCache Phase 3
 15.6.2017 13:14:21  TRowParamCache Phase 0
+13.12.2017 19:34:06  Error reading memory: Plc=1, Adr=100430EC, Cnt=952
